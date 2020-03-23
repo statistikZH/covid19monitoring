@@ -85,7 +85,7 @@ See also [here](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGB
 
 # Metadata
 
-The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538)
+The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538).
 
 # Tempalte for GitHub Page
 
