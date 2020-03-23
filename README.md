@@ -11,7 +11,7 @@
 # Aim
 The aim is to create different datasets that all follow the same data structure. 
 
-More information on the project can be found [here](https://bit.ly/2UbzLdv). https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538
+More information on the project can be found [here](https://bit.ly/2UbzLdv)
 
 # Naming convention for gitrepos folders
 covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase)<br>
