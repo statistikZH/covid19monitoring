@@ -1,5 +1,6 @@
 # Table of Content
 - [Aim](https://github.com/statistikZH/monitoring_covid19/tree/master#aim) <br>
+- [Out github procedure](https://github.com/statistikZH/monitoring_covid19/tree/master#out-github-procedure) <br>
 - [Naming convention for scipts](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scipts) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-gitrepos-folders) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scripts) <br>
@@ -10,15 +11,33 @@
 - [Template for GitHub Pages](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#tempalte-for-github-page) <br>
 
 # Aim
-The aim is to create different datasets that all follow the same data structure. 
+The aim is to create different datasets that all follow the same data structure. More information on the project can be found [here](https://bit.ly/2UbzLdv)
 
-More information on the project can be found [here](https://bit.ly/2UbzLdv)
+# Our github procedure 
+
+![](methodology.jpg)
+
+## > gitrepos with no data protection
+1. Create private repository <br>
+2. As soon as Peter Moser gives his ok, tranform your private repository into a public repository: 
+> Settings -> Danger Zone -> Make this repository public
+
+## > gitrepos with data protection
+1. Create private repository  (named *+ _ + private*; see naming convention below) <br>
+2. As soon as Peter Moser gives his ok, create a 2nd gitrepos that has the same name but without the *+ _ + private* string in the end. Here, you only copy the non-sensitive data from step 1. 
 
 # Naming convention for gitrepos folders
+
+## > gitrepos  with data protection
 covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase)<br>
->E.g.: covid19monitoring_mobility_SlowTraffic
+> E.g.: covid19monitoring_mobility_SlowTraffic
+
+## > gitrepos  with data protection
+covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase) **+ _ + private** <br>
+> E.g.: covid19monitoring_mobility_SlowTraffic_private
 
 # Naming convention for scipts
+
 topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 > E.g.: Mobility_SlowTraffic
 
