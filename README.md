@@ -7,7 +7,7 @@
 - [Whats already done](https://github.com/statistikZH/monitoring_covid19/tree/master#whats-already-done)
 - [Script Structure](https://github.com/statistikZH/monitoring_covid19/tree/master#script-structure)
 - [More Information about the project (in german)](https://github.com/statistikZH/monitoring_covid19/tree/master#More-Information-about-the-project-(in-german))
--[Tempalte for GitHub Pages]()
+-[Tempalte for GitHub Pages](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#tempalte-for-github-page)
 
 # Aim
 The aim is to create different datasets that all follow the same data structure. 
