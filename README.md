@@ -1,13 +1,13 @@
 # Table of Content
-- [Aim](https://github.com/statistikZH/monitoring_covid19/tree/master#aim) <br>
+- [Aim](https://github.com/statistikZH/covid19monitoring/tree/master#aim) <br>
 - [Our github procedure](https://github.com/statistikZH/covid19monitoring#our-github-procedure) <br>
-- [Naming convention for scipts](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scipts) <br>
-- [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-gitrepos-folders) <br>
-- [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scripts) <br>
-- [Data structure specification for output data](https://github.com/statistikZH/monitoring_covid19/tree/master#data-structure-specification-for-output-data) <br>
-- [Whats already done](https://github.com/statistikZH/monitoring_covid19/tree/master#whats-already-done) <br>
-- [Script Structure](https://github.com/statistikZH/monitoring_covid19/tree/master#script-structure) <br>
-- [More Information about the project (in german)](https://github.com/statistikZH/monitoring_covid19/tree/master#More-Information-about-the-project-(in-german)) <br>
+- [Naming convention for scipts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scipts) <br>
+- [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-gitrepos-folders) <br>
+- [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
+- [Data structure specification for output data](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-output-data) <br>
+- [Whats already done](https://github.com/statistikZH/covid19monitoring/tree/master#whats-already-done) <br>
+- [Script Structure](https://github.com/statistikZH/covid19monitoring/tree/master#script-structure) <br>
+- [More Information about the project (in german)](https://github.com/statistikZH/covid19monitoring/tree/master#More-Information-about-the-project-(in-german)) <br>
 - [Template for GitHub Pages](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#tempalte-for-github-page) <br>
 
 # Aim
