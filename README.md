@@ -1,6 +1,6 @@
 # Table of Content
 - [Aim](https://github.com/statistikZH/monitoring_covid19/tree/master#aim) <br>
-- [Out github procedure](https://github.com/statistikZH/monitoring_covid19/tree/master#out-github-procedure) <br>
+- [Our github procedure](https://github.com/statistikZH/monitoring_covid19/tree/master#out-github-procedure) <br>
 - [Naming convention for scipts](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scipts) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-gitrepos-folders) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scripts) <br>
