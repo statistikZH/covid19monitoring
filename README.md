@@ -7,6 +7,7 @@
 - [Whats already done](https://github.com/statistikZH/monitoring_covid19/tree/master#whats-already-done)
 - [Script Structure](https://github.com/statistikZH/monitoring_covid19/tree/master#script-structure)
 - [More Information about the project (in german)](https://github.com/statistikZH/monitoring_covid19/tree/master#More-Information-about-the-project-(in-german))
+-[Tempalte for GitHub Pages]()
 
 # Aim
 The aim is to create different datasets that all follow the same data structure. 
@@ -68,4 +69,8 @@ See also [here](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGB
 # Metadata
 
 The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538)
+
+# Tempalte for GitHub Page
+
+The Template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
 
