@@ -7,15 +7,17 @@
 - [More Information about the project (in german)](https://github.com/statistikZH/monitoring_covid19/tree/master#More-Information-about-the-project-(in-german))
 
 # Aim
-The aim is to create different datasets that all follow the same data structure. More information on the project can be found [here](https://bit.ly/2UbzLdv)
+The aim is to create different datasets that all follow the same data structure. 
+
+More information on the project can be found [here](https://bit.ly/2UbzLdv). https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538
 
 # Naming convention for gitrepos folders
-covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase)
-E.g.: covid19monitoring_mobility_SlowTraffic
+covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase)<br>
+>E.g.: covid19monitoring_mobility_SlowTraffic
 
 # Naming convention for scipts
-topic (start with uppercase) + _ +  NameOfDataset (CamelCase)
-E.g.: Mobility_SlowTraffic
+topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
+> E.g.: Mobility_SlowTraffic
 
 # Data structure specification for output data
 
@@ -61,15 +63,7 @@ See also [here](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGB
 
 - **description**: if necessary, further, more detailed information  <br>
 
+# Metadata
 
-# Whats already done
-
-See: https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538
-
-# Recommended Script Structure
-
-I recommend to structure the script as follows: <br>
-- Download data <br>
-- Format data according to data structure specification <br>
-- export result to csv (separator =",") UTF-8 formatted <br>
+The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538)
 
