@@ -2,6 +2,7 @@
 - [Aim](https://github.com/statistikZH/monitoring_covid19/tree/master#aim)
 - [Naming convention for scipts](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scipts)
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-gitrepos-folders)
+- [Naming convention for gitrepos folders](https://github.com/statistikZH/monitoring_covid19/tree/master#naming-convention-for-scripts)
 - [Data structure specification for output data](https://github.com/statistikZH/monitoring_covid19/tree/master#data-structure-specification-for-output-data)
 - [Whats already done](https://github.com/statistikZH/monitoring_covid19/tree/master#whats-already-done)
 - [Script Structure](https://github.com/statistikZH/monitoring_covid19/tree/master#script-structure)
