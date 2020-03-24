@@ -1,5 +1,6 @@
 # Table of Content
 - [Aim](https://github.com/statistikZH/covid19monitoring/tree/master#aim) <br>
+- [Gitrepos overview](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-overview) <br>
 - [Our github procedure](https://github.com/statistikZH/covid19monitoring#our-github-procedure) <br>
 - [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-gitrepos-folders) <br>
@@ -10,6 +11,39 @@
 
 # Aim
 The aim is to create different datasets that all follow the same data structure. More information on the project can be found [here](https://bit.ly/2UbzLdv)
+
+# Gitrepos overview
+
+## Private gitrepos
+
+| gitrepos Name  | Data ok |Plots ok|Text ok|Peter Moser ok|
+| ------------- | ------------- |------------|------------|------------
+| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  |   | | ||
+| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   ||||
+| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   ||||
+| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   |   ||||
+| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   |   ||||
+| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   |  ||||
+  
+## public gitrepos
+   
+| gitrepos Name | 
+| ------------- | 
+|  None at the moment |
+
+**"Data ok" means**: 
+-  Data follows specification of Data structure specification for output 
+-  Data is validated
+
+**"Plot ok" means**: 
+-  Plot is created 
+-  Plot is validated
+
+**"Text ok" means**: 
+-  Thomas Hofer has created Text
+
+**"Peter Moser ok" means**: 
+-  Non sensitive data can be publihed to public respository 
 
 # Our github procedure 
 
