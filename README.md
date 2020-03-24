@@ -97,3 +97,13 @@ The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18C
 
 The Template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
 
+# Metadata for gitrepos folders
+
+**Author**: Name and Surname <br>
+**Methodology**: Brief description of how the dataset is created <br>
+**Dataset**: Path to dataset that is created in this gitrepos <br>
+**Source**: Source of dataset <br>
+**Frequncy of update**: E.g. daily/weekly/monthly <br>
+**Please consider these points when using the dataset**: Things to consider when using this dataset.<br>
+
+
