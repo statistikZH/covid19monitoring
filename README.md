@@ -25,7 +25,7 @@ The aim is to create different datasets that all follow the same data structure.
 | [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   |   ||||
 | [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   |  ||||
   
-## public gitrepos
+## Public gitrepos
    
 | gitrepos Name | 
 | ------------- | 
