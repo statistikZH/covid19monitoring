@@ -83,39 +83,7 @@ UTF-8 <br>
 
 **Variables**<br>
 
-See also [here](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0)
-
-- **date**: POSIXct Format. Even though the granulation of the original signal data may be finer, the data for the resulting master table should be stored in POSIXct format on a daily basis. The function POSIXct() usually generates this from other input formats. E.g:<br>
-> as.POSIXct(paste("25.2.2020", "00:00:00", sep=" "), format="%d.%m.%y")  
-> as.POSIXct(paste("datumsvariable", "00:00:00", sep=" "), format="%d.%m.%y")	 
-
-- **value** <br>
-... - Value without thousand separator or the like  <br>
-... - Decimal separator is the dot "."<br>
-
-- **topic**: The five defined subject areas (lower case) <br>
-... - economy <br>
-... - social <br>
-... - mobility <br>
-... - health <br>
-... - education <br>
-... - other <br>
-
-- **variable_short**: meaningful short name of the variable (lower case) <br>
-
-- **variable_short**: meaningful long name of the variable (lower case) <br>
-
-- **location**: Geographic reference <br>
-
-- **unit**: unit of measurement <br>
-
-- **origin**: Short reference, such as could be used in the footer of a plot <br>
-
-- **update**: Time interval of update? baselines are values that serve as a comparative figure and do not change (e.g. from STATENT) <br>
-
-- **public**: Can the variable OGD be set? <br>	
-
-- **description**: if necessary, further, more detailed information  <br>
+See [thie spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 # Metadata
 
