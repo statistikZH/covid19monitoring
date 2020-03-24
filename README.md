@@ -94,7 +94,7 @@ The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18C
 
 # Tempalte for GitHub Page
 
-The Template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
+The template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
 
 # Metadata for gitrepos folders
 
