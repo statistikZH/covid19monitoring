@@ -86,7 +86,6 @@ UTF-8 <br>
 "," <br>
 
 **Variables**<br>
-
 See [thie spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 # Metadata
