@@ -49,7 +49,7 @@ h3 { /* Header 3 */
 </style>
 ```{r, echo=FALSE}
 
-htmltools::img(src = knitr::image_uri(file.path("./KtZuerichLogoSmall.png")),
+htmltools::img(src = knitr::image_uri(file.path("./KtZuerichLogo.png")),
                alt = 'logo', 
                style = 'position:absolute; top:0; right:0; padding:0px;')
 ```
