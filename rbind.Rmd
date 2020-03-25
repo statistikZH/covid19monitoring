@@ -1,0 +1,48 @@
+---
+title: "rbind"
+---
+
+# import dat
+```{r}
+
+#Mobility_Intervista
+url_Mobility_Intervista  <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_intervista/master/Mobility_Intervista.csv"
+Mobility_Intervista <-data.frame(read_csv(url(url_Mobility_Intervista)))
+
+#Other_Weather
+url_Other_Weather <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_other_Weather/master/Other_Weather.csv"
+Other_Weather <-data.frame(read_csv(url(url_Other_Weather)))
+
+#url_Economy_FlightTrafficZRH="https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic/blob/master/Economy_FlightTrafficZRH.csv"
+#Economy_FlightTrafficZRH<-data.frame(read_csv(url(url_Economy_FlightTrafficZRH)))
+
+```
+
+# check dat
+
+```{r}
+
+source("./function.R")
+
+CheckIfDfFollowsStandard(Mobility_Intervista)
+CheckIfDfFollowsStandard(Other_Weather)
+
+```
+
+
+# rbind
+
+```{r}
+
+covid19monitoring <- rbind(Mobility_Intervista, Other_Weather)
+
+```
+
+# export result
+
+```{r}
+
+write.table(covid19monitoring, "./covid19monitoring.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+
+```
+
