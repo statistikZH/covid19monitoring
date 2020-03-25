@@ -3,6 +3,7 @@ title: "rbind"
 ---
 
 # import dat
+
 ```{r}
 
 #Mobility_Intervista
