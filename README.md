@@ -43,7 +43,7 @@ The aim is to create different datasets that all follow the same data structure.
 -  Thomas Hofer has created Text
 
 **"Peter Moser ok" means**: 
--  Non sensitive data can be publihed to public respository 
+-  Non sensitive data can be published to public repository 
 
 # Our github procedure 
 
@@ -86,7 +86,7 @@ UTF-8 <br>
 "," <br>
 
 **Variables**<br>
-See [thie spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
+See [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 # Metadata
 
