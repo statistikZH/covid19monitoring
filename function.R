@@ -13,8 +13,8 @@ CheckIfDfFollowsStandard <- function (df)  {
   print("=> date")
   print(sort(unique(df$date)))
   print("*****************************************************")
-  print("=> value")
-  print(sort(unique(df$value)))
+  #print("=> value")
+  #print(sort(unique(df$value)))
   print("*****************************************************")
   print("=> topic")
   print(sort(unique(df$topic)))
@@ -46,3 +46,14 @@ CheckIfDfFollowsStandard <- function (df)  {
   
 }
 
+
+CreateMetadata <- function ()  {
+  
+covid19monitoring <- read.csv("./covid19monitoring.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
+unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
+Metadata <- covid19monitoring_sel[unique_rows,]
+
+write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+
+}

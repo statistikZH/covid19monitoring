@@ -2,17 +2,20 @@
 title: "rbind"
 ---
 
+
 # import dat
 
 ```{r}
 
 #Mobility_Intervista
 url_Mobility_Intervista  <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_intervista/master/Mobility_Intervista.csv"
-Mobility_Intervista <-data.frame(read_csv(url(url_Mobility_Intervista)))
+Mobility_Intervista <- read.csv(url(url_Mobility_Intervista), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
 
 #Other_Weather
 url_Other_Weather <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_other_Weather/master/Other_Weather.csv"
-Other_Weather <-data.frame(read_csv(url(url_Other_Weather)))
+Other_Weather <- read.csv(url(url_Other_Weather), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
 
 #url_Economy_FlightTrafficZRH="https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic/blob/master/Economy_FlightTrafficZRH.csv"
 #Economy_FlightTrafficZRH<-data.frame(read_csv(url(url_Economy_FlightTrafficZRH)))
@@ -30,7 +33,6 @@ CheckIfDfFollowsStandard(Other_Weather)
 
 ```
 
-
 # rbind
 
 ```{r}
@@ -47,3 +49,15 @@ write.table(covid19monitoring, "./covid19monitoring.csv", sep=",", fileEncoding=
 
 ```
 
+# create metadata
+
+```{r}
+
+covid19monitoring <- read.csv("./covid19monitoring.csv", header=T, sep="\t", stringsAsFactors=FALSE, encoding="UTF-8")
+
+Metadata_prep <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
+Metadata <- Metadata_prep[!duplicated(Metadata_prep[names(Metadata_prep)]),]
+
+write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+
+```
