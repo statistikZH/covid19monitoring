@@ -53,11 +53,9 @@ write.table(covid19monitoring, "./covid19monitoring.csv", sep=",", fileEncoding=
 
 ```{r}
 
-covid19monitoring <- read.csv("./covid19monitoring.csv", header=T, sep="\t", stringsAsFactors=FALSE, encoding="UTF-8")
+source("./function.R")
 
-Metadata_prep <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
-Metadata <- Metadata_prep[!duplicated(Metadata_prep[names(Metadata_prep)]),]
-
-write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+CreateMetadata()
 
 ```
+
