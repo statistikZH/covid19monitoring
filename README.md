@@ -37,14 +37,14 @@ Katharina Kälin, wissenschaftliche Mitarbeiterin Statistisches Amt des Kantons 
 
 ## Private gitrepos
 
-| gitrepos Name  | Data ok |Plots ok|Text ok|Peter Moser ok|
-| ------------- | ------------- |------------|------------|------------|
-| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  |   | | ||
-| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   ||||
-| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   ||||
-| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   |   ||||
-| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   |   ||||
-| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   |  ||||
+| gitrepos Name  | Data ok |Text ok|Peter Moser ok|
+| ------------- | ------------- |------------|------------|
+| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | ok | ||
+| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   |||
+| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   |||
+| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | ok |||
+| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   |   |||
+| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   |  |||
 
 ## Public gitrepos
 
