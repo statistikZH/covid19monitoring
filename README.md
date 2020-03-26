@@ -10,25 +10,44 @@
 - [Template for GitHub Pages](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#tempalte-for-github-page) <br>
 
 # Aim
-The aim is to create different datasets that all follow the same data structure. More information on the project can be found [here](https://bit.ly/2UbzLdv)
+**Gesellschaftsmonitoring COVID19**
+
+Das Monitoring bündelt tagesaktuelle Datenreihen, welche die Entwicklungen beleuchten sollen, die durch die Corona-Krise in allen Lebensbereichen ausgelöst werden. So geben beispielsweise die täglich aktualisierten Daten des COVID19-Mobilitätsmonitorings Auskunft darüber, in welchem Ausmass die Bevölkerung wegen der Verordnungen des Bundesrats ihre Tagesdistanz verringert hat. Ziel des Projekts ist es, möglichst viele der in Verwaltung und Wirtschaft und der OGD-Community erzeugten Zeitreihen zu sammeln und konsolidiert in einem einheitlichen Format und in einem Datensatz so rasch wie möglich öffentlich zugänglich zu machen. Dies verschafft allen Interessierten einen Überblick darüber, wie sich die Bevölkerung in der aktuellen Krisensituation verhält. Das Monitoring kann auch dabei helfen, die Wirksamkeit der behördlichen Massnahmen gegen die Ausbreitung des Corona-Virus' zu evaluieren.
+
+**Zusammenarbeit zwischen Staat und Privaten**
+
+Je schneller der Datensatz wächst, und je mehr Lebensbereiche darin gespiegelt werden, desto wertvoller ist es. Deshalb hat das Statistische Amt zahlreiche potentielle Datenhalter um Unterstützung gebeten: Andere Verwaltungsstellen, Hochschulinstitute, Firmen und engagierte Privatpersonen wurden angefragt, relevantes Datenmaterial zur Verfügung zu stellen. An dieser Stelle herzlichen Dank für die grosse Hilfsbereitschaft trotz der teils hohen Belastung durch das Tagesgeschäft in der Krise! Weitere Vorschläge werden gerne entgegengenommen.
+
+**Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik ist willkommen!**
+
+[Mehr dazu](https://bit.ly/2UbzLdv) **
+
+Wissenschaftlich–fachliche Aspekte:
+
+Dr. Peter Moser, Stv. Amtschef Statistisches Amt des Kantons Zürich, Leiter Analysen & Studien (043 259 75 35)
+
+technische Aspekte:
+
+Katharina Kälin, wissenschaftliche Mitarbeiterin Statistisches Amt des Kantons Zürich (043 259 75 08) 
+
 
 # Gitrepos overview
 
 ## Private gitrepos
 
-| gitrepos Name  | Data ok |Plots ok|Text ok|Peter Moser ok|
-| ------------- | ------------- |------------|------------|------------
-| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  |   | | ||
-| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   ||||
-| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   ||||
-| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   |   ||||
-| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   |   ||||
-| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   |  ||||
-  
+| gitrepos Name  | Data ok |Text ok|Peter Moser ok|
+| ------------- | ------------- |------------|------------|
+| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | ok | ||
+| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   |||
+| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   |||
+| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | ok |||
+| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   |   |||
+| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   |  |||
+
 ## Public gitrepos
-   
-| gitrepos Name | 
-| ------------- | 
+
+| gitrepos Name |
+| ------------- |
 |  None at the moment |
 
 **"Data ok" means**: 
@@ -103,6 +122,8 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 **Dataset**: Path to dataset that is created in this gitrepos <br>
 **Source**: Source of dataset <br>
 **Frequency of update**: E.g. daily/weekly/monthly <br>
-**Please consider these points when using the dataset**: Things to consider when using this dataset.<br>
+**Please consider these points when using the dataset**: 
+Möglicher Quellenverweis:  Originalquelle (z.B Intervista AG, Tiefbauamt Stadt Zürich, Flughafen Zürich etc); Gesellschaftsmonitoring Covid-19 STAT
+.<br>
 
 
