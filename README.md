@@ -10,7 +10,7 @@
 - [Template for GitHub Pages](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#tempalte-for-github-page) <br>
 
 # Aim
-More information on the project can be found [here](file:///C:/gitrepos/covid19monitoring/docs/index.html)
+More information on the project can be found [here](https://statistikzh.github.io/covid19monitoring/)
 
 # Gitrepos overview
 
