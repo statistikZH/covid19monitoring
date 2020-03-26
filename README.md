@@ -32,13 +32,9 @@ More information on the project can be found [in german for the less nerdy among
 | ------------- |
 |  None at the moment |
 
-**validated**: 
+**validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
--  Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
-
-**Published:** 
-
--  Data is included in official published release.
+**published:** Data is included in official published release.
 
 # Our github procedure 
 
