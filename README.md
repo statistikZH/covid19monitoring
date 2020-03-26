@@ -30,7 +30,6 @@ technische Aspekte:
 
 Katharina Kälin, wissenschaftliche Mitarbeiterin Statistisches Amt des Kantons Zürich (043 259 75 08) 
 
-[here](https://bit.ly/2UbzLdv)
 
 # Gitrepos overview
 
@@ -124,7 +123,7 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 **Source**: Source of dataset <br>
 **Frequency of update**: E.g. daily/weekly/monthly <br>
 **Please consider these points when using the dataset**: 
-Möglicher Quellenverweis:  Originalquelle (z.B Intervista AG, Tiefbauamt Stadt Zürich, Flughafen Zürich etc); Gesellschaftsmonitoring Covid-19 STAT,
+Möglicher Quellenverweis:  Originalquelle (z.B Intervista AG, Tiefbauamt Stadt Zürich, Flughafen Zürich etc); Gesellschaftsmonitoring Covid-19 STAT
 .<br>
 
 
