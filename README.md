@@ -15,8 +15,6 @@ More information on the project can be found [in german for the less nerdy among
 
 # Gitrepos overview
 
-## Private gitrepos
-
 | gitrepos  | validated (conforms to specs) |published|
 | ------------- | ------------- |------------|
 | [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | 2020-03-24 ||
@@ -25,12 +23,6 @@ More information on the project can be found [in german for the less nerdy among
 | [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | 2020-03-25 ||
 | [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | 2020-03-26 ||
 | [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | 2020-03-26 ||
-
-## Public gitrepos
-
-| gitrepos Name |
-| ------------- |
-|  None at the moment |
 
 **validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
