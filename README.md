@@ -11,7 +11,7 @@
 
 # Aim
 
-More information on the project can be found [its in german for the less nerdy among you](https://statistikzh.github.io/covid19monitoring/).
+More information on the project can be found [in german for the less nerdy among you](https://statistikzh.github.io/covid19monitoring/).
 
 # Gitrepos overview
 
@@ -60,13 +60,13 @@ More information on the project can be found [its in german for the less nerdy a
 
 # Naming convention for gitrepos folders
 
-## > gitrepos  without data protection
+## > gitrepos without data protection
 
 covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase)<br>
 
 > E.g.: covid19monitoring_mobility_SlowTraffic
 
-## > gitrepos  with data protection
+## > gitrepos with data protection
 
 covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase) **+ _ + private** <br>
 
@@ -80,18 +80,16 @@ topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
 # Data structure specification for output data
 
-**Encoding**<br>
-UTF-8, Comma-separated, without row names.
+**Format**<br>
+csv: UTF-8, Comma-separated, without row names.
 
-**Conventions for the variables**
-
+**Conventions for the variables** <br>
 see [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 
 # Template for GitHub Page
 
 The template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
-
 
 # Metadata for gitrepos folders
 
