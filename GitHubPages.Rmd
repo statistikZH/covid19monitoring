@@ -68,6 +68,20 @@ Je schneller der Datensatz wächst, und je mehr Lebensbereiche darin gespiegelt 
 
 Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
+# Auswertung
+
+ToDo: Welche Auswertungen wollen wir liefern? 
+
+# Datenbezug
+
+TODO: In welcher Form möchten wir die Daten herausgeben? <br>
+https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19monitoring.csv
+
+
+# Metadaten
+
+TODO: Wie beschreiben wir die obigen Daten am besten? 
+
 
 # Kontakt
 
