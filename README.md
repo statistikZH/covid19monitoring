@@ -18,6 +18,7 @@ Zusammenarbeit zwischen Staat und Privaten
 
 Je schneller der Datensatz wächst, und je mehr Lebensbereiche darin gespiegelt werden, desto wertvoller ist es. Deshalb hat das Statistische Amt zahlreiche potentielle Datenhalter um Unterstützung gebeten: Andere Verwaltungsstellen, Hochschulinstitute, Firmen und engagierte Privatpersonen wurden angefragt, relevantes Datenmaterial zur Verfügung zu stellen. An dieser Stelle herzlichen Dank für die grosse Hilfsbereitschaft trotz der teils hohen Belastung durch das Tagesgeschäft in der Krise! Weitere Vorschläge werden gerne entgegengenommen
 
+Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungngen, Beiträge, Kritik ist willkommen!
 Mehr dazu: [here](https://bit.ly/2UbzLdv)
 
 Kontakt für Auskünfte zum Projekt:
