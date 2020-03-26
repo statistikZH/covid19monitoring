@@ -48,9 +48,18 @@ covid19monitoring <- rbind(Mobility_Intervista, Other_Weather, Economy_FlightTra
 
 ```{r}
 
-write.table(covid19monitoring, "./covid19monitoring.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+write.table(covid19monitoring, "./internalcheck.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
 ```
+
+# daily update
+
+```{r}
+
+file.copy("./internalcheck.csv", "./covid19monitoring.csv", overwrite = TRUE)
+
+```
+
 
 # create metadata
 
@@ -61,4 +70,5 @@ source("./function.R")
 CreateMetadata()
 
 ```
+
 

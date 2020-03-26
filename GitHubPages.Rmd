@@ -68,20 +68,24 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 **Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik ist willkommen!**
 
-
-# Auswertung
-
-ToDo: Welche Auswertungen wollen wir liefern? 
-
 # Datenbezug
 
-TODO: In welcher Form möchten wir die Daten herausgeben? <br>
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19monitoring.csv
 
 
 # Metadaten
 
-TODO: Wie beschreiben wir die obigen Daten am besten? 
+```{r, message=FALSE, warning=FALSE, echo = FALSE}
+
+library(DT)
+
+metadata <- read.csv("./Metadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% c("variable_short", "description", "public")]
+
+datatable(metadata_sel, options = list(pageLength = 100), filter = 'top' , escape = FALSE, rownames = FALSE)
+
+```
+
 
 
 # Kontakt
