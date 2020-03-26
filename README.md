@@ -10,6 +10,29 @@
 - [Template for GitHub Pages](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#tempalte-for-github-page) <br>
 
 # Aim
+Durch die Krise begleiten: «Gesellschaftsmonitoring COVID19»
+Das Statistische Amt hat am 16. März das Projekt «Gesellschaftsmonitoring COVID19» gestartet. Es hat zum Ziel, anhand verschiedener Datenreihen zu beobachten, wie die Schweizer Bevölkerung auf die Corona-Krise und die Massnahmen der Behörden reagiert. Mittlerweile liegen erste Ergebnisse vor.
+Das Monitoring bündelt verschiedene, möglichst tagesaktuelle Datenreihen, welche die Entwicklungen, welche die die Corona-Krise in der Wirtschaft im sozialen oder im Mobilitätsbereich auslöst, beleuchten sollen. So geben beispielsweise die täglich aktualisierten Daten des COVID19 Mobilitätsmonitorings [Verweis auf Mitteilung im CMS] Auskunft darüber, in welchem Ausmass die Bevölkerung wegen der Verordnungen des Bundesrats ihre Tagesdistanz verringert hat. Ziel des Projekts ist es, die in Verwaltung und Wirtschaft erzeugten Datenreihen zu sammeln und in einem einheitlichen Format so rasch wie möglich öffentlich zugänglich zu machen. Dies gibt allen Interessierten einen Überblick darüber, wie sich die Bevölkerung in der aktuellen Krisensituation verhält. Ausserdem kann das Monitoring dabei helfen, die Wirksamkeit der behördlichen Massnahmen gegen die Ausbreitung des Corona-Virus' zu evaluieren.
+
+Zusammenarbeit zwischen Staat und Privaten
+
+Je schneller das Monitoring auf die Beine kommt, desto wertvoller ist es. Deshalb hat das Statistische Amt zahlreiche potentielle Datenhalter um Unterstützung gebeten: Andere Verwaltungsstellen, Hochschulinstitute, Firmen und engagierte Privatpersonen wurden angefragt, relevantes Datenmaterial zur Verfügung zu stellen. An dieser Stelle herzlichen Dank für die grosse Hilfsbereitschaft trotz der teils hohen Belastung durch das Tagesgeschäft in der Krise! Derzeit sind die Projektbeteiligten daran, die für das Monitoring benötigten Datenreihen zusammenzutragen, die Datenflüsse zu automatisieren und deren einheitliche, stetige Veröffentlichung auf die Beine zu stellen.
+
+Erste Ergebnisse
+
+Obwohl noch viel zu tun bleibt, liefert das Monitoring mittlerweile erste Ergebnisse in einem harmonisierten Datenformat. Einzelne Datenreihen sind seit kurzem in maschinenlesbarer Form verfügbar. Sie sollen nun laufend ergänzt werden. Informationen dazu sowie zum Projekt allgemein sind erhältlich unter:
+
+Möglicher Quellenverweis: Gesellschaftsmonitoring Covid-19 STAT, Originalquelle (z.B Intervista AG, Tiefbauamt Stadt Zürich, Flughafen Zürich etc)
+
+Kontakt für Auskünfte:
+
+Für wissenschaftlich–fachliche Aspekte des Projekts:
+Dr. Peter Moser, Stv. Amtschef Statistisches Amt des Kantons Zürich, Leiter Analysen & Studien (043 259 75 35)
+Für technische Aspekte des Projekts:
+Katharina Kälin, wissenschaftliche Mitarbeiterin Statistisches Amt des Kantons Zürich (043 259 75 08) 
+
+
+
 The aim is to create different datasets that all follow the same data structure. More information on the project can be found [here](https://bit.ly/2UbzLdv)
 
 # Gitrepos overview
