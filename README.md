@@ -18,7 +18,7 @@ More information on the project can be found [here](https://statistikzh.github.i
 
 | gitrepos  | validated (conforms to specs) |published|
 | ------------- | ------------- |------------|
-| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | 2020-03-25 ||
+| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | 2020-03-24 ||
 | [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   ||
 | [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   ||
 | [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | 2020-03-25 ||
@@ -37,7 +37,7 @@ More information on the project can be found [here](https://statistikzh.github.i
 
 **Published:** 
 
--  data is included in the daily "official release" 
+-  data is included in the daily "official release". 
 
 # Our github procedure 
 
