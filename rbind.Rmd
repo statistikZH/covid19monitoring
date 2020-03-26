@@ -8,17 +8,19 @@ title: "rbind"
 ```{r}
 
 #Mobility_Intervista
-url_Mobility_Intervista  <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_intervista/master/Mobility_Intervista.csv"
+url_Mobility_Intervista  <-
+  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_intervista/master/Mobility_Intervista.csv"
 Mobility_Intervista <- read.csv(url(url_Mobility_Intervista), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
-
 #Other_Weather
-url_Other_Weather <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_other_Weather/master/Other_Weather.csv"
+url_Other_Weather <- 
+  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_other_Weather/master/Other_Weather.csv"
 Other_Weather <- read.csv(url(url_Other_Weather), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
-
-#url_Economy_FlightTrafficZRH="https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic/blob/master/Economy_FlightTrafficZRH.csv"
-#Economy_FlightTrafficZRH<-data.frame(read_csv(url(url_Economy_FlightTrafficZRH)))
+#Economy_FlightTrafficZRH
+url_Economy_FlightTrafficZRH <-
+  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_FlightTraffic/master/Economy_FlightTraffic.csv"
+Economy_FlightTrafficZRH <- read.csv(url(url_Economy_FlightTrafficZRH), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
 ```
 
@@ -30,6 +32,7 @@ source("./function.R")
 
 CheckIfDfFollowsStandard(Mobility_Intervista)
 CheckIfDfFollowsStandard(Other_Weather)
+CheckIfDfFollowsStandard(Economy_FlightTrafficZRH)
 
 ```
 
@@ -37,7 +40,7 @@ CheckIfDfFollowsStandard(Other_Weather)
 
 ```{r}
 
-covid19monitoring <- rbind(Mobility_Intervista, Other_Weather)
+covid19monitoring <- rbind(Mobility_Intervista, Other_Weather, Economy_FlightTrafficZRH)
 
 ```
 
