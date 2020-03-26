@@ -16,14 +16,14 @@ More information on the project can be found [here](https://statistikzh.github.i
 
 ## Private gitrepos
 
-| gitrepos Name  | Data ok |Text ok|Peter Moser ok|
-| ------------- | ------------- |------------|------------|
-| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | ok | ||
-| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   |||
-| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   |||
-| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | ok |||
-| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   |   |||
-| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   |  |||
+| gitrepos  | validated (conforms to specs) |published|
+| ------------- | ------------- |------------|
+| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | 2020-03-25 ||
+| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   ||
+| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   ||
+| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | 2020-03-25 ||
+| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | 2020-03-26 ||
+| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | 2020-03-26 ||
 
 ## Public gitrepos
 
@@ -31,19 +31,13 @@ More information on the project can be found [here](https://statistikzh.github.i
 | ------------- |
 |  None at the moment |
 
-**"Data ok" means**: 
--  Data follows specification of Data structure specification for output 
--  Data is validated
+**validated**: 
 
-**"Plot ok" means**: 
--  Plot is created 
--  Plot is validated
+-  Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
-**"Text ok" means**: 
--  Thomas Hofer has created Text
+**Published:** 
 
-**"Peter Moser ok" means**: 
--  Non sensitive data can be published to public repository 
+-  data is included in the daily "official release" 
 
 # Our github procedure 
 
@@ -73,19 +67,11 @@ covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (C
 topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 > E.g.: Mobility_SlowTraffic
 
-For some data it might be nice to additionally prove a more compact dataset (subset) so that the data user can get a quick insight. 
-Please use the following naming convention for this more compact datasets: 
-Name of regular dataset (as described above) + _ + subset
-
 # Data structure specification for output data
 
 **Encoding**<br>
-UTF-8 <br>
-
-**Tab separator**<br>
-"," <br>
-
-**Variables**<br>
+UTF-8, Comma-separated, without row names.
+**Content specification of Variables**<br>
 See [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 # Metadata
@@ -94,7 +80,6 @@ The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18C
 
 # Template for GitHub Page
 
-TODO: Improve
 The template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
 
 # Metadata for gitrepos folders
@@ -105,7 +90,7 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 **Source**: Source of dataset <br>
 **Frequency of update**: E.g. daily/weekly/monthly <br>
 **Please consider these points when using the dataset**: 
-Möglicher Quellenverweis:  Originalquelle (z.B Intervista AG, Tiefbauamt Stadt Zürich, Flughafen Zürich etc); Gesellschaftsmonitoring Covid-19 STAT
+Original Dataprovider (e.g. intervista, SIX, Flughafen Zürich etc.) ;"Gesellschaftsmonitoring Covid-19 STAT"
 .<br>
 
 
