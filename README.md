@@ -82,8 +82,8 @@ topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
 **Encoding**<br>
 UTF-8, Comma-separated, without row names.
-**Content specification of Variables**
-=======
+
+**Conventions for the variables**
 
 see [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
