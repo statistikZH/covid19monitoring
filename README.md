@@ -2,12 +2,10 @@
 
 - [Aim](https://github.com/statistikZH/covid19monitoring/tree/master#aim) <br>
 - [Gitrepos overview](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-overview) <br>
-<!---
-- [Our github procedure](https://github.com/statistikZH/covid19monitoring#our-github-procedure) <br>
---->
-- [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
+- [Gitrepos with no data protection](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-with-no-data-protection) <br>
+- [Gitrepos with data protection](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-with-data-protection) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-gitrepos-folders) <br>
-- [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
+- [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
 - [Data structure specification for output data](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-output-data) <br>
 - [Metadata](https://github.com/statistikZH/covid19monitoring/tree/master#metadata) <br>
 
@@ -36,7 +34,7 @@ More information on the project can be found [in german for the less nerdy among
 ![](methodology.jpg)
 --->
 
-## > gitrepos with no data protection
+# Gitrepos with no data protection
 
 1. Create private repository <br>
 
@@ -44,7 +42,7 @@ More information on the project can be found [in german for the less nerdy among
 
 > Settings -> Danger Zone -> Make this repository public
 
-## > gitrepos with data protection
+# Gitrepos with data protection
 
 1. Create private repository  (named *+ _ + private*; see naming convention below) <br>
 
