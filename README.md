@@ -90,7 +90,7 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 **Source**: Source of dataset <br>
 **Frequency of update**: E.g. daily/weekly/monthly <br>
 **Please consider these points when using the dataset**: 
-Original Dataprovider (e.g. intervista, SIX, Flughafen Zürich etc.) ;"Gesellschaftsmonitoring Covid-19 STAT"
+Original Dataprovider (e.g. intervista, SIX, Flughafen Zürich etc.)  followed by"Gesellschaftsmonitoring Covid-19 STAT"
 .<br>
 
 
