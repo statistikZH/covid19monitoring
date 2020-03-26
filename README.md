@@ -70,15 +70,6 @@ topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
 # Data structure specification for output data
 
-**Format specification**<br>
-
-- Filetype: .csv <br>
-- Encoding: TF-8 codiert <br>
-- row.names: none <br>
-- separator character: "," <br>
-
-**Variable specification**<br>
-
 See [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 # Metadata
