@@ -23,8 +23,11 @@ Mehr dazu: [here](https://bit.ly/2UbzLdv)
 Kontakt für Auskünfte zum Projekt:
 
 Wissenschaftlich–fachliche Aspekte:
+
 Dr. Peter Moser, Stv. Amtschef Statistisches Amt des Kantons Zürich, Leiter Analysen & Studien (043 259 75 35)
+
 technische Aspekte:
+
 Katharina Kälin, wissenschaftliche Mitarbeiterin Statistisches Amt des Kantons Zürich (043 259 75 08) 
 
 [here](https://bit.ly/2UbzLdv)
