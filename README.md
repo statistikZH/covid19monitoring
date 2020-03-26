@@ -107,11 +107,7 @@ UTF-8, Comma-separated, without row names.
 >>>>>>> 5a9f4954f1ebf416b628948a1ca6831a3cbdb21e
 See [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
-# Metadata
 
-The metadata is documented [here](https://docs.google.com/spreadsheets/d/1AXn18Cz-DJATHCsc_zfyHReWdK0FGjbcbLxxIgjGulg/edit#gid=2058194538).
-
-<<<<<<< HEAD
 # Template for GitHub Page
 
 The template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
@@ -129,9 +125,4 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 **Please consider these points when using the dataset**: 
 Original Dataprovider (e.g. intervista, SIX, Flughafen Zürich etc.)  followed by"Gesellschaftsmonitoring Covid-19 STAT"
 .<br>
-
-=======
-**Please consider these points when using the dataset**: <br>
-**Original Dataprovider** (e.g. intervista, SIX, Flughafen Zürich etc.)  followed by"Gesellschaftsmonitoring Covid-19 STAT"
->>>>>>> 5a9f4954f1ebf416b628948a1ca6831a3cbdb21e
 
