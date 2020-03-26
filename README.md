@@ -11,7 +11,7 @@
 
 # Aim
 
-More information on the project can be found [here](https://statistikzh.github.io/covid19monitoring/).
+More information on the project (in german) can be found [here](https://statistikzh.github.io/covid19monitoring/).
 
 # Gitrepos overview
 
