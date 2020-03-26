@@ -76,11 +76,7 @@ topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
 # Data structure specification for output data
 
-**Format**<br>
-csv: UTF-8, Comma-separated, without row names.
-
-**Conventions for the variables** <br>
-see [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
+See [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 
 # Template for GitHub Page
