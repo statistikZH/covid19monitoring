@@ -36,9 +36,11 @@ More information on the project can be found [in german for the less nerdy among
 
 **published:** Data is included in official published release.
 
+<!---
 # Our github procedure 
 
 ![](methodology.jpg)
+--->
 
 ## > gitrepos with no data protection
 
