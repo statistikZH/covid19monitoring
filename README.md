@@ -25,13 +25,9 @@ More information on the project can be found [here](https://statistikzh.github.i
 | [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | 2020-03-26 ||
 | [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | 2020-03-26 ||
 
-**validated**: 
+**validated**: data follows specification of our [output table](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0), inclusion in covid19monitoring is technically possible - the data flow works.
 
--  Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
-
-**Published:** 
-
--  data is included in the daily "official release". 
+**Published:** data is included in the daily "official release". 
 
 # Our github procedure 
 
