@@ -15,7 +15,6 @@ More information on the project can be found [here](https://statistikzh.github.i
 
 # Gitrepos overview
 
-<<<<<<< HEAD
 ## Private gitrepos
 
 | gitrepos  | validated (conforms to specs) |published|
@@ -39,22 +38,7 @@ More information on the project can be found [here](https://statistikzh.github.i
 
 **Published:** 
 
--  data is included in the daily "official release". 
-=======
-
-| gitrepos  | validated (conforms to specs) |published|
-| ------------- | ------------- |------------|
-| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | 2020-03-24 ||
-| [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   |   ||
-| [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   |   ||
-| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | 2020-03-25 ||
-| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | 2020-03-26 ||
-| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | 2020-03-26 ||
-
-**validated**: data follows specification of our [output table](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0), inclusion in covid19monitoring is technically possible - the data flow works.
-
-**Published:** data is included in the daily "official release". 
->>>>>>> 5a9f4954f1ebf416b628948a1ca6831a3cbdb21e
+-  Data is included in official published release.
 
 # Our github procedure 
 
@@ -76,7 +60,7 @@ More information on the project can be found [here](https://statistikzh.github.i
 
 # Naming convention for gitrepos folders
 
-## > gitrepos  with data protection
+## > gitrepos  without data protection
 
 covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase)<br>
 
@@ -94,26 +78,21 @@ topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
 > E.g.: Mobility_SlowTraffic
 
-<<<<<<< HEAD
 # Data structure specification for output data
 
 **Encoding**<br>
 UTF-8, Comma-separated, without row names.
-**Content specification of Variables**<br>
+**Content specification of Variables**
 =======
 
-# Data structure specification for output data
-
->>>>>>> 5a9f4954f1ebf416b628948a1ca6831a3cbdb21e
-See [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
+see [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
 
 
 # Template for GitHub Page
 
 The template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
 
-=======
->>>>>>> 5a9f4954f1ebf416b628948a1ca6831a3cbdb21e
+
 # Metadata for gitrepos folders
 
 **Author**: Name and Surname <br>
@@ -121,7 +100,6 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 **Dataset**: Path to dataset that is created in this gitrepos <br>
 **Source**: Source of dataset <br>
 **Frequency of update**: E.g. daily/weekly/monthly <br>
-<<<<<<< HEAD
 **Please consider these points when using the dataset**: 
 Original Dataprovider (e.g. intervista, SIX, Flughafen Zürich etc.)  followed by"Gesellschaftsmonitoring Covid-19 STAT"
 .<br>
