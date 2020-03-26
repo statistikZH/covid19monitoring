@@ -73,10 +73,6 @@ covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (C
 topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 > E.g.: Mobility_SlowTraffic
 
-For some data it might be nice to additionally prove a more compact dataset (subset) so that the data user can get a quick insight. 
-Please use the following naming convention for this more compact datasets: 
-Name of regular dataset (as described above) + _ + subset
-
 # Data structure specification for output data
 
 **Encoding**<br>
