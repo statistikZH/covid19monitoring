@@ -1,5 +1,5 @@
 ---
-title: "Gesellschaftsmonitoring Covid19"
+title: "Gesellschaftsmonitoring COVID19"
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
@@ -56,7 +56,7 @@ htmltools::img(src = knitr::image_uri("./KtZuerichLogo.png"),
 
 # Ziel des Projekts
 
-Das Monitoring bündelt tagesaktuelle Datenreihen, welche die Entwicklungen beleuchten sollen, die durch die Corona-Krise in allen Lebensbereichen ausgelöst werden. So geben beispielsweise die täglich aktualisierten Daten des COVID19-Mobilitätsmonitorings Auskunft darüber, in welchem Ausmass die Bevölkerung wegen der Verordnungen des Bundesrats ihre Tagesdistanz verringert hat. Ziel des Projekts ist es, möglichst viele der in Verwaltung und Wirtschaft und der OGD-Community erzeugten Zeitreihen zu sammeln und konsolidiert in einem einheitlichen Format und in einem Datensatz so rasch wie möglich öffentlich zugänglich zu machen, und dann im Tagesrhythmus auch zu aktulisieren. Dies ermöglicht allen Interessierten, sich einen Überblick darüber, wie sich die Bevölkerung in der aktuellen Krisensituation verhält, und auch wie die Entwicklungen in den unterschiedlichen Lebensbereichen miteinander zusammenhängen. Nicht zuletzt kann das "Gesellschaftsmonitoring Covid19" so möglicherweise auch die Evaluation der Wirksamkeit der behördlichen Massnahmen gegen die Ausbreitung des Corona-Virus' zu unterstützen.
+Das Monitoring bündelt tagesaktuelle Datenreihen, welche die Entwicklungen beleuchten sollen, die durch die Corona-Krise in allen Lebensbereichen ausgelöst werden. So geben beispielsweise die täglich aktualisierten Daten des COVID19-Mobilitätsmonitorings Auskunft darüber, in welchem Ausmass die Bevölkerung wegen der Verordnungen des Bundesrats ihre Tagesdistanz verringert hat. Ziel des Projekts ist es, möglichst viele der in Verwaltung und Wirtschaft und der OGD-Community erzeugten Zeitreihen zu sammeln und konsolidiert in einem einheitlichen Format und in einem Datensatz so rasch wie möglich öffentlich zugänglich zu machen, und dann im Tagesrhythmus auch zu aktulisieren. Dies ermöglicht allen Interessierten, sich einen Überblick darüber, wie sich die Bevölkerung in der aktuellen Krisensituation verhält, und auch wie die Entwicklungen in den unterschiedlichen Lebensbereichen miteinander zusammenhängen. Nicht zuletzt kann das "Gesellschaftsmonitoring COVID19" so möglicherweise auch die Evaluation der Wirksamkeit der behördlichen Massnahmen gegen die Ausbreitung des Corona-Virus' zu unterstützen.
 
 **Zusammenarbeit zwischen Staat und Privaten**
 
@@ -64,14 +64,14 @@ Je schneller der Datensatz wächst, und je mehr unterschiedliche Lebensbereiche 
 
 Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
-**Das Gesellschaftsmonitoring Covid19 ist ein work in progress: Anregungen, Beiträge, Kritik sind willkommen!**
+**Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik sind willkommen!**
 
-# Datenbezug
+# Datenbezug:
 
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19monitoring.csv
 
 
-# Metadaten
+# Indikatorenübersicht:
 
 ```{r, message=FALSE, warning=FALSE, echo = FALSE}
 
