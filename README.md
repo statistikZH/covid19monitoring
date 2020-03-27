@@ -24,6 +24,8 @@ The project aims at collecting daily time series in a common format about if pos
 | [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | PM | 2020-03-25 ||
 | [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | PM | 2020-03-26 ||
 | [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | BS | 2020-03-26 ||
+| [covid19monitoring_economy_SIX](https://github.com/statistikZH/covid19monitoring_economy_SIX)   | BS |  ||
+| [covid19moitoring_health_covid19cases](https://github.com/statistikZH/covid19moitoring_health_covid19cases)   | KK |  ||
 
 **validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
