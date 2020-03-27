@@ -1,5 +1,5 @@
 ---
-title: "Monitoring Covid19"
+title: "Gesellschaftsmonitoring Covid19"
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
