@@ -56,8 +56,6 @@ htmltools::img(src = knitr::image_uri("./KtZuerichLogo.png"),
 
 # Ziel des Projekts
 
-**Gesellschaftsmonitoring COVID19**
-
 Das Monitoring bündelt tagesaktuelle Datenreihen, welche die Entwicklungen beleuchten sollen, die durch die Corona-Krise in allen Lebensbereichen ausgelöst werden. So geben beispielsweise die täglich aktualisierten Daten des COVID19-Mobilitätsmonitorings Auskunft darüber, in welchem Ausmass die Bevölkerung wegen der Verordnungen des Bundesrats ihre Tagesdistanz verringert hat. Ziel des Projekts ist es, möglichst viele der in Verwaltung und Wirtschaft und der OGD-Community erzeugten Zeitreihen zu sammeln und konsolidiert in einem einheitlichen Format und in einem Datensatz so rasch wie möglich öffentlich zugänglich zu machen. Dies verschafft allen Interessierten einen Überblick darüber, wie sich die Bevölkerung in der aktuellen Krisensituation verhält. Das Monitoring kann auch dabei helfen, die Wirksamkeit der behördlichen Massnahmen gegen die Ausbreitung des Corona-Virus' zu evaluieren.
 
 **Zusammenarbeit zwischen Staat und Privaten**
