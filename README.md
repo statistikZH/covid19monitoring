@@ -34,11 +34,11 @@ The project aims at collecting daily time series in a common format about if pos
 ![](methodology.jpg)
 --->
 
-# Gitrepos with no data protection
+# Gitrepos without data protection
 
 1. Create private repository <br>
 
-2. As soon as Peter Moser gives his ok, tranform your private repository into a public repository: 
+2. As soon as Peter Moser gives his ok, transform your private repository into a public repository: 
 
 > Settings -> Danger Zone -> Make this repository public
 
