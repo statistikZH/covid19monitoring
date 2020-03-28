@@ -68,7 +68,7 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 # Datenbezug:
 
-https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19monitoring.csv
+https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring_beta.csv
 
 
 # Indikatorenübersicht:
