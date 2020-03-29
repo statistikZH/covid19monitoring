@@ -66,7 +66,7 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 **Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik sind willkommen!**
 
-# Datenbezug:
+# Datenbezug (Beta-Version, in Entwicklung):
 
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring_beta.csv
 
@@ -78,9 +78,9 @@ https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19so
 library(DT)
 
 metadata <- read.csv("./Metadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% c("variable_short", "description", "public")]
+metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% c("variable_short", "unit", "description", "public")]
 
-datatable(metadata_sel, options = list(pageLength = 100), filter = 'top' , escape = FALSE, rownames = FALSE)
+datatable(metadata_sel, options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
 
 ```
 
