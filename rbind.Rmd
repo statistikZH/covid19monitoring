@@ -22,6 +22,25 @@ url_Economy_FlightTrafficZRH <-
   "https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_FlightTraffic/master/Economy_FlightTraffic.csv"
 Economy_FlightTrafficZRH <- read.csv(url(url_Economy_FlightTrafficZRH), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
+#Economy_SMI
+url_Economy_SMI <-
+  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SMI/master/economy_SMI.csv"
+Economy_SMI <- read.csv(url(url_Economy_SMI), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Economy_SIX
+#url_Economy_SIX <-
+#  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SIX/master/economy_SIX.csv"
+#Economy_SIX <- read.csv(url(url_Economy_SIX), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+
+
+
+
+
+
+
+
+
 ```
 
 # check dat
