@@ -81,7 +81,8 @@ topic (start with uppercase) + _ + NameOfDataset (CamelCase)
 
 # Data structure specification for output data
 
-See [the spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0). 
+Each data output must contain the following variables in the defined standard format. Refer to the  [spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0) for variable definition and example.
+ 
 
 
 <!---
