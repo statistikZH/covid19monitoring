@@ -30,10 +30,12 @@ The project aims to collect indicators for as many areas of social life affected
 | [covid19monitoring_education_lvzmath](https://github.com/bildungsmonitoringZH/covid19_edu_lmvzmath)   | FI/KK |  ||
 | [covid19monitoring_education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03_30 ||
 
+
 **validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
 **published:** Data is included in official published release.
 
+<!---
 # Our github procedure 
 
 ![](methodology.jpg)
