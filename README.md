@@ -12,7 +12,7 @@
 
 # Aim
 
-The project aims at collecting daily time series in a common format about if possible all aspects of society affected by the Covid-19 Crisis. Spatially, the immediate focus is on the Canton of Zurich, contributions from all of Switzerland are nevertheless welcome. More approchable information on the project [here in german](https://statistikzh.github.io/covid19monitoring/).
+The project aims to collect indicators for as many areas of social life affected by the COVID19 crisis as possible. The data will be made available as daily updated time series and in a standardised format. In terms of geography, the immediate focus is the Canton of Zurich; however, contributions from the rest of Switzerland are welcome. More on the project [here in german](https://statistikzh.github.io/covid19monitoring/).
 
 # Gitrepos overview
 
