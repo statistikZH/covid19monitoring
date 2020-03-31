@@ -71,6 +71,10 @@ https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19so
 
 Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
 
+**Darstellung der Indikatoren:**
+
+https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
+
 # Indikatorenübersicht:
 
 ```{r, message=FALSE, warning=FALSE, echo = FALSE}
@@ -83,9 +87,6 @@ metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% 
 datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
 
 ```
-# Darstellung der Indikatoren: 
-
-https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
 
 # Kontakt:
 
