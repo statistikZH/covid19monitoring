@@ -66,7 +66,7 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 **Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik sind willkommen!**
 
-# Datenbezug (Beta-Version, in Entwicklung):
+# Datenbezug:
 
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
 
