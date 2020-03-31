@@ -83,8 +83,9 @@ metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% 
 datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
 
 ```
+# Darstellung der Indikatoren: 
 
-
+https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
 
 # Kontakt:
 
