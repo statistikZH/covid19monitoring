@@ -68,8 +68,11 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 # Datenbezug (Beta-Version, in Entwicklung):
 
-https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring_beta.csv
+https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
 
+**Zitiervorschlag:**
+
+Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
 
 # Indikatorenübersicht:
 

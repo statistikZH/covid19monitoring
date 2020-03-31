@@ -79,7 +79,7 @@ write.table(covid19monitoring, "./internalcheck.csv", sep=",", fileEncoding="UTF
 
 ```{r}
 
-file.copy("./internalcheck.csv", "./covid19socialmonitoring_beta.csv", overwrite = TRUE)
+file.copy("./internalcheck.csv", "./covid19socialmonitoring.csv", overwrite = TRUE)
 
 ```
 
