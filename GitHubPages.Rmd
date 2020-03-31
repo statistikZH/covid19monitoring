@@ -47,12 +47,9 @@ h3 { /* Header 3 */
 	color: #6600cc
 }
 </style>
-```{r, echo=FALSE}
 
-htmltools::img(src = knitr::image_uri("./KtZuerichLogo.png"),
-               alt = 'logo', 
-               style = 'position:absolute; top:0; right:0; padding:0px;')
-```
+![](./KtZuerichLogo.png)
+
 
 # Ziel des Projekts
 
@@ -83,7 +80,7 @@ library(DT)
 metadata <- read.csv("./Metadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% c("variable_short", "unit", "description", "public")]
 
-datatable(metadata_sel, options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
+datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
 
 ```
 
