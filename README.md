@@ -16,6 +16,8 @@ The project aims to collect indicators for as many areas of social life affected
 
 # Gitrepos overview
 
+Daily validatiom: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
+
 | gitrepos  | responsible | validated (conforms to specs) |published|
 | ------------- | ------------- | ------------- | ------------- |
 | [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | PM | 2020-03-24 ||
