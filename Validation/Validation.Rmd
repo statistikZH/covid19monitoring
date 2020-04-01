@@ -109,6 +109,9 @@ library(kableExtra) # Version:  ‘1.1.0’
 options(scipen = 1000000)
 options(digits = 6)
 
+# format ggplot
+theme_set(theme_gray(base_size = 20))
+
 # import data
 # url <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv"
 # data <- read_csv(url(url))
@@ -141,36 +144,37 @@ CheckIfDfFollowsStandard2(Other_Weather)
 
 # Meteo 1: Globalstrahlung
 ggplot(data = meteo1, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Globalstrahlung, Tagesmittel, Unit: W/m², Update: täglich",
        y = "Globalstrahlung, Tagesmittel (W/m²)")
 
 # Meteo 2: Luftdruck
 ggplot(data = meteo2, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Luftdruck auf Stationshöhe (QFE); Tagesmittel, Unit: hPa, Update: täglich",
        y = "Luftdruck, Tagesmittel (hPa)")
 
 # Meteo 3: Sonnenschein
 ggplot(data = meteo3, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Sonnenscheindauer; Tagessumme, Unit: min, Update: täglich",
        y = "Sonnenscheindauer, Tagessummer (min)")
 
 # Meteo 4: Temperatur
 ggplot(data = meteo4, aes(x = date, y = value, color = variable_short)) + 
-     geom_line(size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Temperatur, Unit: °C, Update: täglich",
-       y = "Temperatur (°C)")
+       y = "Temperatur (°C)") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 # Meteo 5: Luftfeuchte
 ggplot(data = meteo5, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel, Unit: %, Update: täglich",
        y = "Luftfeuchte, Tagesmittel (%)")
 
@@ -211,8 +215,8 @@ CheckIfDfFollowsStandard2(Mobility_VBZHardbruecke)
 
 # Mobility 1: VBZ
 ggplot(data = mobility1, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+   scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "ÖV-Besucherfrequenzen, Zählstelle Hardbrücke, Unit: Anz. in 1'000, Update: täglich",
        y = "Besucherfreq. (Anz. in 1'000)")
 
@@ -233,31 +237,35 @@ CheckIfDfFollowsStandard2(Mobility_Intervista)
 
 # Mobility 2: Tagesdistanz nach Alter
 ggplot(data = mobility2, aes(x = date, y = value, color = variable_short)) + 
-     geom_line(size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Tagesdistanz nach Altersklassen, Unit: km, Update: täglich",
-       y = "Tagesdistanz (km)")
+       y = "Tagesdistanz (km)") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 # Mobility 3: Tagesdistanz nach Erwerbstätig
 ggplot(data = mobility3, aes(x = date, y = value, color = variable_short )) +
-     geom_line(size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Tagesdistanz nach Erwerbsform, Unit: km, Update: täglich",
-       y = "Tagesdistanz (km)")
+       y = "Tagesdistanz (km)") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 # Mobility 4: Tagesdistanz nach Geschlecht
 ggplot(data = mobility4, aes(x = date, y = value, color = variable_short )) +
      geom_line(size = 1.0, alpha = 1) +
     scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Tagesdistanz nach Geschlecht, Unit: km, Update: täglich",
-       y = "Tagesdistanz (km)")
+       y = "Tagesdistanz (km)") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 # Mobility 5: Tagesdistanz Median
 ggplot(data = mobility5, aes(x = date, y = value, color = location)) +
-     geom_line(size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Tagesdistanz Median, Unit: km, Update: täglich",
-       y = "Tagesdistanz (km)")
+       y = "Tagesdistanz (km)") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 
 ```
@@ -290,17 +298,18 @@ CheckIfDfFollowsStandard2(Economy_SMI)
 
 # Economy 1: SMI
 ggplot(data = economy1, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Indexwert SMI, Unit: Index-Punkte, Update: täglich",
        y = "Index-Punkte")
 
 # Economy 3: Wechselkurse
 ggplot(data = economy3, aes(x = date, y = value, color = variable_short )) + 
-     geom_line(size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Wechselkurse, Unit: NA, Update: täglich",
-       y = "Wechselkurs")
+       y = "Wechselkurs")  +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 ```
 
@@ -314,11 +323,12 @@ CheckIfDfFollowsStandard2(Economy_FlightTrafficZRH)
 
 ```
 
-```{r, echo = FALSE}
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
 # Economy 2: Flugbewegungen
 ggplot(data = economy2, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Flugbewegungen ZRH, Unit: Anz. Flüge, Update: täglich",
        y = "Anz. Flüge")
 
@@ -339,10 +349,11 @@ CheckIfDfFollowsStandard2(Economy_SIX)
 
 # Economy 4: Kartenzahlungen
 ggplot(data = economy4, aes(x = date, y = value, color = variable_short)) + 
-     geom_line(size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b")  +
   labs(title = "Kartenzahlungen, Unit: Mio. Fr., Update: täglich",
-       y = "Mio. Fr.")
+       y = "Mio. Fr.") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 ```
 
@@ -373,8 +384,8 @@ CheckIfDfFollowsStandard2(Education_Mindmaps)
 
 # Education 1: Training Mindsteps
 ggplot(data = education1, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Nutzung der Lernplattform Mindsteps, Unit: Anzahl durchgeführter Aufgabenserien, Update: täglich",
        y = "Anzahl durchgeführter Aufgabenserien")
 
@@ -396,17 +407,18 @@ CheckIfDfFollowsStandard2(Education_LMVZ)
 
 # Education 2: LMVZ
 ggplot(data = education2, aes(x = date, y = value )) + 
-     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Nutzung der Lernplattform LMVZ, Unit: Anzahl Starts",
-       y = "Anzahl Starts")
+   y = "Anzahl Starts")
 
 # Education 3: Mindmaps & LMVZ
 ggplot(data = education3, aes(x = date, y = value, color = variable_short )) +
-     geom_line(size = 1.0, alpha = 1) +
-    scale_x_date(date_labels = "%a %d. %b") +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
   labs(title = "Anzahl",
-       y = "Anzahl")
+       y = "Anzahl") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
 
 ```
 
