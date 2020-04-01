@@ -55,24 +55,26 @@ h3 { /* Header 3 */
 
 Das Monitoring bündelt tagesaktuelle Datenreihen, welche die Entwicklungen beleuchten sollen, die durch die Corona-Krise in allen Lebensbereichen ausgelöst werden. So geben beispielsweise die täglich aktualisierten Daten des COVID19-Mobilitätsmonitorings Auskunft darüber, in welchem Ausmass die Bevölkerung wegen der Verordnungen des Bundesrats ihre Tagesdistanz verringert hat. Ziel des Projekts ist es, möglichst viele der in Verwaltung und Wirtschaft und der OGD-Community erzeugten Zeitreihen zu sammeln und konsolidiert in einem einheitlichen Format und in einem Datensatz so rasch wie möglich öffentlich zugänglich zu machen, und dann im Tagesrhythmus auch zu aktualisieren. So entsteht ein umfassendes Bild davon, wie sich das Verhalten der Akteure in der aktuellen Krisensituation verändert, und wie die Entwicklungen in den unterschiedlichen Lebensbereichen miteinander zusammenhängen. Nicht zuletzt kann das "Gesellschaftsmonitoring COVID19" so auch die Evaluation der Wirksamkeit der behördlichen Massnahmen gegen die Ausbreitung des Corona-Virus' unterstützen.
 
-**Zusammenarbeit zwischen Staat und Privaten**
 
+<span style="color:#0033cc">**Zusammenarbeit zwischen Staat und Privaten**</span> <br>
 Je schneller der Datensatz wächst, und je mehr unterschiedliche Lebensbereiche darin gespiegelt sind, desto wertvoller ist er. Deshalb hat das Statistische Amt des Kantons Zürich zahlreiche potentielle Datenhalter um Unterstützung gebeten: Andere Verwaltungsstellen, Hochschulinstitute, Firmen und engagierte Privatpersonen wurden angefragt, relevantes Datenmaterial zur Verfügung zu stellen. An dieser Stelle allen Beitragenden herzlichen Dank für die grosse Hilfsbereitschaft trotz der oft hohen Belastung durch das Tagesgeschäft in der Krise! Weitere Vorschläge werden gerne entgegengenommen.
 
-Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
-**Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik sind willkommen!**
+Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik sind willkommen!
 
-# Datenbezug:
+Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv. '
 
+
+
+# Datenbezug
+
+Die Daten können unter folgendem Link bezogen werden: 
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
 
-**Erläuterungen zur Struktur der Daten**
-
+<span style="color:#0033cc">**> Erläuterungen zur Struktur der Daten**</span> <br>
 Eine eindeutige Variablenbezeichnung, die auf eine Zeitreihe verweist, ergibt sich aus der Kombination von "variable_short bzw. "variable_long" und location, da einige Indikatoren regionalisiert sind.
 
-**Zitiervorschlag:**
-
+<span style="color:#0033cc">**> Zitiervorschlag**</span> <br>
 Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
 
 <!-- **Darstellung der Indikatoren:** -->

@@ -49,7 +49,7 @@ CheckIfDfFollowsStandard <- function (df)  {
 
 CreateMetadata <- function ()  {
   
-covid19monitoring <- read.csv("./covid19socialmonitoring_beta.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+covid19monitoring <- read.csv("./covid19socialmonitoring.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
 unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
 Metadata <- covid19monitoring_sel[unique_rows,]
