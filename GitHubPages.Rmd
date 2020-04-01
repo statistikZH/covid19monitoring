@@ -62,13 +62,13 @@ Je schneller der Datensatz wächst, und je mehr unterschiedliche Lebensbereiche 
 
 Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beiträge, Kritik sind willkommen!
 
-Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv. '
+Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 
 
 # Datenbezug
 
-Die Daten können unter folgendem Link bezogen werden: 
+Die Daten können unter folgendem Link bezogen werden: <br>
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
 
 <span style="color:#0033cc">**> Erläuterungen zur Struktur der Daten**</span> <br>
