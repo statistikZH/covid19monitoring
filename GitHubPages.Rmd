@@ -67,15 +67,19 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
 
+**Erläuterungen zur Struktur der Daten**
+
+Eine eindeutige Variablenbezeichnung, die auf eine Zeitreihe verweist, ergibt sich aus der Kombination von "variable_short bzw. "variable_long" und location, da einige Indikatoren regionalisiert sind.
+
 **Zitiervorschlag:**
 
 Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
 
-**Darstellung der Indikatoren:**
+<!-- **Darstellung der Indikatoren:** -->
 
-https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
+<!-- https://observablehq.com/@mmznrstat/monitoring-covid19-effekt -->
 
-# Indikatorenübersicht:
+ Indikatorenübersicht:
 
 ```{r, message=FALSE, warning=FALSE, echo = FALSE}
 
@@ -93,14 +97,14 @@ datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength =
 **Twitter:** @[statistik_zh](https://twitter.com/statistik_zh)
 
 
-**Wissenschaftlich–fachliche Aspekte**
+**wissenschaftliche Projektleitung **
 
 Dr. Peter Moser <br>
 Stv. Amtschef Statistisches Amt des Kantons Zürich <br>
 Leiter Analysen & Studien <br>
 043 259 75 35
 
-**Technische Aspekte**
+**Technische Projektleitung**
 
 Katharina Kälin <br>
 wissenschaftliche Mitarbeiterin  <br>
