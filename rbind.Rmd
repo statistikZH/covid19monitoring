@@ -41,43 +41,31 @@ url_Education_Mindmaps <-
   "https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_mindsteps/master/Bildung_LernplattformMindsteps.csv"
 Education_Mindmaps <- read.csv(url(url_Education_Mindmaps), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
-# #Education_LMVZ
-# url_Education_LMVZ <-
-#   "https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_mindsteps/master/Bildung_LernplattformMindsteps.csv"
-# Education_LMVZ <- read.csv(url(url_Education_LMVZ), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+#Education_LMVZ
+url_Education_LMVZ <-
+"https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/Bildung_TrainingMathematik.csv?token=AO5R67TWCP3FU6EHMGONFSS6RM752"
+Education_LMVZ <- read.csv(url(url_Education_LMVZ), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
 
 ```
 
-# check dat
-
-```{r}
-
-source("./function.R")
-
-CheckIfDfFollowsStandard(Other_Weather)
-CheckIfDfFollowsStandard(Mobility_VBZHardbruecke)
-CheckIfDfFollowsStandard(Mobility_Intervista)
-CheckIfDfFollowsStandard(Economy_SMI)
-CheckIfDfFollowsStandard(Economy_FlightTrafficZRH)
-CheckIfDfFollowsStandard(Economy_SIX)
-CheckIfDfFollowsStandard(Education_Mindmaps)
-
-```
 
 # rbind
 
 ```{r}
 
-covid19monitoring <- rbind(Other_Weather, Mobility_VBZHardbruecke, Mobility_Intervista, Economy_SMI, Economy_FlightTrafficZRH, Economy_SIX, Education_Mindmaps)
+covid19monitoring <- rbind(Other_Weather, Mobility_VBZHardbruecke, Mobility_Intervista, Economy_SMI, Economy_FlightTrafficZRH, Economy_SIX, Education_Mindmaps, Education_LMVZ)
 
 ```
 
-# export result
+# Validation
 
 ```{r}
 
-write.table(covid19monitoring, "./internalcheck.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+source("./function.R")
+
+write.table(covid19monitoring, "Validation/ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+ValidationMetadata()
 
 ```
 
@@ -85,18 +73,11 @@ write.table(covid19monitoring, "./internalcheck.csv", sep=",", fileEncoding="UTF
 
 ```{r}
 
-file.copy("./internalcheck.csv", "./covid19socialmonitoring.csv", overwrite = TRUE)
-
-```
-
-# create metadata
-
-```{r}
-
 source("./function.R")
 
-CreateMetadata()
+file.copy("Validation/ValidationData.csv", "./covid19socialmonitoring.csv", overwrite = TRUE)
+file.copy("Validation/ValidationMetadata.csv", "./Metadata.csv", overwrite = TRUE)
+
 
 ```
-
 

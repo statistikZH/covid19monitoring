@@ -1,4 +1,4 @@
-CheckIfDfFollowsStandard <- function (df)  {
+CheckIfDfFollowsStandard1 <- function (df)  {
   
   # check 1: check if Variable names follow the standard
   VariableNamesStandard <- c("date",	"value",	"topic",	"variable_short",	"variable_long",	"location",	"unit",	"source",	"update",	"public",	"description")
@@ -43,17 +43,35 @@ CheckIfDfFollowsStandard <- function (df)  {
   print("=> description")
   print(sort(unique(df$description)))
   print("*****************************************************")
+  print("=> variable_short, variable_long, unit")
   
 }
 
+CheckIfDfFollowsStandard2 <- function (df)  {
+  
+  df2 <- df[!duplicated(df[,c("variable_short", "variable_long", "unit")]), c("variable_short", "variable_long", "unit")]
+  kable(df2) %>% kable_styling(bootstrap_options = c("striped", "hover"))
+  
+}
+
+ValidationMetadata <- function ()  {
+  
+  covid19monitoring <- read.csv("Validation/ValidationData.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+  covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
+  unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
+  Metadata <- covid19monitoring_sel[unique_rows,]
+  Metadata$last_modified <- Sys.Date()
+  write.table(Metadata, "Validation/ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+  
+}
 
 CreateMetadata <- function ()  {
   
-covid19monitoring <- read.csv("./covid19socialmonitoring.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
-unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
-Metadata <- covid19monitoring_sel[unique_rows,]
-
-write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+  covid19monitoring <- read.csv("./covid19socialmonitoring.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+  covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
+  unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
+  Metadata <- covid19monitoring_sel[unique_rows,]
+  Metadata$last_modified <- Sys.Date()
+  write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
 }

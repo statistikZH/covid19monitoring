@@ -1,0 +1,361 @@
+---
+title: "Validation"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    theme: lumen
+    highlight: tango
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: 0;
+  margin-right: auto;
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid #eee;
+}
+
+h1.title {
+  font-size: 38px;
+  color: #000000;
+  }
+  
+h1 { /* Header 1 */
+  font-size: 28px;
+  color: #0033cc;
+}
+h2 { /* Header 2 */
+    font-size: 28px;
+	color: #0099ff
+}
+h3 { /* Header 3 */
+    font-size: 14px;
+	color: #6600cc
+}
+</style>
+
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE, fig.width=20}
+
+#  import function
+source("../function.R")
+
+# import libraries
+library(readr) # Version: ‘1.3.1’
+library(ggplot2) # Version: ‘3.1.0’
+library(kableExtra) # Version:  ‘1.1.0’
+
+# format numbers
+options(scipen = 1000000)
+options(digits = 6)
+
+# import data
+# url <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv"
+# data <- read_csv(url(url))
+data<- read_csv("./ValidationData.csv")
+
+```
+
+# Meteo
+
+```{r meteo subsets, echo=FALSE}
+
+# Subset for source Meteoschweiz
+meteo1 <- subset(data, source == "meteoschweiz" & variable_short == "globalstrahlung")
+meteo2 <- subset(data, source == "meteoschweiz" & variable_short == "luftdruck")
+meteo3 <- subset(data, source == "meteoschweiz" & variable_short == "sonnenschein")
+meteo4 <- subset(data, source == "meteoschweiz" & variable_short %in% c("temp_mittel", "temp_min", "temp_max"))
+meteo5 <- subset(data, source == "meteoschweiz" & variable_short == "luftfeuchte")
+
+```
+
+```{r, echo = FALSE}
+
+Other_Weather <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_other_Weather")
+CheckIfDfFollowsStandard1(Other_Weather)
+CheckIfDfFollowsStandard2(Other_Weather)
+
+```
+
+```{r meteo plots, fig.width=14, fig.height=7, echo=FALSE}
+
+# Meteo 1: Globalstrahlung
+ggplot(data = meteo1, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Globalstrahlung, Tagesmittel, Unit: W/m², Update: täglich",
+       y = "Globalstrahlung, Tagesmittel (W/m²)")
+
+# Meteo 2: Luftdruck
+ggplot(data = meteo2, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Luftdruck auf Stationshöhe (QFE); Tagesmittel, Unit: hPa, Update: täglich",
+       y = "Luftdruck, Tagesmittel (hPa)")
+
+# Meteo 3: Sonnenschein
+ggplot(data = meteo3, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Sonnenscheindauer; Tagessumme, Unit: min, Update: täglich",
+       y = "Sonnenscheindauer, Tagessummer (min)")
+
+# Meteo 4: Temperatur
+ggplot(data = meteo4, aes(x = date, y = value, color = variable_short)) + 
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Temperatur, Unit: °C, Update: täglich",
+       y = "Temperatur (°C)")
+
+# Meteo 5: Luftfeuchte
+ggplot(data = meteo5, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel, Unit: %, Update: täglich",
+       y = "Luftfeuchte, Tagesmittel (%)")
+
+```
+
+# Mobility
+
+
+```{r mobility data, echo=FALSE}
+
+# Subset for source mobility
+mobility <- subset(data, topic == "Mobilität")
+
+mobility1 <- subset(data, source == "VBZ" & variable_short == "oev_freq_hardbruecke")
+
+mobility2 <- subset(data, source == "intervista Tracking-panel" & variable_short %in% c("tages_distanz_median_alter_1529", "tages_distanz_median_alter_3064", "tages_distanz_median_alter_6579"))
+
+mobility3 <- subset(data, source == "intervista Tracking-panel" & variable_short %in% c("tages_distanz_median_erwerbstaetig", "tages_distanz_median_in_ausbildung", "tages_distanz_median_nicht_erwerbstaetig"))
+
+mobility4 <- subset(data, source == "intervista Tracking-panel" & variable_short %in% c("tages_distanz_median_weiblich", "tages_distanz_median_maennlich"))
+
+mobility5 <- subset(data, source == "intervista Tracking-panel" & variable_short == "tages_distanz_median")
+
+```
+
+## Mobility_VBZHardbruecke
+
+```{r, echo = FALSE}
+
+Mobility_VBZHardbruecke <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic")
+CheckIfDfFollowsStandard1(Mobility_VBZHardbruecke)
+CheckIfDfFollowsStandard2(Mobility_VBZHardbruecke)
+
+```
+
+
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
+# Mobility 1: VBZ
+ggplot(data = mobility1, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "ÖV-Besucherfrequenzen, Zählstelle Hardbrücke, Unit: Anz. in 1'000, Update: täglich",
+       y = "Besucherfreq. (Anz. in 1'000)")
+
+```
+
+## Mobility_Intervista
+
+```{r, echo = FALSE}
+
+Mobility_Intervista <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_mobility_intervista")
+CheckIfDfFollowsStandard1(Mobility_Intervista)
+CheckIfDfFollowsStandard2(Mobility_Intervista)
+
+```
+
+
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
+# Mobility 2: Tagesdistanz nach Alter
+ggplot(data = mobility2, aes(x = date, y = value, color = variable_short)) + 
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Tagesdistanz nach Altersklassen, Unit: km, Update: täglich",
+       y = "Tagesdistanz (km)")
+
+# Mobility 3: Tagesdistanz nach Erwerbstätig
+ggplot(data = mobility3, aes(x = date, y = value, color = variable_short )) +
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Tagesdistanz nach Erwerbsform, Unit: km, Update: täglich",
+       y = "Tagesdistanz (km)")
+
+# Mobility 4: Tagesdistanz nach Geschlecht
+ggplot(data = mobility4, aes(x = date, y = value, color = variable_short )) +
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Tagesdistanz nach Geschlecht, Unit: km, Update: täglich",
+       y = "Tagesdistanz (km)")
+
+# Mobility 5: Tagesdistanz Median
+ggplot(data = mobility5, aes(x = date, y = value, color = location)) +
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Tagesdistanz Median, Unit: km, Update: täglich",
+       y = "Tagesdistanz (km)")
+
+
+```
+
+# Economy
+
+```{r economy subsets, echo=FALSE}
+
+# Subset for source Meteoschweiz
+economy <- subset(data, topic == "Wirtschaft")
+economy1 <- subset(data, variable_short == "smi_index")
+economy2 <- subset(data, variable_short == "fluege_zrh")
+economy3 <- subset(data, variable_short %in% c("chf_eur", "chf_usd"))
+economy4 <- subset(data, variable_short %in% c("debiteinsatz_ausland", "bezug_bargeld", "stat_einkauf"))
+
+```
+
+## Economy_SMI
+
+```{r, echo = FALSE}
+
+Economy_SMI <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_economy_SMI")
+CheckIfDfFollowsStandard1(Economy_SMI)
+CheckIfDfFollowsStandard2(Economy_SMI)
+
+```
+
+
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
+# Economy 1: SMI
+ggplot(data = economy1, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Indexwert SMI, Unit: Index-Punkte, Update: täglich",
+       y = "Index-Punkte")
+
+# Economy 3: Wechselkurse
+ggplot(data = economy3, aes(x = date, y = value, color = variable_short )) + 
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Wechselkurse, Unit: NA, Update: täglich",
+       y = "Wechselkurs")
+
+```
+
+## Economy_FlightTrafficZRH
+
+```{r, echo = FALSE}
+
+Economy_FlightTrafficZRH <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic")
+CheckIfDfFollowsStandard1(Economy_FlightTrafficZRH)
+CheckIfDfFollowsStandard2(Economy_FlightTrafficZRH)
+
+```
+
+```{r, echo = FALSE}
+# Economy 2: Flugbewegungen
+ggplot(data = economy2, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Flugbewegungen ZRH, Unit: Anz. Flüge, Update: täglich",
+       y = "Anz. Flüge")
+
+```
+
+
+## Economy_SIX
+
+```{r, echo = FALSE}
+
+Economy_SIX <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_economy_SIX")
+CheckIfDfFollowsStandard1(Economy_SIX)
+CheckIfDfFollowsStandard2(Economy_SIX)
+
+```
+
+```{r, echo = FALSE, fig.width=14, fig.height=7, echo=FALSE}
+
+# Economy 4: Kartenzahlungen
+ggplot(data = economy4, aes(x = date, y = value, color = variable_short)) + 
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Kartenzahlungen, Unit: Mio. Fr., Update: täglich",
+       y = "Mio. Fr.")
+
+```
+
+# Education
+
+```{r education subsets, echo=FALSE}
+
+# Subset for source Meteoschweiz
+education <- subset(data, topic == "Bildung")
+education1 <- subset(data, variable_short == "training_mindsteps")
+education2 <- subset(data, variable_short == "training_mathematik_lmvz")
+education3 <- subset(data, variable_short %in% c("training_mindsteps", "training_mathematik_lmvz"))
+
+```
+
+## Education_Mindmaps
+
+```{r, echo = FALSE}
+
+Education_Mindmaps <- subset(data, description == "https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps")
+CheckIfDfFollowsStandard1(Education_Mindmaps)
+CheckIfDfFollowsStandard2(Education_Mindmaps)
+
+```
+
+
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
+# Education 1: Training Mindsteps
+ggplot(data = education1, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Nutzung der Lernplattform Mindsteps, Unit: Anzahl durchgeführter Aufgabenserien, Update: täglich",
+       y = "Anzahl durchgeführter Aufgabenserien")
+
+```
+
+
+## Education_LMVZ
+
+```{r, echo = FALSE}
+
+Education_LMVZ <- subset(data, description == "https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/README.md?token=AO5R67R4BIFFFXN4MHI3ANK6RSDUW")
+CheckIfDfFollowsStandard1(Education_LMVZ)
+CheckIfDfFollowsStandard2(Education_LMVZ)
+
+```
+
+
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
+# Education 2: LMVZ
+ggplot(data = education2, aes(x = date, y = value )) + 
+     geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Nutzung der Lernplattform LMVZ, Unit: Anzahl Starts",
+       y = "Anzahl Starts")
+
+# Education 3: Mindmaps & LMVZ
+ggplot(data = education3, aes(x = date, y = value, color = variable_short )) +
+     geom_line(size = 1.0, alpha = 1) +
+    scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "Anzahl",
+       y = "Anzahl")
+
+```
+
