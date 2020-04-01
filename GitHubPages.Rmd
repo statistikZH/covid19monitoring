@@ -79,7 +79,7 @@ Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesell
 
 <!-- https://observablehq.com/@mmznrstat/monitoring-covid19-effekt -->
 
- Indikatorenübersicht:
+# Indikatorenübersicht:
 
 ```{r, message=FALSE, warning=FALSE, echo = FALSE}
 
