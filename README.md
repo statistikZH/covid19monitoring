@@ -16,7 +16,7 @@ The project aims to collect indicators for as many areas of social life affected
 
 # Gitrepos overview
 
-Daily validatiom: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
+Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
 
 | gitrepos  | responsible | validated (conforms to specs) |published|
 | ------------- | ------------- | ------------- | ------------- |
