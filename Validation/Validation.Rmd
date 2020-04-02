@@ -43,85 +43,111 @@ h3 { /* Header 3 */
 }
 </style>
 
-```{r, echo=FALSE}
-
-#Other_Weather
-url_Other_Weather <- 
-  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_other_Weather/master/Other_Weather.csv"
-Other_Weather <- read.csv(url(url_Other_Weather), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-#Mobility_VBZHardbruecke
-url_VBZHardbruecke <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke/master/Mobility_VBZHardbruecke.csv"
-Mobility_VBZHardbruecke <- read.csv(url(url_VBZHardbruecke), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-#Mobility_Intervista
-url_Mobility_Intervista  <-
-  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_intervista/master/Mobility_Intervista.csv"
-Mobility_Intervista <- read.csv(url(url_Mobility_Intervista), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-#Economy_SMI
-url_Economy_SMI <-
-  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SMI/master/Economy_SMI.csv"
-Economy_SMI <- read.csv(url(url_Economy_SMI), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-#Economy_FlightTrafficZRH
-url_Economy_FlightTrafficZRH <-
-  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_FlightTraffic/master/Economy_FlightTraffic.csv"
-Economy_FlightTrafficZRH <- read.csv(url(url_Economy_FlightTrafficZRH), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-#Economy_SIX
-url_Economy_SIX <-
-  "https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SIX/master/Economy_SIX.csv"
-Economy_SIX <- read.csv(url(url_Economy_SIX), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-#Education_Mindmaps
-url_Education_Mindmaps <-
-  "https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_mindsteps/master/Bildung_LernplattformMindsteps.csv"
-Education_Mindmaps <- read.csv(url(url_Education_Mindmaps), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-#Education_LMVZ
-url_Education_LMVZ <-
-"https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/Bildung_TrainingMathematik.csv?token=AO5R67TWCP3FU6EHMGONFSS6RM752"
-Education_LMVZ <- read.csv(url(url_Education_LMVZ), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-
-# rbind
-covid19monitoring <- rbind(Other_Weather, Mobility_VBZHardbruecke, Mobility_Intervista, Economy_SMI, Economy_FlightTrafficZRH, Economy_SIX, Education_Mindmaps, Education_LMVZ)
-
-# Export
-source("../function.R")
-write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
-ValidationMetadata()
-
-```
-
-
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE, fig.width=20}
 
+###########################################################################
 #  import function
+
 source("../function.R")
 
+###########################################################################
 # import libraries
+
 library(readr) # Version: ‘1.3.1’
 library(ggplot2) # Version: ‘3.1.0’
 library(kableExtra) # Version:  ‘1.1.0’
 
+###########################################################################
 # format numbers
+
 options(scipen = 1000000)
 options(digits = 6)
 
+###########################################################################
 # format ggplot
-theme_set(theme_gray(base_size = 20))
 
+theme_set(theme_gray(base_size = 18))
+
+###########################################################################
 # import data
+
+#Other_Weather
+url_Other_Weather <- 
+"https://raw.githubusercontent.com/statistikZH/covid19monitoring_other_Weather/master/Other_Weather.csv"
+Other_Weather <- read.csv(url(url_Other_Weather), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Mobility_VBZHardbruecke
+url_VBZHardbruecke <- 
+"https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke/master/Mobility_VBZHardbruecke.csv"
+Mobility_VBZHardbruecke <- read.csv(url(url_VBZHardbruecke), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Mobility_Intervista
+url_Mobility_Intervista  <-
+"https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_intervista/master/Mobility_Intervista.csv"
+Mobility_Intervista <- read.csv(url(url_Mobility_Intervista), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Economy_SMI
+url_Economy_SMI <-
+"https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SMI/master/Economy_SMI.csv"
+Economy_SMI <- read.csv(url(url_Economy_SMI), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Economy_FlightTrafficZRH
+url_Economy_FlightTrafficZRH <-
+"https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_FlightTraffic/master/Economy_FlightTraffic.csv"
+Economy_FlightTrafficZRH <- read.csv(url(url_Economy_FlightTrafficZRH), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Economy_SIX
+url_Economy_SIX <-
+"https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SIX/master/Economy_SIX.csv"
+Economy_SIX <- read.csv(url(url_Economy_SIX), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Education_Mindmaps
+url_Education_Mindmaps <- 
+"https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_mindsteps/master/Bildung_LernplattformMindsteps.csv"
+Education_Mindmaps <- read.csv(url(url_Education_Mindmaps), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Education_LMVZ
+url_Education_LMVZ <- 
+"https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/Bildung_TrainingMathematik.csv?token=AO5R67TWCP3FU6EHMGONFSS6RM752"
+Education_LMVZ <- read.csv(url(url_Education_LMVZ), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Health_Covid19Cases
+url_Health_Covid19Cases <- 
+"https://raw.githubusercontent.com/statistikZH/covid19monitoring_health_covid19cases/master/Health_covid19cases.csv?token=AJX6OIIM25TY22U7N4OKQHS6R3KX6"
+Health_Covid19Cases <- read.csv(url(url_Health_Covid19Cases), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+#Economy_KOF
+url_Economy_KOF <-"https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_KOF/master/Economy_KOF.csv"
+Economy_KOF <- read.csv(url(url_Economy_KOF), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+###########################################################################
+# rbind
+
+covid19monitoring <- rbind(Other_Weather, Mobility_VBZHardbruecke, Mobility_Intervista, Economy_SMI, Economy_FlightTrafficZRH, Economy_SIX, Education_Mindmaps, Education_LMVZ, Health_Covid19Cases, Economy_KOF)
+
+###########################################################################
+# Export
+
+source("../function.R")
+write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+ValidationMetadata()
+
+###########################################################################
+# import covid19socialmonitoring.csv
+
 # url <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv"
 # data <- read_csv(url(url))
+
+###########################################################################
+# import ValidationData.csv
+
 data<- read_csv("./ValidationData.csv")
 
 ```
 
 # Meteo
 
-```{r meteo subsets, echo=FALSE}
+```{r, echo=FALSE}
 
 # Subset for source Meteoschweiz
 meteo1 <- subset(data, source == "meteoschweiz" & variable_short == "globalstrahlung")
@@ -140,42 +166,42 @@ CheckIfDfFollowsStandard2(Other_Weather)
 
 ```
 
-```{r meteo plots, fig.width=14, fig.height=7, echo=FALSE}
+```{r, fig.width=14, fig.height=7, echo=FALSE}
 
 # Meteo 1: Globalstrahlung
 ggplot(data = meteo1, aes(x = date, y = value )) + 
   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Globalstrahlung, Tagesmittel, Unit: W/m², Update: täglich",
+  labs(title = "Globalstrahlung, Tagesmittel",
        y = "Globalstrahlung, Tagesmittel (W/m²)")
 
 # Meteo 2: Luftdruck
 ggplot(data = meteo2, aes(x = date, y = value )) + 
   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Luftdruck auf Stationshöhe (QFE); Tagesmittel, Unit: hPa, Update: täglich",
+  labs(title = "Luftdruck auf Stationshöhe (QFE); Tagesmittel,  Update: täglich",
        y = "Luftdruck, Tagesmittel (hPa)")
 
 # Meteo 3: Sonnenschein
 ggplot(data = meteo3, aes(x = date, y = value )) + 
   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Sonnenscheindauer; Tagessumme, Unit: min, Update: täglich",
+  labs(title = "Sonnenscheindauer; Tagessumme",
        y = "Sonnenscheindauer, Tagessummer (min)")
 
 # Meteo 4: Temperatur
 ggplot(data = meteo4, aes(x = date, y = value, color = variable_short)) + 
   geom_line(size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Temperatur, Unit: °C, Update: täglich",
+  labs(title = "Temperatur",
        y = "Temperatur (°C)") +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
 
 # Meteo 5: Luftfeuchte
 ggplot(data = meteo5, aes(x = date, y = value )) + 
   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel, Unit: %, Update: täglich",
+  labs(title = "Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel, Unit: %",
        y = "Luftfeuchte, Tagesmittel (%)")
 
 ```
@@ -183,7 +209,7 @@ ggplot(data = meteo5, aes(x = date, y = value )) +
 # Mobility
 
 
-```{r mobility data, echo=FALSE}
+```{r, echo=FALSE}
 
 # Subset for source mobility
 mobility <- subset(data, topic == "Mobilität")
@@ -217,7 +243,7 @@ CheckIfDfFollowsStandard2(Mobility_VBZHardbruecke)
 ggplot(data = mobility1, aes(x = date, y = value )) + 
    geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
    scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "ÖV-Besucherfrequenzen, Zählstelle Hardbrücke, Unit: Anz. in 1'000, Update: täglich",
+  labs(title = "ÖV-Besucherfrequenzen, Zählstelle Hardbrücke, Unit: Anz. in 1'000",
        y = "Besucherfreq. (Anz. in 1'000)")
 
 ```
@@ -239,40 +265,40 @@ CheckIfDfFollowsStandard2(Mobility_Intervista)
 ggplot(data = mobility2, aes(x = date, y = value, color = variable_short)) + 
   geom_line(size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Tagesdistanz nach Altersklassen, Unit: km, Update: täglich",
+  labs(title = "Tagesdistanz nach Altersklassen",
        y = "Tagesdistanz (km)") +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
 
 # Mobility 3: Tagesdistanz nach Erwerbstätig
 ggplot(data = mobility3, aes(x = date, y = value, color = variable_short )) +
   geom_line(size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Tagesdistanz nach Erwerbsform, Unit: km, Update: täglich",
+  labs(title = "Tagesdistanz nach Erwerbsform",
        y = "Tagesdistanz (km)") +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
 
 # Mobility 4: Tagesdistanz nach Geschlecht
 ggplot(data = mobility4, aes(x = date, y = value, color = variable_short )) +
      geom_line(size = 1.0, alpha = 1) +
     scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Tagesdistanz nach Geschlecht, Unit: km, Update: täglich",
+  labs(title = "Tagesdistanz nach Geschlecht",
        y = "Tagesdistanz (km)") +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
 
 # Mobility 5: Tagesdistanz Median
 ggplot(data = mobility5, aes(x = date, y = value, color = location)) +
   geom_line(size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Tagesdistanz Median, Unit: km, Update: täglich",
+  labs(title = "Tagesdistanz Median",
        y = "Tagesdistanz (km)") +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
 
 
 ```
 
 # Economy
 
-```{r economy subsets, echo=FALSE}
+```{r, echo=FALSE}
 
 # Subset for source Meteoschweiz
 economy <- subset(data, topic == "Wirtschaft")
@@ -280,6 +306,7 @@ economy1 <- subset(data, variable_short == "smi_index")
 economy2 <- subset(data, variable_short == "fluege_zrh")
 economy3 <- subset(data, variable_short %in% c("chf_eur", "chf_usd"))
 economy4 <- subset(data, variable_short %in% c("debiteinsatz_ausland", "bezug_bargeld", "stat_einkauf"))
+economy5 <- subset(data, variable_short %in% c("konjunkturbarometer"))
 
 ```
 
@@ -300,16 +327,16 @@ CheckIfDfFollowsStandard2(Economy_SMI)
 ggplot(data = economy1, aes(x = date, y = value )) + 
    geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Indexwert SMI, Unit: Index-Punkte, Update: täglich",
+  labs(title = "Indexwert SMI",
        y = "Index-Punkte")
 
 # Economy 3: Wechselkurse
 ggplot(data = economy3, aes(x = date, y = value, color = variable_short )) + 
   geom_line(size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Wechselkurse, Unit: NA, Update: täglich",
+  labs(title = "Wechselkurse",
        y = "Wechselkurs")  +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
 
 ```
 
@@ -329,7 +356,7 @@ CheckIfDfFollowsStandard2(Economy_FlightTrafficZRH)
 ggplot(data = economy2, aes(x = date, y = value )) + 
   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Flugbewegungen ZRH, Unit: Anz. Flüge, Update: täglich",
+  labs(title = "Flugbewegungen ZRH",
        y = "Anz. Flüge")
 
 ```
@@ -351,15 +378,37 @@ CheckIfDfFollowsStandard2(Economy_SIX)
 ggplot(data = economy4, aes(x = date, y = value, color = variable_short)) + 
   geom_line(size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b")  +
-  labs(title = "Kartenzahlungen, Unit: Mio. Fr., Update: täglich",
+  labs(title = "Kartenzahlungen",
        y = "Mio. Fr.") +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
+
+```
+
+## Economy_KOF
+
+```{r, echo = FALSE}
+
+Economy_KOF <- subset(data, description == "https://github.com/KOF-ch/economic-monitoring")
+CheckIfDfFollowsStandard1(Economy_KOF)
+CheckIfDfFollowsStandard2(Economy_KOF)
+
+```
+
+```{r, echo = FALSE, fig.width=14, fig.height=7, echo=FALSE}
+
+# Economy 5: KOF
+# ggplot(data = economy5, aes(x = date, y = value, color = variable_short)) + 
+#   geom_line(size = 1.0, alpha = 1) +
+#   scale_x_date(date_labels = "%a %d. %b")  +
+#   labs(title = "konjunkturbarometer",
+#        y = "Anteil") +
+#   theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
 
 ```
 
 # Education
 
-```{r education subsets, echo=FALSE}
+```{r, echo=FALSE}
 
 # Subset for source Meteoschweiz
 education <- subset(data, topic == "Bildung")
@@ -386,7 +435,7 @@ CheckIfDfFollowsStandard2(Education_Mindmaps)
 ggplot(data = education1, aes(x = date, y = value )) + 
   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Nutzung der Lernplattform Mindsteps, Unit: Anzahl durchgeführter Aufgabenserien, Update: täglich",
+  labs(title = "Nutzung der Lernplattform Mindsteps",
        y = "Anzahl durchgeführter Aufgabenserien")
 
 ```
@@ -409,16 +458,58 @@ CheckIfDfFollowsStandard2(Education_LMVZ)
 ggplot(data = education2, aes(x = date, y = value )) + 
   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Nutzung der Lernplattform LMVZ, Unit: Anzahl Starts",
+  labs(title = "Nutzung der Lernplattform LMVZ",
    y = "Anzahl Starts")
 
 # Education 3: Mindmaps & LMVZ
 ggplot(data = education3, aes(x = date, y = value, color = variable_short )) +
   geom_line(size = 1.0, alpha = 1) +
   scale_x_date(date_labels = "%a %d. %b") +
-  labs(title = "Anzahl",
+  labs(title = "Nutzung der Lernplattform  Mindmaps & LMVZ",
        y = "Anzahl") +
-  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical")
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
+
+```
+
+# Health
+
+```{r, subsets, echo=FALSE}
+
+# Subset for source Meteoschweiz
+health1 <- subset(data, variable_short %in% c("faelle_sars_cov2"))
+health2 <- subset(data, variable_short %in% c("verstorbene_sars_cov2"))
+
+```
+
+## Health_Covid19Cases
+
+```{r, echo = FALSE}
+
+Health_Covid19Cases <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_health_covid19cases")
+CheckIfDfFollowsStandard1(Health_Covid19Cases)
+CheckIfDfFollowsStandard2(Health_Covid19Cases)
+
+```
+
+
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
+# health1: faelle_sars_cov2
+ggplot(data = health1, aes(x = date, y = value, color = location)) +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "faelle_sars_cov2",
+       y = "Anzahl") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
+
+# health2: verstorbene_sars_cov2
+ggplot(data = health2, aes(x = date, y = value, color = location)) +
+  geom_line(size = 1.0, alpha = 1) +
+  scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "verstorbene_sars_cov2",
+       y = "Anzahl") +
+  theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
+
 
 ```
 
