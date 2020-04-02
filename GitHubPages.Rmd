@@ -79,7 +79,7 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 Die Daten der einzelnen Indikatoren können unter folgendem Link als CSV und JSON bezogen werden: <br>
 https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/
 
-Eine Visualisierung der Zeitreihen findet sich hier:<br>
+Eine Visualisierung der einzelnen Zeitreihen findet sich hier:<br>
 https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/
 
 Der gesamte Datensatz mit sämtlichen Indikatoren kann hier heruntergeladen werden: <br>
