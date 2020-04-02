@@ -76,17 +76,16 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 # Datenbezug
 
-Die Daten können unter folgendem Link bezogen werden: <br>
-https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
+Die Daten können unter folgendem Link als CSV und JSON bezogen werden: <br>
+https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/
 
-<span style="color:#0033cc">**> Erläuterungen zur Struktur der Daten**</span> <br>
+In dieser Visualisierung kann der zeitliche Verlauf der einzelnen Indikatoren betrachtet werden:  <br>
+https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/
+
+<span style="color:#0033cc">**Erläuterungen zur Struktur der Daten**</span> <br>
 Eine eindeutige Variablenbezeichnung, die auf *eine* Zeitreihe verweist, ergibt sich aus der Kombination von "variable_short bzw. "variable_long" und location, da einige Indikatoren regionalisiert sind. Zeitreihen, die nicht täglich verfügbar sind (siehe Variable "update"), gehen jeweils mit dem ersten Tag der Periode in den Datensatz ein.   
 
-<span style="color:#0033cc">**> Zitiervorschlag**</span> <br>
+<span style="color:#0033cc">**Zitiervorschlag**</span> <br>
 Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
-
-# Indikatorenübersicht
-
-<object data="https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/" height = "12000" width = "800"</object> 
 
 
