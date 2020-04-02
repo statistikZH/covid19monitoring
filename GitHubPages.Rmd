@@ -76,11 +76,14 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 # Datenbezug
 
-Die Daten können unter folgendem Link als CSV und JSON bezogen werden: <br>
+Die Daten der einzelnen Indikatoren können unter folgendem Link als CSV und JSON bezogen werden: <br>
 https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/
 
-In dieser Visualisierung kann der zeitliche Verlauf der einzelnen Indikatoren betrachtet werden:  <br>
+Eine Visualisierung der Zeitreihen findet sich hier:<br>
 https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/
+
+Der gesamte Datensatz mit sämtlichen Indikatoren kann hier heruntergeladen werden: <br>
+https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
 
 <span style="color:#0033cc">**Erläuterungen zur Struktur der Daten**</span> <br>
 Eine eindeutige Variablenbezeichnung, die auf *eine* Zeitreihe verweist, ergibt sich aus der Kombination von "variable_short bzw. "variable_long" und location, da einige Indikatoren regionalisiert sind. Zeitreihen, die nicht täglich verfügbar sind (siehe Variable "update"), gehen jeweils mit dem ersten Tag der Periode in den Datensatz ein.   
