@@ -6,7 +6,7 @@
 "Sonstiges","temp_min","Lufttemperatur 2 m über Boden; Tagesminimum","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
 "Sonstiges","temp_max","Lufttemperatur 2 m über Boden; Tagesmaximum","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
 "Sonstiges","luftfeuchte","Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel","SMA Zürich Fluntern","%","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
-"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic",2020-04-02
+"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke",2020-04-02
 "Mobilität","tages_distanz_median","mediane Tagesdistanz","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
 "Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Städtischer Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
 "Mobilität","tages_distanz_median","mediane Tagesdistanz","ZH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
