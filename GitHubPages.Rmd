@@ -39,12 +39,12 @@ h1 { /* Header 1 */
   color: #0033cc;
 }
 h2 { /* Header 2 */
-    font-size: 28px;
-	color: #0099ff
+    font-size: 12px;
+	color: #0033cc
 }
 h3 { /* Header 3 */
-    font-size: 14px;
-	color: #6600cc
+    font-size: 12px;
+	color: #0033cc
 }
 </style>
 
@@ -65,7 +65,7 @@ Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beitr�
 Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 
-# Kontakt:
+# Kontakt
 
 **Twitter:** @[statistik_zh](https://twitter.com/statistik_zh)
 
@@ -74,7 +74,7 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 **Technische Projektleitung:** Katharina Kälin, wissenschaftliche Mitarbeiterin, Statistisches Amt des Kantons Zürich Tel: 043 259 75 08
 
-# Datenbezug:
+# Datenbezug
 
 Die Daten können unter folgendem Link bezogen werden: <br>
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
@@ -85,24 +85,8 @@ Eine eindeutige Variablenbezeichnung, die auf *eine* Zeitreihe verweist, ergibt 
 <span style="color:#0033cc">**> Zitiervorschlag**</span> <br>
 Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
 
+# Indikatorenübersicht
 
-<!-- **Darstellung der Indikatoren:** -->
-
-<!-- https://observablehq.com/@mmznrstat/monitoring-covid19-effekt -->
-
-
-
-# Indikatorenübersicht:
-
-```{r, message=FALSE, warning=FALSE, echo = FALSE}
-
-library(DT)
-
-metadata <- read.csv("./Metadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% c("variable_short", "unit", "description", "public")]
-
-datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
-
-```
+<object data="https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/" height = "12000" width = "800"</object> 
 
 
