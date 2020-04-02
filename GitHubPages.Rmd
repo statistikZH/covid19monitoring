@@ -72,19 +72,13 @@ Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 **wissenschaftliche Projektleitung **
 
-Dr. Peter Moser <br>
-Stv. Amtschef Statistisches Amt des Kantons Zürich <br>
-Leiter Analysen & Studien <br>
-043 259 75 35
+Dr. Peter Moser, Stv. Amtschef Statistisches Amt des Kantons Zürich, Abteilungsleiter Analysen & Studien Tel: 043 259 75 35
 
 **Technische Projektleitung**
 
-Katharina Kälin <br>
-wissenschaftliche Mitarbeiterin  <br>
-Statistisches Amt des Kantons Zürich  <br>
-043 259 75 08
+Katharina Kälin, wissenschaftliche Mitarbeiterin, Statistisches Amt des Kantons Zürich Tel: 043 259 75 08
 
-# Datenbezug
+# Datenbezug:
 
 Die Daten können unter folgendem Link bezogen werden: <br>
 https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
