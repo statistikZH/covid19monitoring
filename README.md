@@ -18,19 +18,19 @@ The project aims to collect indicators for as many areas of social life affected
 
 Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
 
-| gitrepos  | responsible | validated (conforms to specs) |published|
+| gitrepos  | responsible | validated (conforms to specs) |first published|
 | ------------- | ------------- | ------------- | ------------- |
-| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | PM | 2020-03-24 ||
-| [covid19monitoring_mobility_VBZ_Hardbruecke](https://github.com/statistikZH/covid19monitoring_mobility_VBZ_Hardbruecke) | PM | 2020-03-30 ||
+| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | PM | 2020-03-24 |2020-03-31|
+| [covid19monitoring_mobility_VBZ_Hardbruecke](https://github.com/statistikZH/covid19monitoring_mobility_VBZ_Hardbruecke) | PM | 2020-03-30 |2020-03-31|
 | [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   | PM |   ||
 | [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   | PM |   ||
-| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | PM | 2020-03-25 ||
-| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | PM | 2020-03-26 ||
-| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | BS | 2020-03-26 ||
-| [covid19monitoring_economy_SIX](https://github.com/statistikZH/covid19monitoring_economy_SIX)   | BS | 2020-03-30 ||
-| [covid19monitoring_health_covid19cases](https://github.com/statistikZH/covid19monitoring_health_covid19cases)   | KK |  ||
+| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | PM | 2020-03-25 |2020-03-31|
+| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | PM | 2020-03-26 |2020-03-31|
+| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | BS | 2020-03-26 |2020-03-31|
+| [covid19monitoring_economy_SIX](https://github.com/statistikZH/covid19monitoring_economy_SIX)   | BS | 2020-03-30 |2020-03-31|
+| [covid19monitoring_health_covid19cases](https://github.com/statistikZH/covid19monitoring_health_covid19cases)   | PM | 2020-04-01 |2020-04-02|
 | [covid19monitoring_education_lvzmath](https://github.com/bildungsmonitoringZH/covid19_edu_lmvzmath)   | FI/KK |  ||
-| [covid19monitoring_education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03_30 ||
+| [covid19monitoring_education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03-30 |2020-03-31|
 
 
 **validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
@@ -84,7 +84,7 @@ topic (start with uppercase) + _ + NameOfDataset (CamelCase)
 # Data structure specification for output data
 
 Each data output must contain the following variables in the defined standard format. Refer to the  [spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0) for variable definition and example.
- 
+
 
 
 <!---

@@ -65,35 +65,6 @@ Das Gesellschaftsmonitoring COVID19 ist ein work in progress: Anregungen, Beitr�
 Mehr Informationen zu diesem Projekt finden Sie [hier](https://bit.ly/2UbzLdv).
 
 
-
-# Datenbezug
-
-Die Daten können unter folgendem Link bezogen werden: <br>
-https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
-
-<span style="color:#0033cc">**> Erläuterungen zur Struktur der Daten**</span> <br>
-Eine eindeutige Variablenbezeichnung, die auf eine Zeitreihe verweist, ergibt sich aus der Kombination von "variable_short bzw. "variable_long" und location, da einige Indikatoren regionalisiert sind.
-
-<span style="color:#0033cc">**> Zitiervorschlag**</span> <br>
-Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
-
-<!-- **Darstellung der Indikatoren:** -->
-
-<!-- https://observablehq.com/@mmznrstat/monitoring-covid19-effekt -->
-
-# Indikatorenübersicht:
-
-```{r, message=FALSE, warning=FALSE, echo = FALSE}
-
-library(DT)
-
-metadata <- read.csv("./Metadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% c("variable_short", "unit", "description", "public")]
-
-datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
-
-```
-
 # Kontakt:
 
 **Twitter:** @[statistik_zh](https://twitter.com/statistik_zh)
@@ -112,4 +83,36 @@ Katharina Kälin <br>
 wissenschaftliche Mitarbeiterin  <br>
 Statistisches Amt des Kantons Zürich  <br>
 043 259 75 08
+
+# Datenbezug
+
+Die Daten können unter folgendem Link bezogen werden: <br>
+https://raw.githubusercontent.com/statistikZH/covid19monitoring/master/covid19socialmonitoring.csv
+
+<span style="color:#0033cc">**> Erläuterungen zur Struktur der Daten**</span> <br>
+Eine eindeutige Variablenbezeichnung, die auf eine Zeitreihe verweist, ergibt sich aus der Kombination von "variable_short bzw. "variable_long" und location, da einige Indikatoren regionalisiert sind.
+
+<span style="color:#0033cc">**> Zitiervorschlag**</span> <br>
+Ursprüngliche Datenherkunft (intervista, SIX, Flughafen Zürich etc.) / "Gesellschaftsmonitoring Covid-19 STAT"
+
+
+<!-- **Darstellung der Indikatoren:** -->
+
+<!-- https://observablehq.com/@mmznrstat/monitoring-covid19-effekt -->
+
+
+
+# Indikatorenübersicht:
+
+```{r, message=FALSE, warning=FALSE, echo = FALSE}
+
+library(DT)
+
+metadata <- read.csv("./Metadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+metadata_sel <- metadata[which(metadata$public == "ja"), ! names(metadata) %in% c("variable_short", "unit", "description", "public")]
+
+datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
+
+```
+
 
