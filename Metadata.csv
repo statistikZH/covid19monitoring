@@ -1,29 +1,50 @@
-"topic","variable_short","variable_long","location","unit","source","update","public","description"
-"Sonstiges","globalstrahlung","Globalstrahlung; Tagesmittel","SMA Zürich Fluntern","W/m²","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather"
-"Sonstiges","luftdruck","Luftdruck auf Stationshöhe (QFE); Tagesmittel","SMA Zürich Fluntern","hPa","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather"
-"Sonstiges","sonnenschein","Sonnenscheindauer; Tagessumme","SMA Zürich Fluntern","min","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather"
-"Sonstiges","temp_mittel","Lufttemperatur 2 m über Boden; Tagesmittel","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather"
-"Sonstiges","temp_min","Lufttemperatur 2 m über Boden; Tagesminimum","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather"
-"Sonstiges","temp_max","Lufttemperatur 2 m über Boden; Tagesmaximum","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather"
-"Sonstiges","luftfeuchte","Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel","SMA Zürich Fluntern","%","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather"
-"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic"
-"Mobilität","tages_distanz_median","mediane Tagesdistanz","ZH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Städtischer Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Ländlicher Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_alter_1529","mediane Tagesdistanz der 15-29-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_alter_3064","mediane Tagesdistanz der 30-64-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_alter_6579","mediane Tagesdistanz der über 65-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_erwerbstaetig","mediane Tagesdistanz der Erwerbstätigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_in_ausbildung","mediane Tagesdistanz in Ausbildung","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_maennlich","mediane Tagesdistanz der Männer","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_nicht_erwerbstaetig","mediane Tagesdistanz nicht erwerbstätig","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Mobilität","tages_distanz_median_weiblich","mediane Tagesdistanz der Frauen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
-"Wirtschaft","smi_index","Indexwert SMI","CH","Index-Punkte","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI"
-"Wirtschaft","chf_eur","Wechselkurs Fr./Euro","CH",NA,"yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI"
-"Wirtschaft","chf_usd","Wechselkurs Fr./US-Dollar","CH",NA,"yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI"
-"Wirtschaft","fluege_zrh","Flugbewegungen ZRH","ZRH","Anzahl","Flughafen Zürich","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic"
-"Wirtschaft","debiteinsatz_ausland","Debitkarteneinsatz Ausland","Ausland","Mio. Fr.","SIX Payment Services","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX"
-"Wirtschaft","bezug_bargeld","Bargeldbezug CH","CH","Mio. Fr.","SIX Payment Services","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX"
-"Wirtschaft","stat_einkauf","Stationärer Einkauf CH","CH","Mio. Fr.","SIX Payment Services","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX"
-"Bildung","training_mindsteps","Nutzung der Lernplattform Mindsteps","Deutschschweiz","Anzahl durchgeführter Aufgabenserien","Universität Zürich, Institut für Bildungsevaluation","täglich","ja","https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps"
+"topic","variable_short","variable_long","location","unit","source","update","public","description","last_modified"
+"Sonstiges","globalstrahlung","Globalstrahlung; Tagesmittel","SMA Zürich Fluntern","W/m²","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
+"Sonstiges","luftdruck","Luftdruck auf Stationshöhe (QFE); Tagesmittel","SMA Zürich Fluntern","hPa","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
+"Sonstiges","sonnenschein","Sonnenscheindauer; Tagessumme","SMA Zürich Fluntern","min","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
+"Sonstiges","temp_mittel","Lufttemperatur 2 m über Boden; Tagesmittel","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
+"Sonstiges","temp_min","Lufttemperatur 2 m über Boden; Tagesminimum","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
+"Sonstiges","temp_max","Lufttemperatur 2 m über Boden; Tagesmaximum","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
+"Sonstiges","luftfeuchte","Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel","SMA Zürich Fluntern","%","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-02
+"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic",2020-04-02
+"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Städtischer Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median","mediane Tagesdistanz","ZH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Ländlicher Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_alter_1529","mediane Tagesdistanz der 15-29-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_alter_3064","mediane Tagesdistanz der 30-64-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_alter_6579","mediane Tagesdistanz der über 65-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_erwerbstaetig","mediane Tagesdistanz der Erwerbstätigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_in_ausbildung","mediane Tagesdistanz in Ausbildung","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_maennlich","mediane Tagesdistanz der Männer","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_nicht_erwerbstaetig","mediane Tagesdistanz nicht erwerbstätig","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Mobilität","tages_distanz_median_weiblich","mediane Tagesdistanz der Frauen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-02
+"Wirtschaft","smi_index","Indexwert SMI","CH","Index-Punkte","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-04-02
+"Wirtschaft","chf_eur","Wechselkurs Fr./Euro","CH",NA,"yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-04-02
+"Wirtschaft","chf_usd","Wechselkurs Fr./US-Dollar","CH",NA,"yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-04-02
+"Wirtschaft","fluege_zrh","Flugbewegungen ZRH","ZRH","Anzahl","Flughafen Zürich","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic",2020-04-02
+"Wirtschaft","debiteinsatz_ausland","Debitkarteneinsatz Ausland","Ausland","Mio. Fr.","SIX Payment Services","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX",2020-04-02
+"Wirtschaft","bezug_bargeld","Bargeldbezug CH","CH","Mio. Fr.","SIX Payment Services","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX",2020-04-02
+"Wirtschaft","stat_einkauf","Stationärer Einkauf CH","CH","Mio. Fr.","SIX Payment Services","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX",2020-04-02
+"Bildung","training_mindsteps","Nutzung der Lernplattform Mindsteps","Deutschschweiz","Anzahl durchgeführter Aufgabenserien","Universität Zürich, Institut für Bildungsevaluation","täglich","ja","https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps",2020-04-02
+"Bildung","training_mathematik_lmvz","Nutzung des Fertigkeitstrainings 1-6 für Mathematik auf der Primarstufe","global","Anzahl Starts Fertigkeitstraining","Lehrmittelverlag Zürich","täglich","Ja","https://bildungsmonitoringzh.github.io/covid19_edu_lmvzmath/",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Espace Mittelland","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Genferseeregion","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Nordwestschweiz","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Ostschweiz","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","TI","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Zentralschweiz","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","ZH","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","Espace Mittelland","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","Genferseeregion","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","Nordwestschweiz","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","Ostschweiz","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","TI","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","Zentralschweiz","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","ZH","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","CH","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","CH","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-02
+"Wirtschaft","konjunkturbarometer","Indikator für die Schweizer Konjunktur","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-02
+"Wirtschaft","geschaeftslage_verarbeitenden","Geschäftslageindikator für das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-02
+"Wirtschaft","erw_bestelleingang_verarbeitenden","Bestellungseingang, erwartete Änderung nächste 3 Monate für das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-02
+"Wirtschaft","arbeitsuchende_jobroom","Arbeitsuchende gemäss Jobroom.ch","CH","Anzahl","SECO job-room.ch und KOF Konjunkturforschungsstelle","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-02
