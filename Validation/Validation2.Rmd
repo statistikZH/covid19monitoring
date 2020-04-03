@@ -1,0 +1,22 @@
+# Validation.Rmd
+
+```{r}
+
+# import function
+source("../function.R")
+
+# import libraries
+library(dplyr)
+library(readr)
+
+dat <-read.csv("./ValidationData.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
+dat_split <- dat %>% 
+  group_split(description) %>%
+   group_map(CheckIfDfFollowsStandard1())
+
+lapply(dat_split, FUN = function(X) CheckIfDfFollowsStandard1(dat_split))
+CheckIfDfFollowsStandard1(dat_split[[1]])
+
+```
+

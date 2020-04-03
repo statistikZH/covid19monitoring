@@ -1,4 +1,12 @@
+ImportUrl <- function(url_sel){
+  
+  df <- read.csv(url(url_sel), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+  return(df)
+  
+}
+
 CheckIfDfFollowsStandard1 <- function (df)  {
+  
   
   # check 1: check if Variable names follow the standard
   VariableNamesStandard <- c("date",	"value",	"topic",	"variable_short",	"variable_long",	"location",	"unit",	"source",	"update",	"public",	"description")
@@ -8,6 +16,8 @@ CheckIfDfFollowsStandard1 <- function (df)  {
     print(names(df)[!(names(df) %in% VariableNamesStandard)])
   }
 
+  print("=> description")
+  print(sort(unique(df$description)))
   # check unique values in table
   print("*****************************************************")
   print("=> date")
@@ -40,11 +50,7 @@ CheckIfDfFollowsStandard1 <- function (df)  {
   print("=> public")
   print(sort(unique(df$public)))
   print("*****************************************************")
-  print("=> description")
-  print(sort(unique(df$description)))
-  print("*****************************************************")
-  print("=> variable_short, variable_long, unit")
-  
+
 }
 
 CheckIfDfFollowsStandard2 <- function (df)  {
