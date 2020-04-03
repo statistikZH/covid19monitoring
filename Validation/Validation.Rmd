@@ -445,7 +445,7 @@ ggplot(data = education1, aes(x = date, y = value )) +
 
 ```{r, echo = FALSE}
 
-Education_LMVZ <- subset(data, description == "https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/README.md?token=AO5R67R4BIFFFXN4MHI3ANK6RSDUW")
+Education_LMVZ <- subset(data, description == "https://bildungsmonitoringzh.github.io/covid19_edu_lmvzmath/")
 CheckIfDfFollowsStandard1(Education_LMVZ)
 CheckIfDfFollowsStandard2(Education_LMVZ)
 
