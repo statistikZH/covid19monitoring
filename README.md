@@ -21,7 +21,7 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 | gitrepos  | responsible | validated (conforms to specs) |first published|
 | ------------- | ------------- | ------------- | ------------- |
 | [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | PM | 2020-03-24 |2020-03-31|
-| [covid19monitoring_mobility_VBZ_Hardbruecke](https://github.com/statistikZH/covid19monitoring_mobility_VBZ_Hardbruecke) | PM | 2020-03-30 |2020-03-31|
+| [covid19monitoring_mobility_VBZHardbruecke](https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke) | PM | 2020-03-30 |2020-03-31|
 | [covid19monitoring_mobility_PrivateTransport](https://github.com/statistikZH/covid19monitoring_mobility_PrivateTransport)   | PM |   ||
 | [covid19monitoring_mobility_SlowTraffic](https://github.com/statistikZH/covid19monitoring_mobility_SlowTraffic)   | PM |   ||
 | [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | PM | 2020-03-25 |2020-03-31|
