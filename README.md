@@ -16,6 +16,10 @@ The project aims to collect indicators for as many areas of social life affected
 
 # Gitrepos overview
 
+An overview of the data that has already been published can be found here:  <br>
+- Table: https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/ <br>
+- Visualization: https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/ <br>
+
 Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
 
 | gitrepos  | responsible | validated (conforms to specs) |first published|
