@@ -54,6 +54,7 @@ covid19monitoring <- rbind(Other_Weather,
 # Export
 
 write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+ValidationMetadata()
 
 ###########################################################################
 # render Validation.Rmd
