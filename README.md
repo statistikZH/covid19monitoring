@@ -100,12 +100,21 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 
 # Metadata for gitrepos folders
 
-**Author**: Name and Surname <br>
-**Methodology**: Brief description of how the dataset is created <br>
-**Dataset**: Path to dataset that is created in this gitrepos <br>
-**Source**: Source of dataset <br>
-**Frequency of update**: E.g. daily/weekly/monthly <br>
-**Please consider these points when using the dataset**: 
-Original Dataprovider (e.g. intervista, SIX, Flughafen Zürich etc.)  followed by"Gesellschaftsmonitoring Covid-19 STAT"
-.<br>
+**Grundlage** <br>
+Short description of dataset.  <br>
+*Kurze Beschreibung worum es im Datensatz geht.*  
+
+**Methodisches** <br>
+Methodological notes. Analyses are explained in more detail here. (e.g.  with reference to script).   <br>
+*Methodische Anmerkungen. Analysen werden hier genauer erläutert (e.v. mit Bezug auf Skript).*  <br>
+
+**Weitere Hinweise zur Variable**  <br>
+Optional. Only necessary if the description of “variable_long” is not sufficient to describe the variable.   <br>
+*Fakultativ. Nur verwenden wenn die Beschreibung von “variable_long”  fürs Verständnis der Variablen nicht ausreicht.* <br>
+
+**Weitere Informationen** <br>
+[Projektseite](https://github.com/statistikZH/covid19monitoring) <br>
+[Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) <br>
+[Visualisierung](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) <br>
+
 
