@@ -120,10 +120,14 @@ Health_Covid19Cases <- read.csv(url(url_Health_Covid19Cases), header=T, sep=",",
 url_Economy_KOF <-"https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_KOF/master/Economy_KOF.csv"
 Economy_KOF <- read.csv(url(url_Economy_KOF), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
+#Mobility_SBBHauptbahnhof
+url_Mobility_SBBHauptbahnhof <-"https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof/master/Mobility_SBBHauptbahnhof.csv"
+Mobility_SBBHauptbahnhof <- read.csv(url(url_Mobility_SBBHauptbahnhof), header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+
 ###########################################################################
 # rbind
 
-covid19monitoring <- rbind(Other_Weather, Mobility_VBZHardbruecke, Mobility_Intervista, Economy_SMI, Economy_FlightTrafficZRH, Economy_SIX, Education_Mindmaps, Education_LMVZ, Health_Covid19Cases, Economy_KOF)
+covid19monitoring <- rbind(Other_Weather, Mobility_VBZHardbruecke, Mobility_Intervista, Economy_SMI, Economy_FlightTrafficZRH, Economy_SIX, Education_Mindmaps, Education_LMVZ, Health_Covid19Cases, Economy_KOF, Mobility_SBBHauptbahnhof)
 
 ###########################################################################
 # Export
@@ -255,6 +259,29 @@ ggplot(data = mobility1, aes(x = date, y = value )) +
 Mobility_Intervista <- subset(data, description == "https://github.com/statistikZH/covid19monitoring_mobility_intervista")
 CheckIfDfFollowsStandard1(Mobility_Intervista)
 CheckIfDfFollowsStandard2(Mobility_Intervista)
+
+```
+## Mobility_SBB_Hardbrücke
+
+```{r, echo = FALSE}
+
+CheckIfDfFollowsStandard1(Mobility_SBBHauptbahnhof)
+CheckIfDfFollowsStandard2(Mobility_SBBHauptbahnhof)
+
+Mobility_SBBHauptbahnhof$date <- as.POSIXct(Mobility_SBBHauptbahnhof$date)
+
+
+```
+
+
+```{r, fig.width=14, fig.height=7, echo=FALSE}
+
+# Mobility 1: SBB
+ggplot(data = Mobility_SBBHauptbahnhof2, aes(x = date, y = value )) + 
+   geom_line(color = "#00AFBB", size = 1.0, alpha = 1) +
+   scale_x_date(date_labels = "%a %d. %b") +
+  labs(title = "ÖV-Besucherfrequenzen, Zählstelle Hardbrücke, Unit: Anz. in 1'000",
+       y = "Besucherfreq. (Anz. in 1'000)")
 
 ```
 
@@ -509,7 +536,6 @@ ggplot(data = health2, aes(x = date, y = value, color = location)) +
   labs(title = "verstorbene_sars_cov2",
        y = "Anzahl") +
   theme(legend.title=element_blank(), legend.position='top', legend.justification='left', legend.direction="vertical", axis.title.x=element_blank())
-
 
 ```
 
