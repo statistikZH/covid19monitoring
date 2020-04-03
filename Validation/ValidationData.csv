@@ -742,6 +742,7 @@
 "2020-03-30",14.12,"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke"
 "2020-03-31",17.6,"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke"
 "2020-04-01",17.72,"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke"
+"2020-04-02",17.4,"Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke"
 "2020-02-16",13.1278698109053,"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
 "2020-02-16",13.7457603957329,"Mobilität","tages_distanz_median","mediane Tagesdistanz","ZH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
 "2020-02-16",11.6157680206483,"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Städtischer Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista"
@@ -3112,3 +3113,4 @@
 "2020-03-30",160727,"Wirtschaft","arbeitsuchende_jobroom","Arbeitsuchende gemäss Jobroom.ch","CH","Anzahl","SECO job-room.ch und KOF Konjunkturforschungsstelle","täglich","ja","https://github.com/KOF-ch/economic-monitoring"
 "2020-03-31",160780,"Wirtschaft","arbeitsuchende_jobroom","Arbeitsuchende gemäss Jobroom.ch","CH","Anzahl","SECO job-room.ch und KOF Konjunkturforschungsstelle","täglich","ja","https://github.com/KOF-ch/economic-monitoring"
 "2020-04-01",160668,"Wirtschaft","arbeitsuchende_jobroom","Arbeitsuchende gemäss Jobroom.ch","CH","Anzahl","SECO job-room.ch und KOF Konjunkturforschungsstelle","täglich","ja","https://github.com/KOF-ch/economic-monitoring"
+"2020-04-02",163139,"Wirtschaft","arbeitsuchende_jobroom","Arbeitsuchende gemäss Jobroom.ch","CH","Anzahl","SECO job-room.ch und KOF Konjunkturforschungsstelle","täglich","ja","https://github.com/KOF-ch/economic-monitoring"
