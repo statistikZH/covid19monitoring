@@ -10,12 +10,7 @@ source("../function.R")
 
 library(readr) # Version: ‘1.3.1’
 library(ggplot2) # Version: ‘3.1.0’
-library(kableExtra) # Version:  ‘1.1.0’
-require(xts)
-library (lattice)
-library(reshape2)
-library(readr)
-library(latticeExtra)
+library(rmarkdown)
 
 ###########################################################################
 # format numbers
@@ -59,4 +54,9 @@ covid19monitoring <- rbind(Other_Weather,
 # Export
 
 write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+
+###########################################################################
+# render Validation.Rmd
+
+render("./Validation2.Rmd")
 

@@ -1,6 +1,50 @@
-# Validation.Rmd
+---
+title: "Validation"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    theme: lumen
+    highlight: tango
+---
 
-```{r}
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: 0;
+  margin-right: auto;
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid #eee;
+}
+
+h1.title {
+  font-size: 38px;
+  color: #000000;
+  }
+  
+h1 { /* Header 1 */
+  font-size: 28px;
+  color: #0033cc;
+}
+h2 { /* Header 2 */
+    font-size: 28px;
+	color: #0099ff
+}
+h3 { /* Header 3 */
+    font-size: 14px;
+	color: #6600cc
+}
+</style>
+
+
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE, width = 14}
 
 # import function
 source("../function.R")
@@ -8,15 +52,50 @@ source("../function.R")
 # import libraries
 library(dplyr)
 library(readr)
+library(kableExtra)
+require(xts)
+library (lattice)
+library(reshape2)
+library(DT)
 
+# import data
 dat <-read.csv("./ValidationData.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
-dat_split <- dat %>% 
-  group_split(description) %>%
-   group_map(CheckIfDfFollowsStandard1())
+metadata <- read.csv("./ValidationMetadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
 
-lapply(dat_split, FUN = function(X) CheckIfDfFollowsStandard1(dat_split))
-CheckIfDfFollowsStandard1(dat_split[[1]])
+# prepare data
+dat_split <- dat %>% 
+  group_split(description) #%>%
+   #group_map(s(X))
+
+
+```
+
+
+# Unique Values
+
+```{r, collapse=TRUE, warning=FALSE,message=FALSE, echo = FALSE}
+
+lapply(dat_split, FUN = function(X) CheckIfDfFollowsStandard1(X))
+
+```
+
+# Metadata
+
+```{r, echo = FALSE}
+
+metadata_sel <- metadata[, ! names(metadata) %in% c("variable_short", "unit", "description", "public")]	
+datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength = 10), filter = 'top' , escape = FALSE, rownames = FALSE)
+
+```
+
+
+# Plots
+fig.height = 8
+
+```{r, collapse=TRUE, warning=FALSE,  message=FALSE, echo = FALSE, , out.width='\\textwidth',  fig.width = 14, fig.height= 5}
+
+CheckIfDfFollowsStandard3(dat)
 
 ```
 
