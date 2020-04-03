@@ -8,13 +8,17 @@
 - [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
 - [Data structure specification for output data](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-output-data) <br>
 - [Naming convention for output data](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for--output-data) <br>
-- [Metadata](https://github.com/statistikZH/covid19monitoring/tree/master#metadata) <br>
+- [Metadata for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#metadata-for-gitrepos-folders) <br>
 
 # Aim
 
 The project aims to collect indicators for as many areas of social life affected by the COVID19 crisis as possible. The data will be made available as daily updated time series and in a standardised format. In terms of geography, the immediate focus is the Canton of Zurich; however, contributions from the rest of Switzerland are welcome. More on the project [here in german](https://statistikzh.github.io/covid19monitoring/).
 
 # Gitrepos overview
+
+An overview of the data that has already been published can be found here:  <br>
+- Table: https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/ <br>
+- Visualization: https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/ <br>
 
 Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
 
@@ -32,6 +36,8 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 | [covid19monitoring_education_lvzmath](https://github.com/bildungsmonitoringZH/covid19_edu_lmvzmath)   | FI/KK |  ||
 | [covid19monitoring_education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03-30 |2020-03-31|
 | [covid19monitoring_economy_KOF](https://github.com/statistikZH/covid19monitoring_economy_KOF)   | PM | 2020-02-04 | 2020-02-04 |
+| [covid19monitoring_mobility_SBBHauptbahnhof](https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof)  | KK | 2020-03-04 | 2020-03-04 |
+
 
 
 **validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
@@ -96,12 +102,21 @@ The template for our GitHub Page can be found [here](https://github.com/statisti
 
 # Metadata for gitrepos folders
 
-**Author**: Name and Surname <br>
-**Methodology**: Brief description of how the dataset is created <br>
-**Dataset**: Path to dataset that is created in this gitrepos <br>
-**Source**: Source of dataset <br>
-**Frequency of update**: E.g. daily/weekly/monthly <br>
-**Please consider these points when using the dataset**: 
-Original Dataprovider (e.g. intervista, SIX, Flughafen Zürich etc.)  followed by"Gesellschaftsmonitoring Covid-19 STAT"
-.<br>
+**Grundlage** <br>
+Short description of dataset.  <br>
+*Kurze Beschreibung worum es im Datensatz geht.*  
+
+**Methodisches** <br>
+Methodological notes. Analyses are explained in more detail here. (e.g.  with reference to script).   <br>
+*Methodische Anmerkungen. Analysen werden hier genauer erläutert (e.v. mit Bezug auf Skript).*  <br>
+
+**Weitere Hinweise zur Variable**  <br>
+Optional. Only necessary if the description of “variable_long” is not sufficient to describe the variable.   <br>
+*Fakultativ. Nur verwenden wenn die Beschreibung von “variable_long”  fürs Verständnis der Variablen nicht ausreicht.* <br>
+
+**Weitere Informationen** <br>
+[Projektseite](https://github.com/statistikZH/covid19monitoring) <br>
+[Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) <br>
+[Visualisierung](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) <br>
+
 
