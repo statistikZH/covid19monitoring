@@ -1,8 +1,12 @@
 name: Merge cantonal CSVs
 
 on:
-  schedule:
-    - cron:  '*/15 * * * *'
+#  schedule:
+#    - cron:  '*/15 * * * *'
+      
+  push:
+    paths:
+    - 'Readme.md'
 
 jobs:
   build:
