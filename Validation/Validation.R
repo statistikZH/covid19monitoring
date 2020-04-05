@@ -3,7 +3,7 @@
 ###########################################################################
 #  import function
 
-source("../function.R")
+source("./function.R")
 
 ###########################################################################
 # import libraries
@@ -59,5 +59,5 @@ ValidationMetadata()
 ###########################################################################
 # render Validation.Rmd
 
-render("./Validation2.Rmd")
+render("./Validation.Rmd")
 
