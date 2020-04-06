@@ -67,7 +67,8 @@
                                Education_LMVZ, 
                                Health_Covid19Cases, 
                                Economy_KOF, 
-                               Mobility_SBBHauptbahnhof)
+                               Mobility_SBBHauptbahnhof, 
+                               Mobility_ZaehlstellenMIVLVVelo)
     
     ###########################################################################
     # Export
