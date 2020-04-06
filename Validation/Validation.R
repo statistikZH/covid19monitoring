@@ -33,7 +33,26 @@
     Health_Covid19Cases <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_health_covid19cases/master/Health_covid19cases.csv?token=AJX6OIIM25TY22U7N4OKQHS6R3KX6")
     Economy_KOF <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_KOF/master/Economy_KOF.csv")
     Mobility_SBBHauptbahnhof <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof/master/Mobility_SBBHauptbahnhof.csv")
+    Mobility_ZaehlstellenMIVLVVelo<- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo/master/Mobilit%C3%A4t_AufkommenTerrestrischerVerkehr.csv?token=AJX6OIMJOS23JRB65JU5LUK6SQPDA")
+
     #mydf <- ImportUrl("")
+    
+    ###########################################################################
+    
+    # check if variable names follow the standard
+    
+    CheckIfDfFollowsStandard1(Other_Weather)
+    CheckIfDfFollowsStandard1(Mobility_VBZHardbruecke)
+    CheckIfDfFollowsStandard1(Mobility_Intervista)
+    CheckIfDfFollowsStandard1(Economy_SMI)
+    CheckIfDfFollowsStandard1(Economy_FlightTrafficZRH)
+    CheckIfDfFollowsStandard1(Economy_SIX)
+    CheckIfDfFollowsStandard1(Education_Mindmaps)
+    CheckIfDfFollowsStandard1(Education_LMVZ)
+    CheckIfDfFollowsStandard1(Health_Covid19Cases)
+    CheckIfDfFollowsStandard1(Mobility_SBBHauptbahnhof)
+    CheckIfDfFollowsStandard1(Mobility_ZaehlstellenMIVLVVelo)
+   
     
     ###########################################################################
     # rbind

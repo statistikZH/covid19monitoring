@@ -71,12 +71,11 @@ dat_split <- dat %>%
 
 ```
 
-
 # Unique Values
 
 ```{r, collapse=TRUE, warning=FALSE,message=FALSE, echo = FALSE}
 
-  lapply(dat_split, FUN = function(X) CheckIfDfFollowsStandard1(X))
+  lapply(dat_split, FUN = function(X) CheckIfDfFollowsStandard2(X))
 
 ```
 

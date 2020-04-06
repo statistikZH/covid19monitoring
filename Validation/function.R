@@ -6,16 +6,23 @@ ImportUrl <- function(url_sel){
 }
 
 CheckIfDfFollowsStandard1 <- function (df)  {
-  
-  
-  # check 1: check if Variable names follow the standard
+
+  # check 1: check if variable names follow the standard
   VariableNamesStandard <- c("date",	"value",	"topic",	"variable_short",	"variable_long",	"location",	"unit",	"source",	"update",	"public",	"description")
   if(TRUE == all(sort(names(df)) == sort(VariableNamesStandard))){
-  } else {
+    print("ok")
+  } 
+    else {
     print("variable names do not follow the defined standard: ")
     print(names(df)[!(names(df) %in% VariableNamesStandard)])
   }
 
+}
+
+CheckIfDfFollowsStandard2 <- function (df)  {
+  
+  
+ # check2: check unique attibutes
   print("*************************************************")
   #print("=> variable_short")
   print(sort(unique(df$variable_short)))
@@ -46,12 +53,12 @@ CheckIfDfFollowsStandard1 <- function (df)  {
   print(paste("public:", sort(unique(df$public))))
   }
 
-CheckIfDfFollowsStandard2 <- function (df)  {
-  
-  df2 <- df[!duplicated(df[,c("variable_short", "variable_long", "unit")]), c("variable_short", "variable_long", "unit")]
-  kable(df2) %>% kable_styling(bootstrap_options = c("striped", "hover"))
-  
-}
+# CheckIfDfFollowsStandard3 <- function (df)  {
+#   
+#   df2 <- df[!duplicated(df[,c("variable_short", "variable_long", "unit")]), c("variable_short", "variable_long", "unit")]
+#   kable(df2) %>% kable_styling(bootstrap_options = c("striped", "hover"))
+#   
+# }
 
 CheckIfDfFollowsStandard3 <- function (dat)  {
 
