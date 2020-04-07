@@ -92,7 +92,7 @@ datatable(metadata_sel[order(metadata_sel$topic), ], options = list(pageLength =
 # Plots
 fig.height = 8
 
-```{r, collapse=TRUE, warning=FALSE,  message=FALSE, echo = FALSE, , out.width='\\textwidth',  fig.width = 14, fig.height= 5}
+```{r, collapse=TRUE, warning=FALSE,  message=FALSE, echo = FALSE, , out.width='\\textwidth',  fig.width = 20, fig.height= 5}
 
 CheckIfDfFollowsStandard3(dat)
 

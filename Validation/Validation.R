@@ -1,4 +1,7 @@
     #Validation
+
+    getwd()
+    #setwd("C:/gitrepos/covid19monitoring/Validation")
     
     ###########################################################################
     #  import function
