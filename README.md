@@ -75,29 +75,29 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 
 covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase)<br>
 
-> E.g.: covid19monitoring_mobility_SlowTraffic
+> E.g.: covid19monitoring_other_Weather
 
 ## > gitrepos with data protection
 
 covid19monitoring  + _ +   topic (start with lowercase)  + _ +  NameOfDataset (CamelCase) **+ _ + private** <br>
 
-> E.g.: covid19monitoring_mobility_SlowTraffic_private
+> E.g.:covid19monitoring_other_Weather_private
 
 # Naming convention for scripts
 
 topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
-> E.g.: Mobility_SlowTraffic
+> E.g.: Other_Weather
 
 # Naming convention for  output data
 
 topic (start with uppercase) + _ + NameOfDataset (CamelCase)
 
+> E.g.: Other_Weather
+
 # Data structure specification for output data
 
 Each data output must contain the following variables in the defined standard format. Refer to the  [spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0) for variable definition and example.
-
-
 
 <!---
 # Template for GiHub Page
