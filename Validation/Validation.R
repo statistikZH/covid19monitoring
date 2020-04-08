@@ -37,7 +37,8 @@
     Economy_KOF <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_KOF/master/Economy_KOF.csv")
     Mobility_SBBHauptbahnhof <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof/master/Mobility_SBBHauptbahnhof.csv")
     Mobility_ZaehlstellenMIVLVVelo<- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo/master/Mobilit%C3%A4t_AufkommenTerrestrischerVerkehr.csv")
-
+    Social_SWISSIX <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_social_SWISSIX/master/Social_SWISSIX.csv")
+    
     #mydf <- ImportUrl("")
     
     ###########################################################################
@@ -55,7 +56,7 @@
     CheckIfDfFollowsStandard1(Health_Covid19Cases)
     CheckIfDfFollowsStandard1(Mobility_SBBHauptbahnhof)
     CheckIfDfFollowsStandard1(Mobility_ZaehlstellenMIVLVVelo)
-   
+    CheckIfDfFollowsStandard1(Social_SWISSIX)
     
     ###########################################################################
     # rbind
@@ -71,7 +72,8 @@
                                Health_Covid19Cases, 
                                Economy_KOF, 
                                Mobility_SBBHauptbahnhof, 
-                               Mobility_ZaehlstellenMIVLVVelo)
+                               Mobility_ZaehlstellenMIVLVVelo,
+                               Social_SWISSIX)
     
     ###########################################################################
     # Export

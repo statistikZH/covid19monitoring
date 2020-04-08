@@ -40,7 +40,7 @@ CheckIfDfFollowsStandard2 <- function (df)  {
   print("-----------------------------------------------------")
   print(paste("topic:",  sort(unique(df$topic))))
   print("-----------------------------------------------------")
-  print(paste("variable_long",  sort(unique(df$variable_long))))
+  print(paste("variable_long:",  sort(unique(df$variable_long))))
   print("-----------------------------------------------------")
   print(paste("location:",  sort(unique(df$location))))
   print("-----------------------------------------------------")
