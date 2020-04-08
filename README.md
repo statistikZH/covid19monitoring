@@ -97,7 +97,7 @@ topic (start with uppercase) + _ + NameOfDataset (CamelCase)
 
 # Data structure specification for output data
 
-Each data output must contain the following variables in the defined standard format. Refer to the  [spreadsheet](https://docs.google.com/spreadsheets/d/16bmV79jLgKt_miaFbQpSAcGBkqYA0pWXbmFviaTZUuk/edit#gid=0) for variable definition and example.
+Each data output must contain the following variables in the defined standard format. Refer to the  [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRAXE1Sahd8Gv5wiadUQrmyENCvsBhiCW1c1tGKEuXBtmPRXxvw4F-BmGDdjQcgQp7gz61qt6xw-JSk/pubhtml#) for variable definition and example.
 
 <!---
 # Template for GiHub Page
