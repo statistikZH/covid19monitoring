@@ -26,7 +26,7 @@ jobs:
     - name: Screenshot Dashboard
       uses: swinton/screenshot-website@v1.x
       with:
-        source: https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/
+        source: https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/5/Alle
         destination: dashboard.png
         full-page: true
     
