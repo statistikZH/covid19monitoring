@@ -2,7 +2,7 @@
 
 - [Aim](https://github.com/statistikZH/covid19monitoring/tree/master#aim) <br>
 - [Gitrepos overview](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-overview) <br>
-- [Gitrepos with no data protection](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-with-no-data-protection) <br>
+- [Gitrepos without data protection](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-without-data-protection) <br>
 - [Gitrepos with data protection](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-with-data-protection) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-gitrepos-folders) <br>
 - [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
