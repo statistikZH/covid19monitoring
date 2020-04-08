@@ -119,7 +119,7 @@ Optional. Only necessary if the description of “variable_long” is not suffic
 *Fakultativ. Nur verwenden wenn die Beschreibung von “variable_long”  fürs Verständnis der Variablen nicht ausreicht.* <br>
 
 **Weitere Informationen** <br>
-[Projektseite](https://github.com/statistikZH/covid19monitoring) <br>
+[Projektseite: "Gesellschafsmonitoring COVID19"](https://github.com/statistikZH/covid19monitoring) <br>
 [Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) <br>
 [Visualisierung](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) <br>
 
