@@ -46,9 +46,9 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 | [covid19monitoring_economy_AWA](https://github.com/statistikZH/covid19monitoring_economy_AWA)  | BS | 2020-09-04 | 2020-09-04 |
 
 
-**validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
+**> validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
-**published:** Data is included in official published release.
+**> published:** Data is included in official published release.
 
 <!---
 # Our github procedure 
