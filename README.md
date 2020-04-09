@@ -42,7 +42,8 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 | [covid19monitoring_economy_KOF](https://github.com/statistikZH/covid19monitoring_economy_KOF)   | PM | 2020-02-04 | 2020-02-04 |
 | [covid19monitoring_mobility_SBBHauptbahnhof](https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof)  | KK | 2020-03-04 | 2020-03-04 |
 | [covid19monitoring_social_SWISSIX](https://github.com/statistikZH/covid19monitoring_social_SWISSIX)  | KK | 2020-08-04 | 2020-08-04 |
-
+| [covid19monitoring_education_KITA](https://bildungsmonitoringzh.github.io/covid19_edu_ajb)  | FI/KK | 2020-09-04 | 2020-09-04 |
+| [covid19monitoring_economy_AWA](https://github.com/statistikZH/covid19monitoring_economy_AWA)  | BS | 2020-09-04 | 2020-09-04 |
 
 
 **validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
