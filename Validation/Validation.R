@@ -1,14 +1,20 @@
-    #Validation
+    # Validation.R
+    
+    ###########################################################################
+    
+    # working direcotory 
 
     getwd()
     #setwd("C:/gitrepos/covid19monitoring/Validation")
     
     ###########################################################################
-    #  import function
+    
+    # import function
     
     source("./function.R")
     
     ###########################################################################
+    
     # import libraries
     
     library(readr) # Version: ‘1.3.1’
@@ -16,6 +22,7 @@
     library(rmarkdown)
     
     ###########################################################################
+    
     # format numbers
     
     options(scipen = 1000000)
@@ -38,6 +45,8 @@
     Mobility_SBBHauptbahnhof <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof/master/Mobility_SBBHauptbahnhof.csv")
     Mobility_ZaehlstellenMIVLVVelo<- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo/master/Mobilit%C3%A4t_AufkommenTerrestrischerVerkehr.csv")
     Social_SWISSIX <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_social_SWISSIX/master/Social_SWISSIX.csv")
+    Education_KITA <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_ajb/master/Bildung_Kita.csv?token=AO5R67UPPWBWDCZOLR2CNC26TAEEI")
+    Economy_AWA <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_AWA/master/Economy_AWA.csv")
     
     #mydf <- ImportUrl("")
     
@@ -57,8 +66,13 @@
     CheckIfDfFollowsStandard1(Mobility_SBBHauptbahnhof)
     CheckIfDfFollowsStandard1(Mobility_ZaehlstellenMIVLVVelo)
     CheckIfDfFollowsStandard1(Social_SWISSIX)
+    CheckIfDfFollowsStandard1(Education_KITA)
+    CheckIfDfFollowsStandard1(Economy_AWA)
+  
+    #CheckIfDfFollowsStandard1()
     
     ###########################################################################
+    
     # rbind
     
     covid19monitoring <- rbind(Other_Weather, 
@@ -73,15 +87,19 @@
                                Economy_KOF, 
                                Mobility_SBBHauptbahnhof, 
                                Mobility_ZaehlstellenMIVLVVelo,
-                               Social_SWISSIX)
+                               Social_SWISSIX,
+                               Education_KITA,
+                               Economy_AWA)
     
     ###########################################################################
+    
     # Export
     
     write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
     ValidationMetadata()
     
     ###########################################################################
+    
     # render Validation.Rmd
     
     render("./Validation.Rmd")

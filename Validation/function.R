@@ -23,10 +23,10 @@ CheckIfDfFollowsStandard2 <- function (df)  {
   
   
  # check2: check unique attibutes
-  print("*************************************************")
+  print("#################################################")
   #print("=> variable_short")
   print(sort(unique(df$variable_short)))
-  print("*************************************************")
+  print("#################################################")
   print(paste("description:", sort(unique(df$description))))
   print("-----------------------------------------------------")
   #print("=> date")
