@@ -7,9 +7,9 @@
 "Sonstiges","temp_max","Lufttemperatur 2 m über Boden; Tagesmaximum","SMA Zürich Fluntern","°C","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-15
 "Sonstiges","luftfeuchte","Relative Luftfeuchtigkeit 2 m über Boden; Tagesmittel","SMA Zürich Fluntern","%","meteoschweiz","täglich","ja","https://github.com/statistikZH/covid19monitoring_other_Weather",2020-04-15
 "Mobilität","oev_freq_hardbruecke","ÖV-Besucherfrequenzen, Zählstelle Hardbrücke","Stadt Zürich","Anzahl in 1000","VBZ","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke",2020-04-15
+"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Ländlicher Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-15
 "Mobilität","tages_distanz_median","mediane Tagesdistanz","ZH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-15
 "Mobilität","tages_distanz_median","mediane Tagesdistanz","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-15
-"Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Ländlicher Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-15
 "Mobilität","tages_distanz_median","mediane Tagesdistanz","CH: Städtischer Raum","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-15
 "Mobilität","tages_distanz_median_alter_1529","mediane Tagesdistanz der 15-29-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-15
 "Mobilität","tages_distanz_median_alter_3064","mediane Tagesdistanz der 30-64-Jährigen","CH","km","intervista Tracking-panel","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_intervista",2020-04-15
@@ -45,22 +45,10 @@
 "Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","ZH","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-15
 "Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","CH","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-15
 "Gesundheit","verstorbene_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Verstorbene","CH","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-15
-"Wirtschaft","arbeitsuchende_jobroom","Arbeitsuchende gemÃ¤ss Jobroom.ch","CH","Anzahl","SECO job-room.ch und KOF Konjunkturforschungsstelle","tÃ¤glich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","erw_bestelleingang_verarbeitenden","Bestellungseingang, erwartete Ã„nderung nÃ¤chste 3 Monate fÃ¼r das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","geschaeftslage_verarbeitenden","GeschÃ¤ftslageindikator fÃ¼r das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","konjunkturbarometer","Indikator fÃ¼r die Schweizer Konjunktur","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_eintrag","Handelsregistereintragungen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_grundstueck","Betreibungsamtliche Grundstücksteigerungen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_konkurs","Konkurse","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_konkurs_sb","Meldungen zu Konkurs und Schuldbetreibungen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_konkurspublikation","Konkurspublikationen/Schuldenrufe","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_loeschung","Löschungen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_mutation","Mutationen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_neueintrag","Neueintragungen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_pfaendung","Pfändungsanzeigen/-urkunden","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_schuldbetreibung","Schuldbetreibungen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_vorl_konkursanzeige","Vorläufige Konkursanzeigen","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
-"Wirtschaft","hr_zahlungsbefehl","Zahlungsbefehle","CH","Anzahl","Schweizerisches Handelsamtsblatt SHAB","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
+"Wirtschaft","arbeitsuchende_jobroom","Arbeitsuchende gemäss Jobroom.ch","CH","Anzahl","SECO job-room.ch und KOF Konjunkturforschungsstelle","täglich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
+"Wirtschaft","erw_bestelleingang_verarbeitenden","Bestellungseingang, erwartete Änderung nächste 3 Monate für das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
+"Wirtschaft","geschaeftslage_verarbeitenden","Geschäftslageindikator für das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
+"Wirtschaft","konjunkturbarometer","Indikator für die Schweizer Konjunktur","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-04-15
 "Mobilität","oev_freq_hb","Ein-& Ausfahrten am Zürich HB","Zürich Hauptbahnhof","Anzahl","SBB","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof",2020-04-15
 "Mobilität","aufkommen_miv","Aufkommen MIV an ausgewählten Zählstellen","Stadt Zürich","Anzahl","Dienstabteilung Verkehr, Sicherheitsdepartement","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo",2020-04-15
 "Mobilität","aufkommen_miv_indexiert","Aufkommen MIV an ausgewählten Zählstellen, relativ zu mittlerem Aufkommen 2019","Stadt Zürich","Anteil","Dienstabteilung Verkehr, Sicherheitsdepartement","täglich","ja","https://github.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo",2020-04-15
