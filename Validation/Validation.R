@@ -91,8 +91,9 @@
                                Mobility_ZaehlstellenMIVLVVelo,
                                Social_SWISSIX,
                                Education_KITA,
-                               Economy_AWA,
-                               Mobility_VerkehrsmessstellenKantonZH)
+                               Economy_AWA#,
+                               #Mobility_VerkehrsmessstellenKantonZH
+                               )
     
     ###########################################################################
     
