@@ -130,6 +130,26 @@ CreateMetadata <- function ()  {
   unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
   Metadata <- covid19monitoring_sel[unique_rows,]
   Metadata$last_modified <- Sys.Date()
-  write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+  sort_vec <- c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges")
+  Metadata[which(Metadata$topic == "Mobilität"), c("sort1")] <- 1
+  Metadata[which(Metadata$topic == "Wirtschaft"), c("sort1")] <- 2
+  Metadata[which(Metadata$topic == "Soziales"), c("sort1")] <- 3
+  Metadata[which(Metadata$topic == "Gesundheit"), c("sort1")] <- 4
+  Metadata[which(Metadata$topic == "Bildung"), c("sort1")] <- 5
+  Metadata[which(Metadata$topic == "Sonstiges"), c("sort1")] <- 6
+  Metadata$sort2 <- 999999
+  Metadata[which(Metadata$topic == "Mobilität"), ][order(Metadata[which(Metadata$topic == "Mobilität"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Mobilität"), ][order(Metadata[which(Metadata$topic == "Mobilität"), ]$variable_long), ] ))
+  Metadata[which(Metadata$topic == "Wirtschaft"), ][order(Metadata[which(Metadata$topic == "Wirtschaft"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Wirtschaft"), ][order(Metadata[which(Metadata$topic == "Wirtschaft"), ]$variable_long), ] ))
+  Metadata[which(Metadata$topic == "Soziales"), ][order(Metadata[which(Metadata$topic == "Soziales"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Soziales"), ][order(Metadata[which(Metadata$topic == "Soziales"), ]$variable_long), ] ))
+  Metadata[which(Metadata$topic == "Gesundheit"), ][order(Metadata[which(Metadata$topic == "Gesundheit"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Gesundheit"), ][order(Metadata[which(Metadata$topic == "Gesundheit"), ]$variable_long), ] ))
+  Metadata[which(Metadata$topic == "Bildung"), ][order(Metadata[which(Metadata$topic == "Bildung"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Bildung"), ][order(Metadata[which(Metadata$topic == "Bildung"), ]$variable_long), ] ))
+  Metadata[which(Metadata$topic == "Sonstiges"), ][order(Metadata[which(Metadata$topic == "Sonstiges"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Sonstiges"), ][order(Metadata[which(Metadata$topic == "Sonstiges"), ]$variable_long), ] ))
+  Metadata$sort <- as.numeric(paste0(Metadata$sort1 + Metadata$sort2/100))
+  Metadata <- Metadata[order(Metadata$sort),]
+  Metadata$sort1 <- NULL
+  Metadata$sort2 <- NULL
+  #View(Metadata %>% select(topic, variable_long, sort))
+  #View(Metadata %>% select(topic, variable_long, sort, sort1, sort2))
+  write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
 }
