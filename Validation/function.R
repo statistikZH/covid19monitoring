@@ -112,17 +112,6 @@ CheckIfDfFollowsStandard3 <- function (dat)  {
   
 }
 
-ValidationMetadata <- function ()  {
-  
-  covid19monitoring <- read.csv("./ValidationData.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-  covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
-  unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
-  Metadata <- covid19monitoring_sel[unique_rows,]
-  Metadata$last_modified <- Sys.Date()
-  write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
-  
-}
-
 CreateMetadata <- function ()  {
   
   covid19monitoring <- read.csv("./ValidationData.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
