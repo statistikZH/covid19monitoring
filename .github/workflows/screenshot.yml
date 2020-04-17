@@ -2,7 +2,7 @@ name: create screenshot
 
 on:
   schedule:
-    - cron:  '*/15 * * * *'
+    - cron:  '*/59 * * * *'
 
 #  push:
 #    paths:
