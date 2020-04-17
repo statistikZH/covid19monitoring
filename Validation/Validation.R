@@ -6,6 +6,7 @@
 
     getwd()
     #setwd("C:/gitrepos/covid19monitoring/Validation")
+    #setwd("/home/klk/Documents/gitrepos/covid19monitoring/Validation")
     
     ###########################################################################
     
@@ -104,12 +105,12 @@
     
     write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
     ValidationMetadata()
-  
-#reordering      
-meta<- read.csv("./ValidationMetadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
-meta$topic<-factor(meta$topic, levels=c("Mobilität",  "Wirtschaft", "Bildung", "Soziales", "Gesundheit", "Sonstiges")[6:1])
-meta<-meta[order(meta$topic),] 
-write.table(meta, "ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+     
+    # #reordering ????? 
+    # meta<- read.csv("./ValidationMetadata.csv", header=T, sep=",", stringsAsFactors=FALSE, encoding="UTF-8")
+    # meta$topic<-factor(meta$topic, levels=c("Mobilität",  "Wirtschaft", "Bildung", "Soziales", "Gesundheit", "Sonstiges")[6:1])
+    # meta<-meta[order(meta$topic),] 
+    # write.table(meta, "ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
        
     ###########################################################################
