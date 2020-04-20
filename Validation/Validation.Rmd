@@ -52,7 +52,7 @@ source("./function.R")
 # import libraries
 library(dplyr)
 library(readr)
-library(kableExtra)
+#library(kableExtra)
 require(xts)
 library (lattice)
 library(reshape2)
