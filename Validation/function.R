@@ -128,7 +128,6 @@ CreateMetadata <- function ()  {
   Metadata[which(Metadata$topic == "Sonstiges"), c("sort1")] <- 6
   Metadata$sort2 <- 999999
   Metadata[which(Metadata$topic == "Mobilität"), ][order(Metadata[which(Metadata$topic == "Mobilität"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Mobilität"), ][order(Metadata[which(Metadata$topic == "Mobilität"), ]$variable_long), ] ))
-  Metadata[which(Metadata$topic == "Wirtschaft"), ][order(Metadata[which(Metadata$topic == "Wirtschaft"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Wirtschaft"), ][order(Metadata[which(Metadata$topic == "Wirtschaft"), ]$variable_long), ] ))
   Metadata[which(Metadata$topic == "Soziales"), ][order(Metadata[which(Metadata$topic == "Soziales"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Soziales"), ][order(Metadata[which(Metadata$topic == "Soziales"), ]$variable_long), ] ))
   Metadata[which(Metadata$topic == "Gesundheit"), ][order(Metadata[which(Metadata$topic == "Gesundheit"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Gesundheit"), ][order(Metadata[which(Metadata$topic == "Gesundheit"), ]$variable_long), ] ))
   Metadata[which(Metadata$topic == "Bildung"), ][order(Metadata[which(Metadata$topic == "Bildung"), ]$variable_long), c("sort2")] <- seq.int(nrow(Metadata[which(Metadata$topic == "Bildung"), ][order(Metadata[which(Metadata$topic == "Bildung"), ]$variable_long), ] ))

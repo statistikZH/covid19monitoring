@@ -50,6 +50,7 @@
     Economy_AWA <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_AWA/master/Economy_AWA.csv")
     Mobility_VerkehrsmessstellenKantonZH <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_VerkehrsmessstellenKantonZH/master/Mobility_VerkehrsmessstellenKantonZH.csv")
     Bildung_Lehrvertraege <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_bista/master/Bildung_Lehrvertraege.csv")
+    Economy_Kreditkarten <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_Kreditkarten/master/Economy_Kreditkarten.csv")
     #mydf <- ImportUrl("")
     
     # View(Education_Mindmaps[order(Education_Mindmaps$date, decreasing = TRUE),]); View(Education_LMVZ[order(Education_LMVZ$date, decreasing = TRUE),]); View(Education_KITA[order(Education_KITA$date, decreasing = TRUE),]); View(Social_SWISSIX[order(Social_SWISSIX$date, decreasing = TRUE),]); View(Mobility_SBBHauptbahnhof[order(Mobility_SBBHauptbahnhof$date, decreasing = TRUE),])
@@ -74,6 +75,7 @@
     CheckIfDfFollowsStandard1(Economy_AWA)
     CheckIfDfFollowsStandard1(Mobility_VerkehrsmessstellenKantonZH)
     CheckIfDfFollowsStandard1(Bildung_Lehrvertraege)
+    CheckIfDfFollowsStandard1(Economy_Kreditkarten)
     #CheckIfDfFollowsStandard1()
     
     ###########################################################################
@@ -96,7 +98,8 @@
                                Education_KITA,
                                Economy_AWA,
                                Mobility_VerkehrsmessstellenKantonZH,
-                               Bildung_Lehrvertraege
+                               Bildung_Lehrvertraege,
+                               Economy_Kreditkarten
                                )
     
     ###########################################################################
