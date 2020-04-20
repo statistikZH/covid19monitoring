@@ -110,31 +110,25 @@ write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UT
 
 # Export Metadata
 covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
-  unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
-  Metadata <- covid19monitoring_sel[unique_rows,]
-  Metadata$last_modified <- Sys.Date()
-  Metadata$topic<-as.factor(Metadata$topic)
-  Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
-  Metadata<-Metadata[order(as.numeric(Metadata$topic), Metadata$variable_long),]
-  #Numberof items in topic
-  numit<-data.frame(table(as.numeric(Metadata$topic)))
-  sortind<-list()  
-  #create numeric 
-  for(i in as.numeric(numit$Var1)) sortind[[i]]<-paste(numit$Var1[i], formatC(1:numit$Freq[i], width=3, format="d", flag="0"), sep=".")
-  Metadata$sort<-as.numeric(unlist(sortind))
-  write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
+Metadata <- covid19monitoring_sel[unique_rows,]
+Metadata$last_modified <- Sys.Date()
+Metadata$topic<-as.factor(Metadata$topic)
+Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
+Metadata<-Metadata[order(as.numeric(Metadata$topic), Metadata$variable_long),]
+#Numberof items in topic
+numit<-data.frame(table(as.numeric(Metadata$topic)))
+sortind<-list()  
+#create numeric 
+for(i in as.numeric(numit$Var1)) sortind[[i]]<-paste(numit$Var1[i], formatC(1:numit$Freq[i], width=3, format="d", flag="0"), sep=".")
+Metadata$sort<-as.numeric(unlist(sortind))
+write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
-
-
-    
-
-
- 
 ###########################################################################
     
 # render Validation.Rmd
     
-    render("./Validation.Rmd")
+render("./Validation.Rmd")
     
 
     
