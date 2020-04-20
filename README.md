@@ -46,6 +46,7 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 | [covid19monitoring_economy_AWA](https://github.com/statistikZH/covid19monitoring_economy_AWA)  | BS | 2020-04-09 | 2020-04-09 |
 | [covid19monitoring_mobility_VerkehrsmessstellenKantonZH](https://github.com/statistikZH/covid19monitoring_mobility_VerkehrsmessstellenKantonZH)  | GC/KK | 2020-04-16 | 2020-04-16 |
 | [covid19monitoring_education_Lehrvertraege](https://github.com/bildungsmonitoringZH/covid19_edu_bista)  | FI/KK | 2020-04-16 | 2020-04-16 |
+| [covid19monitoring_economy_Kreditkarten](https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten)  | FI/KK | 2020-04-20 | 2020-04-20 |
 
 **> validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
