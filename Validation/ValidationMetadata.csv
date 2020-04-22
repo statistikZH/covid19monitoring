@@ -134,6 +134,7 @@
 "Wirtschaft","chf_eur","Wechselkurs Fr./Euro","CH","CHF/EUR","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-04-22,2.025
 "Wirtschaft","chf_usd","Wechselkurs Fr./US-Dollar","CH","CHF/USD","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-04-22,2.026
 "Soziales","internet_datenvolumen","Internet-Datenvolumen","CH","Terabit pro Tag","SwissIX Swiss Internet Exchange","täglich","ja","https://github.com/statistikZH/covid19monitoring_social_SWISSIX",2020-04-22,3.001
+"Soziales","sum_endverbrauchteenergie_ch","Summe endverbrauchte Energie Regelblock Schweiz","CH","GWh","Swissgrid","täglich","ja","https://github.com/statistikZH/covid19monitoring_social_EnergieSwissgrid",2020-04-22,3.002
 "Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Espace Mittelland","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-22,4.001
 "Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Genferseeregion","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-22,4.002
 "Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Nordwestschweiz","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-04-22,4.003
