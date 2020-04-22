@@ -40,7 +40,7 @@ Economy_SMI <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19m
 Economy_FlightTrafficZRH <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_FlightTraffic/master/Economy_FlightTraffic.csv")
 Economy_SIX <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SIX/master/Economy_SIX.csv")
 Education_Mindmaps <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_mindsteps/master/Bildung_LernplattformMindsteps.csv")
-#Education_LMVZ <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/Bildung_TrainingMathematik.csv?token=AO5R67WV3SGVMXDYHFOBNYC6T3P7K")
+Education_LMVZ <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/Bildung_TrainingMathematik.csv?token=AO5R67VPEU2FROXN54WVXB26VEJVI")
 Health_Covid19Cases <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_health_covid19cases/master/Health_covid19cases.csv?token=AJX6OIIM25TY22U7N4OKQHS6R3KX6")
 Economy_KOF <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_KOF/master/Economy_KOF.csv")
 Mobility_SBBHauptbahnhof <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof/master/Mobility_SBBHauptbahnhof.csv")
@@ -66,7 +66,7 @@ CheckIfDfFollowsStandard1(Economy_SMI)
 CheckIfDfFollowsStandard1(Economy_FlightTrafficZRH)
 CheckIfDfFollowsStandard1(Economy_SIX)
 CheckIfDfFollowsStandard1(Education_Mindmaps)
-#CheckIfDfFollowsStandard1(Education_LMVZ)
+CheckIfDfFollowsStandard1(Education_LMVZ)
 CheckIfDfFollowsStandard1(Health_Covid19Cases)
 CheckIfDfFollowsStandard1(Mobility_SBBHauptbahnhof)
 CheckIfDfFollowsStandard1(Mobility_ZaehlstellenMIVLVVelo)
@@ -89,7 +89,7 @@ covid19monitoring <- rbind(Other_Weather,
      Economy_FlightTrafficZRH, 
      Economy_SIX, 
      Education_Mindmaps, 
-     #Education_LMVZ, 
+     Education_LMVZ, 
      Health_Covid19Cases, 
      Economy_KOF, 
      Mobility_SBBHauptbahnhof, 
