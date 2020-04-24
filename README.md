@@ -48,6 +48,7 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 | [covid19monitoring_education_Lehrvertraege](https://github.com/bildungsmonitoringZH/covid19_edu_bista)  | FI/KK | 2020-04-16 | 2020-04-16 |
 | [covid19monitoring_economy_Kreditkarten](https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten)  | FI/KK | 2020-04-20 | 2020-04-20 |
 | [covid19monitoring_social_EnergieSwissgrid](https://github.com/statistikZH/covid19monitoring_social_EnergieSwissgrid)  | KK | 2020-04-22 | 2020-04-22 |
+| [covid19monitoring_education_ILIAS](https://github.com/bildungsmonitoringZH/covid19_edu_phzh)  | FI/KK | 2020-04-22 | 2020-04-24 |
 
 **> validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
