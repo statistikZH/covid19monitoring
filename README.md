@@ -21,7 +21,7 @@ An overview of the data that has already been published can be found here:
 [![Dashboard of data updates](https://github.com/statistikZH/covid19monitoring/blob/master/dashboard/dashboard.png "Dashboard of data updates")](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/)
 
 **> Visualization** <br>
-A visualizsation of the data can be found [here](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/). <br> Observable notebook: https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
+A visualization of the data can be found [here](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/). <br> Observable notebook: https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
 
 # Gitrepos overview
 
