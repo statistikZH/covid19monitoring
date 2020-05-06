@@ -54,7 +54,7 @@ library(dplyr)
 library(readr)
 #library(kableExtra)
 require(xts)
-library (lattice)
+library(lattice)
 library(reshape2)
 library(DT)
 
