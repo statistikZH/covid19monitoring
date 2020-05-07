@@ -40,7 +40,7 @@ Economy_SMI <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19m
 Economy_FlightTrafficZRH <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_FlightTraffic/master/Economy_FlightTraffic.csv")
 Economy_SIX <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SIX/master/Economy_SIX.csv")
 Education_Mindmaps <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_mindsteps/master/Bildung_LernplattformMindsteps.csv")
-Education_LMVZ <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvzmath/master/Bildung_TrainingMathematik.csv?token=AO5R67U7ZT3JCUGXR2C6WYC6WONBE")
+Education_LMVZ <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_lmvz_public/master/Bildung_TrainingMathematik.csv")
 Health_Covid19Cases <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_health_covid19cases/master/Health_covid19cases.csv?token=AJX6OIIM25TY22U7N4OKQHS6R3KX6")
 Economy_KOF <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_KOF/master/Economy_KOF.csv")
 Mobility_SBBHauptbahnhof <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof/master/Mobility_SBBHauptbahnhof.csv")
