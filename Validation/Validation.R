@@ -47,7 +47,7 @@ Mobility_SBBHauptbahnhof <- ImportUrl("https://raw.githubusercontent.com/statist
 Mobility_ZaehlstellenMIVLVVelo<- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo/master/Mobilit%C3%A4t_AufkommenTerrestrischerVerkehr.csv")
 Social_SWISSIX <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_social_SWISSIX/master/Social_SWISSIX.csv")
 Education_KITA <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_ajb/master/Bildung_Kita.csv?token=AO5R67QPGQ6SNWMC67X4XU26UFNXM")
-#Economy_AWA <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_AWA/master/Economy_AWA.csv")
+Economy_AWA <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_AWA/master/Economy_AWA.csv")
 Mobility_VerkehrsmessstellenKantonZH <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_VerkehrsmessstellenKantonZH/master/Mobility_VerkehrsmessstellenKantonZH.csv")
 Bildung_Lehrvertraege <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_bista/master/Bildung_Lehrvertraege.csv")
 Economy_Kreditkarten <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_Kreditkarten/master/Economy_Kreditkarten.csv")
@@ -77,7 +77,7 @@ CheckIfDfFollowsStandard1(Mobility_SBBHauptbahnhof)
 CheckIfDfFollowsStandard1(Mobility_ZaehlstellenMIVLVVelo)
 CheckIfDfFollowsStandard1(Social_SWISSIX)
 CheckIfDfFollowsStandard1(Education_KITA)
-#CheckIfDfFollowsStandard1(Economy_AWA)
+CheckIfDfFollowsStandard1(Economy_AWA)
 CheckIfDfFollowsStandard1(Mobility_VerkehrsmessstellenKantonZH)
 CheckIfDfFollowsStandard1(Bildung_Lehrvertraege)
 CheckIfDfFollowsStandard1(Economy_Kreditkarten)
@@ -105,7 +105,7 @@ covid19monitoring <- rbind(Other_Weather,
      Mobility_ZaehlstellenMIVLVVelo,
      Social_SWISSIX,
      Education_KITA,
-     #Economy_AWA,
+     Economy_AWA,
      Mobility_VerkehrsmessstellenKantonZH,
      Bildung_Lehrvertraege,
      Economy_Kreditkarten,
