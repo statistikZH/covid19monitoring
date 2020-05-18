@@ -125,18 +125,16 @@
 "Wirtschaft","betrag_kktrans_ausl","Betrag Kreditkarten-Transaktionen im Ausland","Ausland","Mio. Fr.","Swiss Payment Association","wöchentlich","yes","https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten",2020-05-18,2.016
 "Wirtschaft","betrag_kktrans_ch","Betrag Kreditkarten-Transaktionen im Inland","CH","Mio. Fr.","Swiss Payment Association","wöchentlich","yes","https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten",2020-05-18,2.017
 "Wirtschaft","betrag_kktrans_ch_praes","Betrag Kreditkarten-Transaktionen Präsenzgeschäft im Inland insgesamt","CH","Mio. Fr.","Swiss Payment Association","wöchentlich","yes","https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten",2020-05-18,2.018
-"Wirtschaft","kurzarbeitzh_bew_betrieb","Bewilligte Voranmeldungen Kurzarbeit Betriebe","ZH","Anzahl","Amt für Wirtschaft und Arbeit Kanton Zürich","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_AWA",2020-05-18,2.019
-"Wirtschaft","kurzarbeitzh_bew_arbeitn","Bewilligte Voranmeldungen Kurzarbeit voraussichtlich betroffene Arbeitn.","ZH","Anzahl","Amt für Wirtschaft und Arbeit Kanton Zürich","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_AWA",2020-05-18,2.02
-"Wirtschaft","debiteinsatz_ausland","Debitkarteneinsatz Ausland","Ausland","Mio. Fr.","SIX BBS AG","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX",2020-05-18,2.021
-"Wirtschaft","fluege_zrh","Flugbewegungen ZRH","ZRH","Anzahl","Flughafen Zürich","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic",2020-05-18,2.022
-"Wirtschaft","geschaeftslage_verarbeitenden","Geschäftslageindikator für das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-05-18,2.023
-"Wirtschaft","smi_volumen","Handelsvolumen SMI","CH","Anzahl Transaktionen in Mio.","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.024
-"Wirtschaft","smi_index","Indexwert SMI","CH","Index-Punkte","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.025
-"Wirtschaft","konjunkturbarometer","Indikator für die Schweizer Konjunktur","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-05-18,2.026
-"Wirtschaft","oil_fut_ny","Ölpreis","NY, US","USD","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.027
-"Wirtschaft","stat_einkauf","Stationärer Einkauf CH","CH","Mio. Fr.","SIX BBS AG","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX",2020-05-18,2.028
-"Wirtschaft","chf_eur","Wechselkurs Fr./Euro","CH","CHF/EUR","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.029
-"Wirtschaft","chf_usd","Wechselkurs Fr./US-Dollar","CH","CHF/USD","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.03
+"Wirtschaft","debiteinsatz_ausland","Debitkarteneinsatz Ausland","Ausland","Mio. Fr.","SIX BBS AG","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX",2020-05-18,2.019
+"Wirtschaft","fluege_zrh","Flugbewegungen ZRH","ZRH","Anzahl","Flughafen Zürich","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic",2020-05-18,2.02
+"Wirtschaft","geschaeftslage_verarbeitenden","Geschäftslageindikator für das Verarbeitende Gewerbe","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-05-18,2.021
+"Wirtschaft","smi_volumen","Handelsvolumen SMI","CH","Anzahl Transaktionen in Mio.","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.022
+"Wirtschaft","smi_index","Indexwert SMI","CH","Index-Punkte","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.023
+"Wirtschaft","konjunkturbarometer","Indikator für die Schweizer Konjunktur","CH","Anteil","KOF Konjunkturforschungsstelle","monatlich","ja","https://github.com/KOF-ch/economic-monitoring",2020-05-18,2.024
+"Wirtschaft","oil_fut_ny","Ölpreis","NY, US","USD","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.025
+"Wirtschaft","stat_einkauf","Stationärer Einkauf CH","CH","Mio. Fr.","SIX BBS AG","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SIX",2020-05-18,2.026
+"Wirtschaft","chf_eur","Wechselkurs Fr./Euro","CH","CHF/EUR","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.027
+"Wirtschaft","chf_usd","Wechselkurs Fr./US-Dollar","CH","CHF/USD","yahoo finance","täglich","ja","https://github.com/statistikZH/covid19monitoring_economy_SMI",2020-05-18,2.028
 "Soziales","internet_datenvolumen","Internet-Datenvolumen","CH","Terabit pro Tag","SwissIX Swiss Internet Exchange","täglich","ja","https://github.com/statistikZH/covid19monitoring_social_SWISSIX",2020-05-18,3.001
 "Soziales","sum_endverbrauchteenergie_ch","Summe endverbrauchte Energie Regelblock Schweiz","CH","GWh","Swissgrid","täglich","ja","https://github.com/statistikZH/covid19monitoring_social_EnergieSwissgrid",2020-05-18,3.002
 "Gesundheit","faelle_sars_cov2","neu gemeldete Anzahl SARS-CoV-2 Fälle","Espace Mittelland","Anzahl","Kantone, STAT","täglich","ja","https://github.com/statistikZH/covid19monitoring_health_covid19cases",2020-05-18,4.001
