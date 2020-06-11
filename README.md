@@ -12,7 +12,7 @@
 
 # Aim
 
-The project aims to collect indicators for as many areas of social life affected by the COVID19 crisis as possible. The data will be made available as daily updated time series and in a standardised format. In terms of geography, the immediate focus is the Canton of Zurich; however, contributions from the rest of Switzerland are welcome. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). <br>
+In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect indicators for as many areas of social life affected by the COVID19 crisis as possible. The data will be made available as regularly updated time series and in a standardised format. From mid-March until mid-June the indicators will be made available daily. Apart from  mid-June the indicators will b e made available weekly. In terms of geography, the immediate focus is the Canton of Zurich; however, contributions from the rest of Switzerland are welcome. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). <br>
 
 An overview of the data that has already been published can be found here:
 
@@ -27,29 +27,29 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 
 Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
 
-| gitrepos  | responsible | validated (conforms to specs) |first published|
-| ------------- | ------------- | ------------- | ------------- |
-| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | PM | 2020-03-24 |2020-03-31|
-| [covid19monitoring_mobility_VBZHardbruecke](https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke) | PM | 2020-03-30 |2020-03-31|
-| [covid19monitoring_mobility_ZaehlstellenMIVLVVelo](https://github.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo) | PM | 2020-04-06 |2020-04-07|
-| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | PM | 2020-03-25 |2020-03-31|
-| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | PM | 2020-03-26 |2020-03-31|
-| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | BS | 2020-03-26 |2020-03-31|
-| [covid19monitoring_economy_SIX](https://github.com/statistikZH/covid19monitoring_economy_SIX)   | BS | 2020-03-30 |2020-03-31|
-| [covid19monitoring_health_covid19cases](https://github.com/statistikZH/covid19monitoring_health_covid19cases)   | PM | 2020-04-01 |2020-04-02|
-| [covid19monitoring_education_lvzmath](https://bildungsmonitoringzh.github.io/covid19_edu_lmvz_public/)   | FI/KK | 2020-04-01 |2020-04-05|
-| [covid19monitoring_education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03-30 |2020-03-31|
-| [covid19monitoring_economy_KOF](https://github.com/statistikZH/covid19monitoring_economy_KOF)   | PM | 2020-04-02 | 2020-04-02 |
-| [covid19monitoring_mobility_SBBHauptbahnhof](https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof)  | KK | 2020-04-03 | 2020-04-03 |
-| [covid19monitoring_social_SWISSIX](https://github.com/statistikZH/covid19monitoring_social_SWISSIX)  | KK | 2020-04-08 | 2020-04-08 |
-| [covid19monitoring_education_KITA](https://bildungsmonitoringzh.github.io/covid19_edu_ajb)  | FI/KK | 2020-04-09 | 2020-04-09 |
-| [covid19monitoring_economy_AWA](https://github.com/statistikZH/covid19monitoring_economy_AWA)  | BS | 2020-04-09 | 2020-04-09 |
-| [covid19monitoring_mobility_VerkehrsmessstellenKantonZH](https://github.com/statistikZH/covid19monitoring_mobility_VerkehrsmessstellenKantonZH)  | GC/KK | 2020-04-16 | 2020-04-16 |
-| [covid19monitoring_education_Lehrvertraege](https://github.com/bildungsmonitoringZH/covid19_edu_bista)  | FI/KK | 2020-04-16 | 2020-04-16 |
-| [covid19monitoring_economy_Kreditkarten](https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten)  | BS | 2020-04-20 | 2020-04-20 |
-| [covid19monitoring_social_EnergieSwissgrid](https://github.com/statistikZH/covid19monitoring_social_EnergieSwissgrid)  | KK | 2020-04-22 | 2020-04-22 |
-| [covid19monitoring_education_ILIAS](https://github.com/bildungsmonitoringZH/covid19_edu_phzh)  | FI/KK | 2020-04-22 | 2020-04-24 |
-| [covid19monitoring_education_WikiFernlernen](https://github.com/bildungsmonitoringZH/covid19_edu_vsa)  | FI/KK | 2020-05-14 | 2020-05-14 |
+| gitrepos  | responsible | validated (conforms to specs) |first published| colled until|
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | PM | 2020-03-24 |2020-03-31|ongoing|
+| [covid19monitoring_mobility_VBZHardbruecke](https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke) | PM | 2020-03-30 |2020-03-31|ongoing|
+| [covid19monitoring_mobility_ZaehlstellenMIVLVVelo](https://github.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo) | PM | 2020-04-06 |2020-04-07|ongoing|
+| [covid19monitoring_mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | PM | 2020-03-25 |2020-03-31|30.03.2020|
+| [covid19monitoring_economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | PM | 2020-03-26 |2020-03-31|12.06.2020|
+| [covid19monitoring_economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | BS | 2020-03-26 |2020-03-31|ongoing|
+| [covid19monitoring_economy_SIX](https://github.com/statistikZH/covid19monitoring_economy_SIX)   | BS | 2020-03-30 |2020-03-31|ongoing|
+| [covid19monitoring_health_covid19cases](https://github.com/statistikZH/covid19monitoring_health_covid19cases)   | PM | 2020-04-01 |2020-04-02|ongoing|
+| [covid19monitoring_education_lvzmath](https://bildungsmonitoringzh.github.io/covid19_edu_lmvz_public/)   | FI/KK | 2020-04-01 |2020-04-05|ongoing|
+| [covid19monitoring_education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03-30 |2020-03-31|ongoing|
+| [covid19monitoring_economy_KOF](https://github.com/statistikZH/covid19monitoring_economy_KOF)   | PM | 2020-04-02 | 2020-04-02 |12.06.2020|
+| [covid19monitoring_mobility_SBBHauptbahnhof](https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof)  | KK | 2020-04-03 | 2020-04-03 |12.06.2020|
+| [covid19monitoring_social_SWISSIX](https://github.com/statistikZH/covid19monitoring_social_SWISSIX)  | KK | 2020-04-08 | 2020-04-08 |ongoing|
+| [covid19monitoring_education_KITA](https://bildungsmonitoringzh.github.io/covid19_edu_ajb)  | FI/KK | 2020-04-09 | 2020-04-09 |ongoing|
+| [covid19monitoring_economy_AWA](https://github.com/statistikZH/covid19monitoring_economy_AWA)  | BS | 2020-04-09 | 2020-04-09 |ongoing|
+| [covid19monitoring_mobility_VerkehrsmessstellenKantonZH](https://github.com/statistikZH/covid19monitoring_mobility_VerkehrsmessstellenKantonZH)  | GC/KK | 2020-04-16 | 2020-04-16 |ongoing|
+| [covid19monitoring_education_Lehrvertraege](https://github.com/bildungsmonitoringZH/covid19_edu_bista)  | FI/KK | 2020-04-16 | 2020-04-16 |ongoing|
+| [covid19monitoring_economy_Kreditkarten](https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten)  | BS | 2020-04-20 | 2020-04-20 |ongoing|
+| [covid19monitoring_social_EnergieSwissgrid](https://github.com/statistikZH/covid19monitoring_social_EnergieSwissgrid)  | KK | 2020-04-22 | 2020-04-22 |12.06.2020|
+| [covid19monitoring_education_ILIAS](https://github.com/bildungsmonitoringZH/covid19_edu_phzh)  | FI/KK | 2020-04-22 | 2020-04-24 |ongoing|
+| [covid19monitoring_education_WikiFernlernen](https://github.com/bildungsmonitoringZH/covid19_edu_vsa)  | FI/KK | 2020-05-14 | 2020-05-14 |12.06.2020|
 
 **> validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
