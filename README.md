@@ -27,7 +27,7 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 
 Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
 
-| gitrepos  | responsible | validated (conforms to specs) |first published| colled until|
+| gitrepos  | responsible | validated (conforms to specs) |first published| collected until|
 | ------------- | ------------- | ------------- | ------------- |------------- |
 | [covid19monitoring_other_Weather](https://github.com/statistikZH/covid19monitoring_other_Weather)  | PM | 2020-03-24 |2020-03-31|ongoing|
 | [covid19monitoring_mobility_VBZHardbruecke](https://github.com/statistikZH/covid19monitoring_mobility_VBZHardbruecke) | PM | 2020-03-30 |2020-03-31|ongoing|
