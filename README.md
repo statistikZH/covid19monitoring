@@ -128,5 +128,5 @@ Optional. Only necessary if the description of “variable_long” is not suffic
 
 # Other projects
 
-[Konjunkturforschungsstelle (KOF)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html)
+[Konjunkturforschungsstelle (KOF)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html) <br>
 [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html)
