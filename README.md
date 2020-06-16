@@ -15,7 +15,7 @@
 
 # Aim
 
-In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect daily indicators for as many areas of social life affected by the COVID19 crisis as possible, and make them available in a standardised format. From mid-June onwards, data will be updated once weekly, on Wednesday. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html).  Other projects with a similar orientation  exist  [Konjunkturforschungsstelle (KOF ETH)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html); [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html);  [Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)<br>
+In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect daily indicators for as many areas of social life affected by the COVID19 crisis as possible, and make them available in a standardised format. From mid-June onwards, data will be updated once weekly, on Wednesday. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html).  Other projects with a similar orientation exist: [Konjunkturforschungsstelle (KOF ETH)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html); [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html);  [Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)<br>
 
 An overview of the available data:
 
