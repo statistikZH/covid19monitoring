@@ -14,7 +14,8 @@
 
 # Aim
 
-In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The aim of this project is to collect inticators that help to observe how the Swiss popualation reacted to the corona crisis and the measures taken by the authorities. The incicators are published in a standarised format. From mid-June onwards, the indicators will be updated weekly on Wednesday. More informatin on this project can be found [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). Other projects with a similar orientation exist: [Konjunkturforschungsstelle (KOF ETH)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html); [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html);  [Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)<br>
+In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The aim of this project is to collect inticators that help to observe how the Swiss popualation reacted to the corona crisis and the measures taken by the authorities. The incicators are published in a standarised format. From mid-June onwards, the indicators will be updated weekly on Wednesday. More informatin on this project can be found [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). <br>
+The following projects have a similar aim: [Konjunkturforschungsstelle (KOF ETH)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html); [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html);  [Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)<br>
 
 An overview of the available data:
 
