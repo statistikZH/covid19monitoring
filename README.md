@@ -11,10 +11,11 @@
 - [Data structure specification for output data](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-output-data) <br>
 - [Naming convention for output data](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for--output-data) <br>
 - [Metadata for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#metadata-for-gitrepos-folders) <br>
+- 
 
 # Aim
 
-In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect daily indicators for as many areas of social life affected by the COVID19 crisis as possible, and make them available in a standardised format. From mid-June onwards, data will be updated once weekly, on Wednesday. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). <br>
+In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect daily indicators for as many areas of social life affected by the COVID19 crisis as possible, and make them available in a standardised format. From mid-June onwards, data will be updated once weekly, on Wednesday. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html).  Other projects with a similar orientation  exist  [Konjunkturforschungsstelle (KOF ETH)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html); [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html);  [Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)<br>
 
 An overview of the available data:
 
@@ -121,11 +122,4 @@ Optional. Only necessary if the description of “variable_long” is not suffic
 [Projektseite: "Gesellschafsmonitoring COVID19"](https://github.com/statistikZH/covid19monitoring) <br>
 [Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) <br>
 [Visualisierung](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) <br>
-
-# Other projects
-
-[Konjunkturforschungsstelle (KOF)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html) <br>
-[Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html)<br>
-
-[Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)
 
