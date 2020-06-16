@@ -14,9 +14,9 @@
 
 # Aim
 
-In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect indicators for as many areas of social life affected by the COVID19 crisis as possible. The data will be made available as regularly updated time series and in a standardised format. From mid-March until mid-June the indicators will be made available daily. Apart from  mid-June the indicators will b e made available weekly. In terms of geography, the immediate focus is the Canton of Zurich; however, contributions from the rest of Switzerland are welcome. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). <br>
+In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect daily indicators for as many areas of social life affected by the COVID19 crisis as possible, and make them available in a standardised format. From mid-June onwards, data will be updated once weekly, on Wednesday. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). <br>
 
-An overview of the data that has already been published can be found here:
+An overview of the data can be found here:
 
 **> Table** <br>
 
@@ -26,8 +26,6 @@ An overview of the data that has already been published can be found here:
 A visualization of the data can be found [here](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/). <br> Observable notebook: https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
 
 # Gitrepos overview
-
-Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts4Ria7e58K7LcntKySxATo/edit#gid=0
 
 | gitrepos  | responsible | validated (conforms to specs) |first published| collected until|
 | ------------- | ------------- | ------------- | ------------- |------------- |
