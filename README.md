@@ -16,9 +16,7 @@
 
 In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The project aims to collect daily indicators for as many areas of social life affected by the COVID19 crisis as possible, and make them available in a standardised format. From mid-June onwards, data will be updated once weekly, on Wednesday. More on the project [here in german](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/aktuell/mitteilungen/2020/gesellschaftsmonitoring_covid19.html). <br>
 
-An overview of the data can be found here:
-
-**> Table** <br>
+An overview of the available data:
 
 [![Dashboard of data updates](https://github.com/statistikZH/covid19monitoring/blob/master/dashboard/dashboard.png "Dashboard of data updates")](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/)
 
