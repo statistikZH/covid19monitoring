@@ -1,3 +1,5 @@
+![](https://opendata.swiss/content/uploads/2016/02/kt_zh.png)
+
 # Table of Content
 
 - [Aim](https://github.com/statistikZH/covid19monitoring/tree/master#aim) <br>
@@ -54,12 +56,6 @@ Daily validation: https://docs.google.com/spreadsheets/d/15jE8I-PSsLh_Bd5hHxe8Ts
 **> validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
 
 **> published:** Data is included in official published release.
-
-<!---
-# Our github procedure 
-
-![](methodology.jpg)
---->
 
 # Gitrepos without data protection
 
@@ -130,4 +126,7 @@ Optional. Only necessary if the description of “variable_long” is not suffic
 [Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) <br>
 [Visualisierung](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) <br>
 
+# Other projects
 
+[Konjunkturforschungsstelle (KOF)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html)
+[Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html)
