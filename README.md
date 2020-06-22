@@ -1,4 +1,4 @@
-![](https://opendata.swiss/content/uploads/2016/02/kt_zh.png)
+9![](https://opendata.swiss/content/uploads/2016/02/kt_zh.png)
 
 # Table of Content
 
@@ -38,7 +38,7 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 | [covid19monitoring_health_covid19cases](https://github.com/statistikZH/covid19monitoring_health_covid19cases)   | PM | 2020-04-01 |2020-04-02|ongoing|
 | [covid19monitoring_education_lvzmath](https://bildungsmonitoringzh.github.io/covid19_edu_lmvz_public/)   | FI/KK | 2020-04-01 |2020-04-05|ongoing|
 | [covid19monitoring_education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03-30 |2020-03-31|ongoing|
-| [covid19monitoring_economy_KOF](https://github.com/statistikZH/covid19monitoring_economy_KOF)   | PM | 2020-04-02 | 2020-04-02 |ongoing|
+| [covid19monitoring_economy_KOF](https://github.com/statistikZH/covid19monitoring_economy_KOF)   | PM | 2020-04-02 | 2020-04-02 |9.6.2020|
 | [covid19monitoring_mobility_SBBHauptbahnhof](https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof)  | KK | 2020-04-03 | 2020-04-03 |ongoing|
 | [covid19monitoring_social_SWISSIX](https://github.com/statistikZH/covid19monitoring_social_SWISSIX)  | KK | 2020-04-08 | 2020-04-08 |12.06.2020|
 | [covid19monitoring_education_KITA](https://bildungsmonitoringzh.github.io/covid19_edu_ajb)  | FI/KK | 2020-04-09 | 2020-04-09 |ongoing|
