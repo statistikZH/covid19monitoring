@@ -56,6 +56,7 @@ Bildung_IliasNutzung <- ImportUrl("https://raw.githubusercontent.com/bildungsmon
 Bildung_IliasNutzung <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_phzh/master/Bildung_IliasNutzung.csv")
 Bildung_Lehrstellen <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_bista/master/Bildung_Lehrstellen.csv")
 Bildung_WikiFerlernen <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_vsa/master/Bildung_WikiFernlernen.csv")
+Economy_SHAB <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SHAB/master/Economy_SHAB.csv")
 #mydf <- ImportUrl("")
 
 # View(Education_Mindmaps[order(Education_Mindmaps$date, decreasing = TRUE),]); View(Education_LMVZ[order(Education_LMVZ$date, decreasing = TRUE),]); View(Education_KITA[order(Education_KITA$date, decreasing = TRUE),]); View(Social_SWISSIX[order(Social_SWISSIX$date, decreasing = TRUE),]); View(Mobility_SBBHauptbahnhof[order(Mobility_SBBHauptbahnhof$date, decreasing = TRUE),])
@@ -85,13 +86,16 @@ CheckIfDfFollowsStandard1(Social_SwissgridEnergie)
 CheckIfDfFollowsStandard1(Bildung_IliasNutzung)
 CheckIfDfFollowsStandard1(Bildung_Lehrstellen)
 CheckIfDfFollowsStandard1(Bildung_WikiFerlernen)
+CheckIfDfFollowsStandard1(Economy_SHAB)
+
 #CheckIfDfFollowsStandard1()
 
 ###########################################################################
   
 # rbind
     
-covid19monitoring <- rbind(Other_Weather, 
+covid19monitoring <- rbind(
+     Other_Weather, 
      Mobility_VBZHardbruecke, 
      Mobility_Intervista, 
      Economy_SMI, 
@@ -112,7 +116,8 @@ covid19monitoring <- rbind(Other_Weather,
      Social_SwissgridEnergie,
      Bildung_IliasNutzung,
      Bildung_Lehrstellen,
-     Bildung_WikiFerlernen
+     Bildung_WikiFerlernen,
+     Economy_SHAB
      )
     
 ###########################################################################
