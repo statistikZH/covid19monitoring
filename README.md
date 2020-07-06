@@ -42,7 +42,7 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 | [Mobility_SBBHauptbahnhof](https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof)  | KK | 2020-04-03 | 2020-04-03 |ongoing|
 | [Social_SWISSIX](https://github.com/statistikZH/covid19monitoring_social_SWISSIX)  | KK | 2020-04-08 | 2020-04-08 |12.06.2020|
 | [Education_KITA](https://bildungsmonitoringzh.github.io/covid19_edu_ajb)  | FI/KK | 2020-04-09 | 2020-04-09 |ongoing|
-| [Economy_AWA](https://github.com/statistikZH/covid19monitoring_economy_AWA)  | BS | 2020-04-09 | 2020-04-09 |ongoing|
+| [Economy_AWA](https://github.com/statistikZH/covid19monitoring_economy_AWA)  | BS | 2020-04-09 | 2020-04-09 |30.06.2020|
 | [Mobility_VerkehrsmessstellenKantonZH](https://github.com/statistikZH/covid19monitoring_mobility_VerkehrsmessstellenKantonZH)  | GC/KK | 2020-04-16 | 2020-04-16 |ongoing|
 | [Education_Lehrvertraege](https://github.com/bildungsmonitoringZH/covid19_edu_bista)  | FI/KK | 2020-04-16 | 2020-04-16 |ongoing|
 | [Economy_Kreditkarten](https://github.com/statistikZH/covid19monitoring_economy_Kreditkarten)  | BS | 2020-04-20 | 2020-04-20 |30.06.2020|
