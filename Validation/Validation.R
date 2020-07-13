@@ -47,7 +47,7 @@ Mobility_SBBHauptbahnhof <- ImportUrl("https://raw.githubusercontent.com/statist
 Mobility_ZaehlstellenMIVLVVelo<- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo/master/Mobilit%C3%A4t_AufkommenTerrestrischerVerkehr.csv")
 Social_SWISSIX <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_social_SWISSIX/master/Social_SWISSIX.csv")
 Education_KITA <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_ajb/master/Bildung_Kita.csv?token=AO5R67QPGQ6SNWMC67X4XU26UFNXM")
-Economy_AWA <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_AWA/master/Economy_AWA.csv")
+Economy_AWA <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_AWA/master/Economy_AWA_kurzarbeit_ausbezahlt.csv")
 Mobility_VerkehrsmessstellenKantonZH <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_mobility_VerkehrsmessstellenKantonZH/master/Mobility_VerkehrsmessstellenKantonZH.csv")
 Bildung_Lehrvertraege <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_bista/master/Bildung_Lehrvertraege.csv")
 Economy_Kreditkarten <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_Kreditkarten/master/Economy_Kreditkarten.csv")
