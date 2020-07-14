@@ -132,9 +132,9 @@ unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
 Metadata <- covid19monitoring_sel[unique_rows,]
 Metadata$last_modified <- Sys.Date()
 Metadata$topic<-as.factor(Metadata$topic)
-Metadata$topic<-factor(Metadata$topic, levels=c("MobilitÃ¤t", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
+Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
 Metadata<-Metadata[order(as.numeric(Metadata$topic), Metadata$variable_long),]
-#Numberof items in topic
+#Number of items in topic
 numit<-data.frame(table(as.numeric(Metadata$topic)))
 sortind<-list()  
 #create numeric 
