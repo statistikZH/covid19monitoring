@@ -18,8 +18,8 @@ source("./function.R")
     
 # import libraries
     
-library(readr) # Version: ‘1.3.1’
-library(ggplot2) # Version: ‘3.1.0’
+library(readr) # Version: 1.3.1
+library(ggplot2) # Version: 3.1.0
 library(rmarkdown)
     
 ###########################################################################
