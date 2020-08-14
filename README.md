@@ -50,7 +50,7 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 | [Education_ILIAS](https://github.com/bildungsmonitoringZH/covid19_edu_phzh)  | FI/KK | 2020-04-22 | 2020-04-24 |30.06.2020|
 | [Education_WikiFernlernen](https://github.com/bildungsmonitoringZH/covid19_edu_vsa)  | FI/KK | 2020-05-14 | 2020-05-14 |ongoing|
 
-**> validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
+**> validated**: Data is consitent with the ['Data structure specification for csv'](). Inclusion in covid19monitoring is technically possible - the data flow works.
 
 **> published:** Data is included in official published release.
 
@@ -88,13 +88,13 @@ topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
 > E.g.: Other_Weather
 
-# Naming convention for  output data
+# Naming convention for csv
 
 topic (start with uppercase) + _ + NameOfDataset (CamelCase)
 
 > E.g.: Other_Weather
 
-# Data structure specification for output data
+# Data structure specification for csv
 
 Each data output must contain the following variables in the defined standard format. Refer to the  [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRAXE1Sahd8Gv5wiadUQrmyENCvsBhiCW1c1tGKEuXBtmPRXxvw4F-BmGDdjQcgQp7gz61qt6xw-JSk/pubhtml#) for variable definition and example.
 
