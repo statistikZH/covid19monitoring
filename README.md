@@ -10,7 +10,7 @@
 - [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
 - [Data structure specification for csv](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-csv) <br>
 - [Naming convention for csv](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#data-structure-specification-for-csv) <br>
-- [README.md tempalte](https://github.com/statistikZH/covid19monitoring/tree/master#README.md#readmemd-tempalte) <br>
+- [README.md tempalte](https://github.com/statistikZH/covid19monitoring/tree/master#readmemd-tempalte) <br>
 
 # Aim
 
