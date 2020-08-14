@@ -8,9 +8,9 @@
 - [Gitrepos with data protection](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-with-data-protection) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-gitrepos-folders) <br>
 - [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
-- [Data structure specification for output data](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-output-data) <br>
-- [Naming convention for output data](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for--output-data) <br>
-- [Metadata for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#metadata-for-gitrepos-folders) <br>
+- [Data structure specification for csv](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-csv) <br>
+- [Naming convention for csv](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#data-structure-specification-for-csv) <br>
+- [README.md tempalte](https://github.com/statistikZH/covid19monitoring/tree/master#README.md#readmemd-tempalte) <br>
 
 # Aim
 
