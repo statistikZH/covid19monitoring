@@ -50,7 +50,7 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 | [Education_ILIAS](https://github.com/bildungsmonitoringZH/covid19_edu_phzh)  | FI/KK | 2020-04-22 | 2020-04-24 |30.06.2020|
 | [Education_WikiFernlernen](https://github.com/bildungsmonitoringZH/covid19_edu_vsa)  | FI/KK | 2020-05-14 | 2020-05-14 |ongoing|
 
-**> validated**: Data is consitent with the ['Data structure specification for csv'](). Inclusion in covid19monitoring is technically possible - the data flow works.
+**> validated**: Data is consitent with the ['Data structure specification for csv'](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#data-structure-specification-for-csv). Inclusion in covid19monitoring is technically possible - the data flow works.
 
 **> published:** Data is included in official published release.
 
@@ -104,7 +104,7 @@ Each data output must contain the following variables in the defined standard fo
 The template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
 --->
 
-# Metadata for gitrepos folders
+# README.md tempalte
 
 **Grundlage** <br>
 Short description of dataset.  <br>
