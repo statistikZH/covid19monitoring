@@ -8,9 +8,9 @@
 - [Gitrepos with data protection](https://github.com/statistikZH/covid19monitoring/tree/master#gitrepos-with-data-protection) <br>
 - [Naming convention for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-gitrepos-folders) <br>
 - [Naming convention for scripts](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for-scripts) <br>
-- [Data structure specification for output data](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-output-data) <br>
-- [Naming convention for output data](https://github.com/statistikZH/covid19monitoring/tree/master#naming-convention-for--output-data) <br>
-- [Metadata for gitrepos folders](https://github.com/statistikZH/covid19monitoring/tree/master#metadata-for-gitrepos-folders) <br>
+- [Data structure specification for csv](https://github.com/statistikZH/covid19monitoring/tree/master#data-structure-specification-for-csv) <br>
+- [Naming convention for csv](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#data-structure-specification-for-csv) <br>
+- [README.md tempalte](https://github.com/statistikZH/covid19monitoring/tree/master#readmemd-tempalte) <br>
 
 # Aim
 
@@ -50,7 +50,7 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 | [Education_ILIAS](https://github.com/bildungsmonitoringZH/covid19_edu_phzh)  | FI/KK | 2020-04-22 | 2020-04-24 |30.06.2020|
 | [Education_WikiFernlernen](https://github.com/bildungsmonitoringZH/covid19_edu_vsa)  | FI/KK | 2020-05-14 | 2020-05-14 |ongoing|
 
-**> validated**: Data follows specification of our output table, inclusion in covid19monitoring is technically possible - the data flow works.
+**> validated**: Data is consitent with the ['Data structure specification for csv'](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#data-structure-specification-for-csv). Inclusion in covid19monitoring is technically possible - the data flow works.
 
 **> published:** Data is included in official published release.
 
@@ -88,13 +88,13 @@ topic (start with uppercase) + _ +  NameOfDataset (CamelCase) <br>
 
 > E.g.: Other_Weather
 
-# Naming convention for  output data
+# Naming convention for csv
 
 topic (start with uppercase) + _ + NameOfDataset (CamelCase)
 
 > E.g.: Other_Weather
 
-# Data structure specification for output data
+# Data structure specification for csv
 
 Each data output must contain the following variables in the defined standard format. Refer to the  [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRAXE1Sahd8Gv5wiadUQrmyENCvsBhiCW1c1tGKEuXBtmPRXxvw4F-BmGDdjQcgQp7gz61qt6xw-JSk/pubhtml#) for variable definition and example.
 
@@ -104,7 +104,7 @@ Each data output must contain the following variables in the defined standard fo
 The template for our GitHub Page can be found [here](https://github.com/statistikZH/covid19monitoring/blob/master/Template_GitHubPages.Rmd). This template generates the following [GitHub Pages](https://statistikzh.github.io/covid19monitoring/). 
 --->
 
-# Metadata for gitrepos folders
+# README.md tempalte
 
 **Grundlage** <br>
 Short description of dataset.  <br>
