@@ -39,7 +39,7 @@ A visualization of the data can be found [here](https://www.web.statistik.zh.ch/
 | [Economy_SIX](https://github.com/statistikZH/covid19monitoring_economy_SIX)   | BS | 2020-03-30 |2020-03-31|ongoing|
 | [Health_covid19cases](https://github.com/statistikZH/covid19monitoring_health_covid19cases)   | PM | 2020-04-01 |2020-04-02|ongoing|
 | [Education_lvzmath](https://bildungsmonitoringzh.github.io/covid19_edu_lmvz_public/)   | FI/KK | 2020-04-01 |2020-04-05|ongoing|
-| [Education_mindmaps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03-30 |2020-03-31|ongoing|
+| [Education_mindsteps](https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps)   | FI/KK | 2020-03-30 |2020-03-31|ongoing|
 | [Economy_KOF](https://github.com/statistikZH/covid19monitoring_economy_KOF)   | PM | 2020-04-02 | 2020-04-02 |4.7.2020|
 | [Mobility_SBBHauptbahnhof](https://github.com/statistikZH/covid19monitoring_mobility_SBBHauptbahnhof)  | KK | 2020-04-03 | 2020-04-03 |ongoing|
 | [Social_SWISSIX](https://github.com/statistikZH/covid19monitoring_social_SWISSIX)  | KK | 2020-04-08 | 2020-04-08 |12.06.2020|
