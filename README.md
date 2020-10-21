@@ -1,4 +1,4 @@
-9![](https://opendata.swiss/content/uploads/2016/02/kt_zh.png)
+![](https://opendata.swiss/content/uploads/2016/02/kt_zh.png)
 
 # Gesellschaftsmonitoring COVID19
 
