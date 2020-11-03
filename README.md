@@ -19,12 +19,9 @@
 In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The aim of this project is to collect indicators that help to observe how the Swiss popualation reacted to the corona crisis and the measures taken by the authorities. The indicators are published in a standarised format. From mid-June onwards, the indicators will be updated weekly on Wednesday. More informatin on this project can be found [here in german](https://www.zh.ch/de/news-uebersicht/mitteilungen/2020/politik-staat/statistik/durch-die-krise-begleiten---gesellschaftsmonitoring-covid19-.html). <br>
 The following projects have a similar aim: [Konjunkturforschungsstelle (KOF ETH)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html); [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html);  [Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)<br>
 
-An overview of the available data:
+[This dashboard](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) provides an overview of the available data. <br>
 
-[![Dashboard of data updates](https://github.com/statistikZH/covid19monitoring/blob/master/dashboard/dashboard.png "Dashboard of data updates")](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/)
-
-**> Visualization** <br>
-A visualization of the data can be found [here](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/). <br> Observable notebook: https://observablehq.com/@mmznrstat/monitoring-covid19-effekt
+A visualization of the data is published [here](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) ([Link to corresponding Observable notebook](https://observablehq.com/@mmznrstat/monitoring-covid19-effekt))
 
 # Gitrepos overview
 
