@@ -21,7 +21,7 @@ The following projects have a similar aim: [Konjunkturforschungsstelle (KOF ETH)
 
 [This dashboard](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) provides an overview of the available data. <br>
 
-A visualization of the data is published [here](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) ([Link to corresponding Observable notebook](https://observablehq.com/@mmznrstat/monitoring-covid19-effekt))
+A visualization of the data is published [here](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) ([Link to corresponding Observable notebook](https://observablehq.com/@mmznrstat/monitoring-covid19-effekt)).
 
 # Gitrepos overview
 
