@@ -1,114 +1,43 @@
-name: create screenshot
-
-on:
-  schedule:
-    - cron:  '*/59 * * * *'
-
-#  push:
-#    paths:
-#    - 'Readme.md'
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-    
-    - name: Setup Ruby
-      uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 2.6.x
-   
-    # update screenshot of dashboard
-    - name: Screenshot Dashboard
-      uses: swinton/screenshot-website@v1.x
-      with:
-        source: https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/5/Alle
-        destination: dashboard.png
-        full-page: true
-    
-    # download artifact
-    - name: Download dashboard screenshot from last step
-      uses: actions/download-artifact@v1
-      with:
-        name: dashboard
-
-    # Commit to repo with updated file
-    - uses: stefanzweifel/git-auto-commit-action@v4.1.1
-      with:
-        commit_message: Update Screenshot
-        branch: ${{ github.head_ref }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# name: create screenshot
+# 
+# on:
+#   schedule:
+#   - cron:  '*/59 * * * *'
+# 
+# #  push:
+# #    paths:
+# #    - 'Readme.md'
+# 
+# jobs:
+#   build:
+#   runs-on: ubuntu-latest
+# 
+# # Steps represent a sequence of tasks that will be executed as part of the job
+# steps:
+#   # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#   - uses: actions/checkout@v2
+# 
+# - name: Setup Ruby
+# uses: actions/setup-ruby@v1
+# with:
+#   ruby-version: 2.6.x
+# 
+# # update screenshot of dashboard
+# - name: Screenshot Dashboard
+# uses: swinton/screenshot-website@v1.x
+# with:
+#   source: https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/5/Alle
+#   destination: dashboard.png
+# full-page: true
+# 
+# # download artifact
+# - name: Download dashboard screenshot from last step
+# uses: actions/download-artifact@v1
+# with:
+#   name: dashboard
+# 
+# # Commit to repo with updated file
+# - uses: stefanzweifel/git-auto-commit-action@v4.1.1
+# with:
+#   commit_message: Update Screenshot
+# branch: ${{ github.head_ref }}
