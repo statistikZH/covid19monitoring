@@ -16,7 +16,7 @@
 
 # Aim
 
-In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The aim of this project is to collect indicators that help to observe how the Swiss popualation reacted to the corona crisis and the measures taken by the authorities. The indicators are published in a standarised format. From mid-June onwards, the indicators will be updated weekly on Wednesday. More informatin on this project can be found [here in german](https://www.zh.ch/de/news-uebersicht/mitteilungen/2020/politik-staat/statistik/durch-die-krise-begleiten---gesellschaftsmonitoring-covid19-.html). <br>
+In mid-March, the Statistical Office launched the project "Society Monitoring COVID19". The aim of this project is to collect indicators that help to observe how the Swiss popualation reacted to the corona crisis and the measures taken by the authorities. The indicators are published in a standarised format. More informatin on this project can be found [here in german](https://www.zh.ch/de/news-uebersicht/mitteilungen/2020/politik-staat/statistik/durch-die-krise-begleiten---gesellschaftsmonitoring-covid19-.html). <br>
 The following projects have a similar aim: [Konjunkturforschungsstelle (KOF ETH)](https://kof.ethz.ch/prognosen-indikatoren/indikatoren.html); [Bundesamt für Statistik (BFS)](https://www.bfs.admin.ch/bfs/de/home/aktuell/covid-19.html);  [Monitoring Consumption (HSG St Gallen)](https://public.tableau.com/profile/monitoringconsumptionswitzerland#!/)<br>
 
 [This dashboard](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) provides an overview of the available data. <br>
