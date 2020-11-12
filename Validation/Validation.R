@@ -133,6 +133,14 @@ Metadata <- covid19monitoring_sel[unique_rows,]
 Metadata$last_modified <- Sys.Date()
 Metadata$topic<-as.factor(Metadata$topic)
 Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
+
+
+# render Validation.Rmd
+    
+#render("./Validation.Rmd")
+    
+
+    
 Metadata<-Metadata[order(as.numeric(Metadata$topic), Metadata$variable_long),]
 #Number of items in topic
 numit<-data.frame(table(as.numeric(Metadata$topic)))
@@ -143,10 +151,19 @@ Metadata$sort<-as.numeric(unlist(sortind))
 write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
 ###########################################################################
-    
-# render Validation.Rmd
-    
-#render("./Validation.Rmd")
+
+
+#dir.create("../variables/", showWarnings = F)
+
+#for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
+#{
+#  subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
+#  write.csv(subs, file=paste("../variables/", gsub(" ", "_", i), ".csv"))
+#}
     
 
-    
+#file.copy("ValidationData.csv", "../covid19socialmonitoring.csv", overwrite = TRUE)
+
+#file.copy("ValidationMetadata.csv", "../Metadata.csv", overwrite = TRUE)
+
+
