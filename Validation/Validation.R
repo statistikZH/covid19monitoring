@@ -131,16 +131,18 @@ covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("
 unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
 Metadata <- covid19monitoring_sel[unique_rows,]
 Metadata$last_modified <- Sys.Date()
+
+#add atomic variable names
+#Metadata$varnames<-paste(gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" "))), ".csv", sep="")
+#add date of first and last observation
+#startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
+#startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
+#startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
+#startend$varnames<-paste(rownames(startend), ".csv", sep="")
+#Metadata<-merge(Metadata, startend, by.x="varnames", by.y="varnames", all.x=T)
+
 Metadata$topic<-as.factor(Metadata$topic)
 Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
-
-
-# render Validation.Rmd
-    
-#render("./Validation.Rmd")
-    
-
-    
 Metadata<-Metadata[order(as.numeric(Metadata$topic), Metadata$variable_long),]
 #Number of items in topic
 numit<-data.frame(table(as.numeric(Metadata$topic)))
@@ -148,6 +150,7 @@ sortind<-list()
 #create numeric 
 for(i in as.numeric(numit$Var1)) sortind[[i]]<-paste(numit$Var1[i], formatC(1:numit$Freq[i], width=3, format="d", flag="0"), sep=".")
 Metadata$sort<-as.numeric(unlist(sortind))
+
 write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
 ###########################################################################
@@ -165,5 +168,11 @@ write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8",
 #file.copy("ValidationData.csv", "../covid19socialmonitoring.csv", overwrite = TRUE)
 
 #file.copy("ValidationMetadata.csv", "../Metadata.csv", overwrite = TRUE)
+
+
+
+# render Validation.Rmd
+
+#render("./Validation.Rmd")
 
 
