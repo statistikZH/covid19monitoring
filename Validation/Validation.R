@@ -122,24 +122,29 @@ covid19monitoring <- rbind(
     
 ###########################################################################
   
-# Export
+# Export Data
     
-write.table(covid19monitoring, "./ValidationData.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+write.table(covid19monitoring, "./covid19socialmonitoring.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+
+###########################################################################
 
 # Export Metadata
+
 covid19monitoring_sel <- covid19monitoring[, ! names(covid19monitoring) %in% c("date", "value")]
 unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
 Metadata <- covid19monitoring_sel[unique_rows,]
 Metadata$last_modified <- Sys.Date()
 
-#add atomic variable names
-#Metadata$varnames<-paste(gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" "))), ".csv", sep="")
-#add date of first and last observation
-#startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
-#startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
-#startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
-#startend$varnames<-paste(rownames(startend), ".csv", sep="")
-#Metadata<-merge(Metadata, startend, by.x="varnames", by.y="varnames", all.x=T)
+# #add atomic variable names
+# Metadata$varnames<-paste(gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" "))), ".csv", sep="")
+# #add date of first and last observation
+# startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
+# startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
+# startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
+# startend$varnames<-paste(rownames(startend), ".csv", sep="")
+# Metadata<-merge(Metadata, startend, by.x="varnames", by.y="varnames", all.x=T)
+# Metadata$id <- gsub(".csv", "", Metadata$varnames)
+# Metadata$varnames <- NULL
 
 Metadata$topic<-as.factor(Metadata$topic)
 Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
@@ -151,25 +156,21 @@ sortind<-list()
 for(i in as.numeric(numit$Var1)) sortind[[i]]<-paste(numit$Var1[i], formatC(1:numit$Freq[i], width=3, format="d", flag="0"), sep=".")
 Metadata$sort<-as.numeric(unlist(sortind))
 
-write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 
 ###########################################################################
 
-
-#dir.create("../variables/", showWarnings = F)
-
-#for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
-#{
-#  subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
-#  write.csv(subs, file=paste("../variables/", gsub(" ", "_", i), ".csv"))
-#}
+# dir.create("../variables/", showWarnings = F)
+# 
+# for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
+# {
+#   name_i = gsub(" ", "_", i)
+#   subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
+#   subs$id <- rep(name_i, times = nrow(subs))
+#   write.csv(subs, file=paste("../variables/", name_i, ".csv"))
+# }
     
-
-#file.copy("ValidationData.csv", "../covid19socialmonitoring.csv", overwrite = TRUE)
-
-#file.copy("ValidationMetadata.csv", "../Metadata.csv", overwrite = TRUE)
-
-
+###########################################################################
 
 # render Validation.Rmd
 
