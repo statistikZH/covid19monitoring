@@ -5,7 +5,7 @@
 # working direcotory 
 
 getwd()
-setwd("C:/gitrepos/covid19monitoring/Validation")
+setwd("C:/gitrepos/covid19monitoring/")
 #setwd("/home/klk/Documents/gitrepos/covid19monitoring/Validation")
     
 ###########################################################################
@@ -135,16 +135,15 @@ unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
 Metadata <- covid19monitoring_sel[unique_rows,]
 Metadata$last_modified <- Sys.Date()
 
-# #add atomic variable names
-# Metadata$varnames<-paste(gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" "))), ".csv", sep="")
+# #add atomic variable names (id)
+# Metadata$id<-gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" ")))
 # #add date of first and last observation
 # startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
 # startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
 # startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
-# startend$varnames<-paste(rownames(startend), ".csv", sep="")
-# Metadata<-merge(Metadata, startend, by.x="varnames", by.y="varnames", all.x=T)
-# Metadata$id <- gsub(".csv", "", Metadata$varnames)
-# Metadata$varnames <- NULL
+# startend$id<-rownames(startend)
+# Metadata<-merge(Metadata, startend, by.x="id", by.y="id", all.x=T)
+
 
 Metadata$topic<-as.factor(Metadata$topic)
 Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))

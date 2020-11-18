@@ -126,5 +126,5 @@ CreateMetadata <- function (dat=covid19monitoring)  {
   #create numeric 
   for(i in as.numeric(numit$Var1)) sortind[[i]]<-paste(numit$Var1[i], formatC(1:numit$Freq[i], width=3, format="d", flag="0"), sep=".")
   Metadata$sort<-as.numeric(unlist(sortind))
-  write.table(Metadata, "./ValidationMetadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+  write.table(Metadata, ".Metadata.csv", sep=",", fileEncoding="UTF-8", row.names = F)
 }
