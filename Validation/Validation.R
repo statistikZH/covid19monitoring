@@ -6,8 +6,7 @@
 
 getwd()
 setwd("C:/gitrepos/covid19monitoring/")
-#setwd("/home/klk/Documents/gitrepos/covid19monitoring/Validation")
-    
+
 ###########################################################################
     
 # import function
@@ -135,15 +134,14 @@ unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
 Metadata <- covid19monitoring_sel[unique_rows,]
 Metadata$last_modified <- Sys.Date()
 
-#add atomic variable names (id)
-Metadata$id<-gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" ")))
-#add date of first and last observation
-startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
-startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
-startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
-startend$id<-rownames(startend)
-Metadata<-merge(Metadata, startend, by.x="id", by.y="id", all.x=T)
-
+# #add atomic variable names (id)
+# Metadata$id<-gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" ")))
+# #add date of first and last observation
+# startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
+# startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
+# startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
+# startend$id<-rownames(startend)
+# Metadata<-merge(Metadata, startend, by.x="id", by.y="id", all.x=T)
 
 Metadata$topic<-as.factor(Metadata$topic)
 Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
@@ -159,15 +157,15 @@ write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names
 
 ###########################################################################
 
-dir.create("./variables/", showWarnings = F)
-
-for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
-{
-  name_i = gsub(" ", "_", i)
-  subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
-  subs$id <- rep(name_i, times = nrow(subs))
-  write.csv(subs, file=paste("./variables/", name_i, ".csv"))
-}
+# dir.create("./variables/", showWarnings = F)
+# 
+# for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
+# {
+#   name_i = gsub(" ", "_", i)
+#   subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
+#   subs$id <- rep(name_i, times = nrow(subs))
+#   write.csv(subs, file=paste("./variables/", name_i, ".csv"))
+# }
     
 ###########################################################################
 
