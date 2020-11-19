@@ -57,6 +57,7 @@ Bildung_IliasNutzung <- ImportUrl("https://raw.githubusercontent.com/bildungsmon
 Bildung_Lehrstellen <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_bista/master/Bildung_Lehrstellen.csv")
 Bildung_WikiFerlernen <- ImportUrl("https://raw.githubusercontent.com/bildungsmonitoringZH/covid19_edu_vsa/master/Bildung_WikiFernlernen.csv")
 Economy_SHAB <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SHAB/master/Economy_SHAB.csv")
+Economy_SHABNachBranche <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SHAB/master/Economy_SHAB_branchen.csv")
 #mydf <- ImportUrl("")
 
 # View(Education_Mindmaps[order(Education_Mindmaps$date, decreasing = TRUE),]); View(Education_LMVZ[order(Education_LMVZ$date, decreasing = TRUE),]); View(Education_KITA[order(Education_KITA$date, decreasing = TRUE),]); View(Social_SWISSIX[order(Social_SWISSIX$date, decreasing = TRUE),]); View(Mobility_SBBHauptbahnhof[order(Mobility_SBBHauptbahnhof$date, decreasing = TRUE),])
@@ -87,7 +88,7 @@ CheckIfDfFollowsStandard1(Bildung_IliasNutzung)
 CheckIfDfFollowsStandard1(Bildung_Lehrstellen)
 CheckIfDfFollowsStandard1(Bildung_WikiFerlernen)
 CheckIfDfFollowsStandard1(Economy_SHAB)
-
+CheckIfDfFollowsStandard1(Economy_SHABNachBranche)
 #CheckIfDfFollowsStandard1()
 
 ###########################################################################
@@ -116,7 +117,8 @@ covid19monitoring <- rbind(
      Bildung_IliasNutzung,
      Bildung_Lehrstellen,
      Bildung_WikiFerlernen,
-     Economy_SHAB
+     Economy_SHAB#,
+     #Economy_SHABNachBranche
      )
     
 ###########################################################################
@@ -134,14 +136,14 @@ unique_rows <- !duplicated(covid19monitoring_sel[names(covid19monitoring_sel)])
 Metadata <- covid19monitoring_sel[unique_rows,]
 Metadata$last_modified <- Sys.Date()
 
-# #add atomic variable names (id)
-# Metadata$id<-gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" ")))
-# #add date of first and last observation
-# startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
-# startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
-# startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
-# startend$id<-rownames(startend)
-# Metadata<-merge(Metadata, startend, by.x="id", by.y="id", all.x=T)
+#add atomic variable names (id)
+Metadata$id<-gsub(" ", "_", with(Metadata, paste(variable_short, location, sep=" ")))
+#add date of first and last observation
+startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(variable_short, location, sep=" "))), range))
+startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
+startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
+startend$id<-rownames(startend)
+Metadata<-merge(Metadata, startend, by.x="id", by.y="id", all.x=T)
 
 Metadata$topic<-as.factor(Metadata$topic)
 Metadata$topic<-factor(Metadata$topic, levels=c("Mobilität", "Wirtschaft", "Soziales", "Gesundheit", "Bildung", "Sonstiges"))
@@ -157,15 +159,15 @@ write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names
 
 ###########################################################################
 
-# dir.create("./variables/", showWarnings = F)
-# 
-# for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
-# {
-#   name_i = gsub(" ", "_", i)
-#   subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
-#   subs$id <- name_i
-#   write.csv(subs, file=paste("./variables/", name_i, ".csv"))
-# }
+dir.create("./variables/", showWarnings = F)
+
+for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
+{
+  name_i = gsub(" ", "_", i)
+  subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
+  subs$id <- name_i
+  write.csv(subs, file=paste("./variables/", name_i, ".csv"))
+}
     
 ###########################################################################
 
