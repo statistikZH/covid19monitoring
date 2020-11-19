@@ -163,7 +163,7 @@ write.table(Metadata, "./Metadata.csv", sep=",", fileEncoding="UTF-8", row.names
 # {
 #   name_i = gsub(" ", "_", i)
 #   subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
-#   subs$id <- rep(name_i, times = nrow(subs))
+#   subs$id <- name_i
 #   write.csv(subs, file=paste("./variables/", name_i, ".csv"))
 # }
     
