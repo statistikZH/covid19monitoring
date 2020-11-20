@@ -166,7 +166,7 @@ for(i in paste(Metadata$variable_short, Metadata$location, sep=" "))
   name_i = gsub(" ", "_", i)
   subs<-subset(covid19monitoring, paste(variable_short, location, sep=" ")==i)[,c("date", "value")]
   subs$id <- name_i
-  write.csv(subs, file=paste("./variables/", name_i, ".csv"))
+  write.csv(subs, file=paste("./variables/", name_i, ".csv", sep=""), row.names=F)
 }
     
 ###########################################################################
