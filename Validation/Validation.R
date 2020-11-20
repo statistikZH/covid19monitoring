@@ -5,7 +5,7 @@
 # working direcotory 
 
 getwd()
-setwd("C:/gitrepos/covid19monitoring/")
+setwd("../")
 
 ###########################################################################
     
