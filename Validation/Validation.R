@@ -117,8 +117,8 @@ covid19monitoring <- rbind(
      Bildung_IliasNutzung,
      Bildung_Lehrstellen,
      Bildung_WikiFerlernen,
-     Economy_SHAB#,
-     #Economy_SHABNachBranche
+     Economy_SHAB,
+     Economy_SHABNachBranche
      )
     
 ###########################################################################
