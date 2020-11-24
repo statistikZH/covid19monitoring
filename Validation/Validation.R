@@ -143,6 +143,9 @@ startendlist<-with(covid19monitoring, tapply(date, list(gsub(" ", "_", paste(var
 startend<-data.frame(date_first_obs=sapply(startendlist, FUN=function(x) {x[[1]]}, simplify = T))
 startend$date_last_obs<-sapply(startendlist, FUN=function(x) {x[[2]]}, simplify = T)
 startend$id<-rownames(startend)
+#correct date for sector*canton bankruptcies (Economy_SHABNachBranche)
+startend$date_first_obs[grepl('konk_eroeff_noga',startend$id)] <- min(Economy_SHABNachBranche$date)
+startend$date_last_obs[grepl('konk_eroeff_noga',startend$id)] <- max(Economy_SHABNachBranche$date)
 Metadata<-merge(Metadata, startend, by.x="id", by.y="id", all.x=T)
 
 Metadata$topic<-as.factor(Metadata$topic)
