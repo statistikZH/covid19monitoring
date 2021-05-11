@@ -110,7 +110,7 @@ covid19monitoring <- rbind(
      Mobility_ZaehlstellenMIVLVVelo,
      Social_SWISSIX,
      Education_KITA,
-     Mobility_VerkehrsmessstellenKantonZH,
+     #Mobility_VerkehrsmessstellenKantonZH,
      Bildung_Lehrvertraege,
      Economy_Kreditkarten,
      Social_SwissgridEnergie,
