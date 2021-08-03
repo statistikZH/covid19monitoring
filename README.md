@@ -32,7 +32,7 @@ A visualization of the data is published [here](https://www.web.statistik.zh.ch/
 | [Mobility_ZaehlstellenMIVLVVelo](https://github.com/statistikZH/covid19monitoring_mobility_ZaehlstellenMIVLVVelo) | PM | 2020-04-06 |2020-04-07|ongoing|
 | [Mobility_intervista](https://github.com/statistikZH/covid19monitoring_mobility_intervista)   | PM | 2020-03-25 |2020-03-31|4.7.2021|
 | [Economy_SMI](https://github.com/statistikZH/covid19monitoring_economy_SMI)   | PM | 2020-03-26 |2020-03-31|ongoing|
-| [Economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | BS | 2020-03-26 |2020-03-31|ongoing|
+| [Economy_FlightTraffic](https://github.com/statistikZH/covid19monitoring_economy_FlightTraffic)   | BS | 2020-03-26 |2020-03-31|2021-07-05|
 | [Economy_SIX](https://github.com/statistikZH/covid19monitoring_economy_SIX)   | BS | 2020-03-30 |2020-03-31|ongoing|
 | [Health_covid19cases](https://github.com/statistikZH/covid19monitoring_health_covid19cases)   | PM | 2020-04-01 |2020-04-02|ongoing|
 | [Education_lvzmath](https://bildungsmonitoringzh.github.io/covid19_edu_lmvz_public/)   | FI/KK | 2020-04-01 |2020-04-05|ongoing|
