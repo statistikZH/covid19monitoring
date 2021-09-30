@@ -59,6 +59,7 @@ Bildung_WikiFerlernen <- ImportUrl("https://raw.githubusercontent.com/bildungsmo
 Economy_SHAB <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SHAB/master/Economy_SHAB.csv")
 Economy_SHABNachBranche <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_economy_SHAB/master/Economy_SHAB_branchen.csv")
 #mydf <- ImportUrl("")
+Social_DargeboteneHand <- ImportUrl("https://raw.githubusercontent.com/statistikZH/covid19monitoring_social_DargeboteneHand/main/Social_DargeboteneHand.csv")
 
 # View(Education_Mindmaps[order(Education_Mindmaps$date, decreasing = TRUE),]); View(Education_LMVZ[order(Education_LMVZ$date, decreasing = TRUE),]); View(Education_KITA[order(Education_KITA$date, decreasing = TRUE),]); View(Social_SWISSIX[order(Social_SWISSIX$date, decreasing = TRUE),]); View(Mobility_SBBHauptbahnhof[order(Mobility_SBBHauptbahnhof$date, decreasing = TRUE),])
     
@@ -89,6 +90,7 @@ CheckIfDfFollowsStandard1(Bildung_Lehrstellen)
 CheckIfDfFollowsStandard1(Bildung_WikiFerlernen)
 CheckIfDfFollowsStandard1(Economy_SHAB)
 CheckIfDfFollowsStandard1(Economy_SHABNachBranche)
+CheckIfDfFollowsStandard1(Social_DargeboteneHand)
 #CheckIfDfFollowsStandard1()
 
 ###########################################################################
@@ -118,7 +120,8 @@ covid19monitoring <- rbind(
      Bildung_Lehrstellen,
      Bildung_WikiFerlernen,
      Economy_SHAB,
-     Economy_SHABNachBranche
+     Economy_SHABNachBranche,
+     Social_DargeboteneHand
      )
     
 ###########################################################################
