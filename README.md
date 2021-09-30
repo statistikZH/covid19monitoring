@@ -49,7 +49,7 @@ A visualization of the data is published [here](https://www.web.statistik.zh.ch/
 | [Education_ILIAS](https://github.com/bildungsmonitoringZH/covid19_edu_phzh)  | FI/KK | 2020-04-22 | 2020-04-24 |30.06.2020|
 | [Education_WikiFernlernen](https://github.com/bildungsmonitoringZH/covid19_edu_vsa)  | FI/KK | 2020-05-14 | 2020-05-14 |ongoing|
 | [Economy_SHAB](https://github.com/statistikZH/covid19monitoring_economy_SHAB)  | BS |  2020-06-12 |2020-06-12 |ongoing|
-| [Social_DargeboteneHnd]()  | KK | 2021-09-30 |2021-09-30 |ongoing|
+| [Social_DargeboteneHand](https://github.com/statistikZH/covid19monitoring_social_DargeboteneHand)  | KK | 2021-09-30 |2021-09-30 |ongoing|
 
 **> validated**: Data is consitent with the ['Data structure specification for csv'](https://github.com/statistikZH/covid19monitoring/blob/master/README.md#data-structure-specification-for-csv). Inclusion in covid19monitoring is technically possible - the data flow works.
 
